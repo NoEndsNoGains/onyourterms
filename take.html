@@ -6,23 +6,26 @@
     <title>Take — On Your Terms</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { min-height: 100%; }
         body {
             background: #000;
             color: #ccc;
             font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.7;
-            padding: 3rem 1.5rem;
+            padding: 4rem 1.5rem;
             max-width: 700px;
             margin: 0 auto;
+            min-height: 100vh;
+            text-align: center;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             color: #fff;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             font-weight: 800;
         }
         .price-section {
-            margin: 2rem 0;
+            margin: 3rem 0;
             text-align: center;
         }
         .price-label {
@@ -75,9 +78,10 @@
             background: #ddd;
         }
         .price-note {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 1rem;
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+            line-height: 1.8;
         }
         .confirmation {
             display: none;
@@ -167,7 +171,7 @@
 
     <h1>Take.</h1>
 
-    <p>You take to benefit yourself, and that is ok.</p>
+    <p style="font-size:1.2rem; color:#999; margin-bottom:1rem;">You take to benefit yourself, and that is ok.</p>
 
     <div class="price-section" id="priceSection">
         <span class="price-label">Name your price</span>
