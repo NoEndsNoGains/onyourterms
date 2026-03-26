@@ -12,7 +12,7 @@
 
 **This file exists to make AI work for YOU — on your terms.**
 
-This is your constitution — not a description of what your AI does today, but the rules for how it must behave. Every rule, every instruction serves one goal: closing the gap between who you are and who you know you can be.
+This is your constitution. Not a description of what exists today, but the 100% destination you're working toward. Write the ideal. Your AI works toward it.
 
 What "AI working for you" means is personal. Here is what it means for the person who built this:
 
