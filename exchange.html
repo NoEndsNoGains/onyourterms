@@ -6,24 +6,32 @@
     <title>Exchange — On Your Terms</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { min-height: 100%; }
         body {
             background: #000;
             color: #ccc;
             font-family: 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.7;
-            padding: 3rem 1.5rem;
+            padding: 4rem 1.5rem;
             max-width: 700px;
             margin: 0 auto;
+            min-height: 100vh;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             color: #fff;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             font-weight: 800;
+            text-align: center;
         }
-        p { margin-bottom: 1rem; }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #999;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
         .form-section {
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
         label {
             display: block;
@@ -39,7 +47,7 @@
             width: 100%;
             padding: 0.8rem 1rem;
             border-radius: 8px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
         input[type="email"]:focus {
             outline: none;
@@ -56,11 +64,16 @@
             min-height: 200px;
             resize: vertical;
             line-height: 1.6;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         textarea:focus {
             outline: none;
             border-color: #fff;
+        }
+        .note {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
         }
         .submit-btn {
             display: inline-block;
@@ -77,10 +90,12 @@
         .submit-btn:hover {
             background: #ddd;
         }
-        .note {
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
+        .price-note {
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+            line-height: 1.8;
+            text-align: center;
         }
         .confirmation {
             display: none;
@@ -158,7 +173,7 @@
         .join-btn {
             position: fixed;
             top: 1.5rem;
-            right: 1.5rem;
+            right: 15%;
             background: #1a3a1a;
             color: #fff;
             padding: 0.7rem 1.5rem;
@@ -178,20 +193,25 @@
 
     <h1>Exchange.</h1>
 
-    <p>You take to benefit us all.</p>
-    <p style="color:#999;">You get the file. Plus: you share your views, we share everyone else's. Starting from zero got nothing to lose.</p>
+    <p class="subtitle">You take to benefit us all.</p>
+    <p class="subtitle" style="color:#777; font-size:1rem;">You get the file. You share your views. The next available version of terms gets better because of all of us.</p>
 
     <div class="form-section" id="formSection">
-        <label>Your email (so we can let you know when a new version is ready)</label>
+        <label>Your email<br><span style="color:#666; font-size:0.85rem;">So we can send you emails about everything irrelevant that you didn't give us permission for. Just kidding. We only write when a new version of terms is available.</span></label>
         <input type="email" id="emailInput" placeholder="your@email.com">
 
-        <label>Your terms, your ideas, or anything you think we missed</label>
-        <textarea id="termsInput" placeholder="Paste your terms here. Or share an idea. Or tell us what's wrong. Plain text only."></textarea>
+        <label>Your views</label>
+        <textarea id="termsInput" placeholder="Already have your own terms? What did you put there? Or maybe you've set up your AI in a specific way for your projects — how you use it, what instructions you give it, what works. Share what you have."></textarea>
 
-        <p class="note">No personal content. Just rules, ideas, feedback.</p>
 
-        <div style="text-align:center; margin-top:1.5rem;">
-            <button class="submit-btn" onclick="handleExchange()">Exchange →</button>
+        <div style="text-align:center; margin-top:2rem;">
+            <span style="color:#999; font-size:1.1rem; display:block; margin-bottom:1rem;">Name your price</span>
+            <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:1.5rem;">
+                <span style="color:#fff; font-size:2rem; font-weight:700;">£</span>
+                <input type="number" id="priceInput" value="0" min="0" step="1" style="background:#111; border:2px solid #333; color:#fff; font-size:2rem; font-weight:700; width:120px; padding:0.5rem 1rem; text-align:center; border-radius:8px;">
+            </div>
+            <button class="submit-btn" onclick="handleExchange()">Exchange & Download Terms →</button>
+            <p class="price-note">Zero is fine if you can't afford it. If you can, you're paying for someone who can't.<br>Every donation is proof this project is more than just one person's imagination.</p>
         </div>
     </div>
 
@@ -231,9 +251,14 @@
                 return;
             }
 
-            // For now, send to email (placeholder - will connect to Supabase or similar later)
+            const price = parseInt(document.getElementById('priceInput').value) || 0;
+
             // TODO: Connect to backend to store email + terms
-            console.log('Exchange submitted:', { email, terms });
+            console.log('Exchange submitted:', { email, terms, price });
+
+            if (price > 0) {
+                window.open('https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00', '_blank');
+            }
 
             // Download the file
             const link = document.createElement('a');
