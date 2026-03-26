@@ -1,20 +1,6 @@
-# AI Terms v1.0
-# On Your Terms — onyourterms.ai (OYTA)
+# AI Terms v1.0 — onyourterms.ai (OYTA)
 
 > One document. Your rules. Every AI that works with you loads this first.
-> Built by a human. Tested daily. Not perfect. Yours to change.
-
----
-
-# HOW TO USE THIS FILE
-
-Upload this file to your AI. In Claude Code, save it as CLAUDE.md in your project folder. In ChatGPT, paste the contents into Custom Instructions. In other AIs, use whatever custom instructions or system prompt feature they offer.
-
-Your AI reads this before every conversation. It knows your rules. It follows them.
-
-Everything below is a real, working set of terms used daily by the person who built this project. You can use it as it is, or change every word. The sections marked [YOUR TURN] are where you make it yours — but even those have real examples so you can see how it works.
-
-When you upload this, your AI should recognise the [YOUR TURN] sections and offer to help you fill them in. If it doesn't, just say: "Help me fill in the sections marked YOUR TURN."
 
 ---
 
