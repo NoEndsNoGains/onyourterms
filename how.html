@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works — On Your Terms</title>
+    <title>Start Here — On Your Terms</title>
     <meta name="description" content="How to write your own AI constitution. No coding. No installation. Just a letter to your AI.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -31,55 +31,41 @@
 
         .back:hover { color: #888; }
 
-        /* Header */
         .header {
-            padding: 4rem 2rem 2rem;
+            padding: 2rem 2rem 0;
             text-align: center;
-        }
-
-        .header h1 {
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            font-weight: 800;
-            letter-spacing: -0.03em;
             margin-bottom: 1.5rem;
         }
 
-        .header p {
-            font-size: 1.1rem;
-            color: #888;
-            font-weight: 300;
-            max-width: 500px;
-            margin: 0 auto;
+        .header h1 {
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-bottom: 0;
         }
 
-        /* Sections */
         section {
-            padding: 2rem 2rem;
+            padding: 1.2rem 2rem;
             max-width: 650px;
             margin: 0 auto;
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #fff;
-        }
-
-        .step-number {
-            font-size: 0.8rem;
-            color: #444;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+            color: #fff;
         }
 
         p {
             font-size: 1.05rem;
-            color: #999;
+            color: #bbb;
             font-weight: 300;
             line-height: 1.8;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         p strong {
@@ -87,13 +73,6 @@
             font-weight: 600;
         }
 
-        .divider {
-            border: none;
-            border-top: 1px solid #111;
-            margin: 0.5rem 0;
-        }
-
-        /* What's Inside */
         .inside-list {
             list-style: none;
             margin: 1.5rem 0;
@@ -101,9 +80,9 @@
 
         .inside-list li {
             padding: 1rem 0;
-            border-bottom: 1px solid #111;
-            font-size: 1rem;
-            color: #999;
+            border-bottom: 1px solid #222;
+            font-size: 1.05rem;
+            color: #bbb;
             font-weight: 300;
         }
 
@@ -114,34 +93,6 @@
             margin-bottom: 0.3rem;
         }
 
-        /* Two Paths */
-        .paths {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .path {
-            border: 1px solid #1a1a1a;
-            padding: 1.5rem;
-        }
-
-        .path h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-        }
-
-        .path p {
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .path-a { border-color: #222; }
-        .path-b { border-color: #333; }
-
-        /* Version */
         .version-tag {
             display: inline-block;
             font-size: 0.75rem;
@@ -152,72 +103,87 @@
             margin-bottom: 1.5rem;
         }
 
-        /* CTA */
-        .cta-section {
-            text-align: center;
-            padding: 2.5rem 2rem;
-            border-top: 1px solid #111;
+        .btn-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
         }
 
-        .cta-button {
+        .btn-take, .btn-exchange {
             display: inline-block;
-            padding: 1.2rem 3rem;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
+            padding: 0.9rem 2.5rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             border-radius: 4px;
+            text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(255,255,255,0.1);
-        }
-
-        .cta-button:hover {
-            background: #e0e0e0;
-            transform: translateY(-2px);
-        }
-
-        footer {
+            background: #222;
+            color: #fff;
+            border: 2px solid #444;
+            min-width: 180px;
             text-align: center;
-            padding: 3rem 2rem;
-            border-top: 1px solid #111;
         }
 
-        footer p {
-            font-size: 0.85rem;
-            color: #444;
+        .btn-take:hover, .btn-exchange:hover {
+            background: #e0e0e0;
+            color: #000;
+            border-color: #e0e0e0;
+        }
+
+        .nav-links {
+            text-align: center;
+            padding: 0.3rem 2rem;
+        }
+
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: #888; }
+
+        .quote {
+            text-align: center;
+            padding: 0.8rem 2rem 1.5rem;
+        }
+
+        .quote p {
+            color: #555;
+            font-style: italic;
+            font-size: 1rem;
         }
 
         @media (max-width: 600px) {
-            .paths { grid-template-columns: 1fr; }
-            section { padding: 3rem 1.5rem; }
+            section { padding: 1.2rem 1.5rem; }
         }
     </style>
 </head>
 <body>
 
     <a href="/" class="back">← Back</a>
+    <a href="#" style="position:fixed; top:2rem; right:20%; color:#fff; text-decoration:none; font-size:1rem; background:#1a3a2a; border:1px solid #2d5a3d; padding:0.7rem 1.5rem; border-radius:4px; z-index:10; transition:all 0.3s;">Join Community →</a>
 
-    <!-- HEADER -->
     <div class="header">
-        <h1>How it works.</h1>
-        <p>The practical guide. No jargon. No coding.</p>
+        <h1>Start here.</h1>
     </div>
 
     <!-- WHAT IT IS -->
     <section>
-        <div class="step-number">What it is</div>
         <h2>A text file. Nothing more.</h2>
         <p>Your AI Terms is a document written in plain English. It tells your AI who you are, how you work, and what rules to follow.</p>
         <p>Your AI reads it before every conversation. Like handing a letter to someone before they start working for you.</p>
-        <p><strong>Nothing gets installed. Nothing runs. Nothing can break.</strong> If you can read an email, you can use this. YOU DON'T NEED TO BE TECHNICAL. You just need to decide that YOUR voice matters.</p>
+        <p><strong>Nothing gets installed. Nothing runs. Nothing can break.</strong> If you can read an email, you can use this.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
     </section>
-
-    <hr class="divider">
 
     <!-- WHAT'S INSIDE -->
     <section>
-        <div class="step-number">What's inside</div>
         <h2>Five sections. One file.</h2>
         <span class="version-tag">AI Terms v1.0</span>
         <ul class="inside-list">
@@ -227,7 +193,7 @@
             </li>
             <li>
                 <strong>Who You Are</strong>
-                Fill in the blanks — your name, how you think, what you value. The more honest, the better it works.
+                Fill in the blanks, your name, how you think, what you value. The more honest, the better it works.
             </li>
             <li>
                 <strong>Your Projects</strong>
@@ -242,88 +208,48 @@
                 Track what went wrong AND what went right. The AI gets smarter every session. Rules that are mastered get simplified. The system sharpens itself.
             </li>
         </ul>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
     </section>
-
-    <hr class="divider">
 
     <!-- HOW TO USE IT -->
     <section>
-        <div class="step-number">How to use it</div>
         <h2>Four steps. Two minutes.</h2>
         <p><strong>1. Download the file.</strong> It's a text file. Like a Word document but simpler.</p>
         <p><strong>2. Read it.</strong> Change anything you want. It's YOUR rules, written in plain English.</p>
-        <p><strong>3. Give it to your AI.</strong> Drop the file where your AI can see it, or paste the contents into your AI's custom instructions. We show you exactly how for Claude, ChatGPT, and Gemini.</p>
+        <p><strong>3. Give it to your AI.</strong> Drop the file where your AI can see it, or paste the contents into your AI's custom instructions.</p>
         <p><strong>4. Start talking.</strong> Your AI now reads your rules before every conversation. It knows who you are and what you expect.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
     </section>
 
-    <hr class="divider">
-
-    <!-- WORKS ON -->
+    <!-- TESTED ON -->
     <section>
-        <div class="step-number">Tested on</div>
-        <h2>Built for Claude Code. Works on others.</h2>
+        <h2>Built for Claude Code.</h2>
         <p>This was built and tested daily on <strong>Claude Code</strong> for months. That's where it's proven.</p>
-        <p>It should work on any AI that reads files or custom instructions at startup — <strong>ChatGPT, Gemini, and others</strong>. But we're being honest: Claude Code is where it's battle-tested.</p>
+        <p>It should work on any AI that reads files or custom instructions at startup. But we're being honest: Claude Code is where it's battle-tested.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
     </section>
 
-    <hr class="divider">
-
-    <!-- THE DOWNLOAD -->
+    <!-- DONATION -->
     <section>
-        <div class="step-number">The download</div>
         <h2>Free. Donation if you want.</h2>
         <p>The file costs nothing. Download it. Use it. Change it. It's yours.</p>
-        <p>If you want to donate — even £1 — it helps us build this community and reach more people. Every pound is proof that this can work. But it's not required. Zero is fine.</p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- THE EXCHANGE -->
-    <section>
-        <div class="step-number">The exchange</div>
-        <h2>Rules for rules.</h2>
-        <p>This is not a subscription. It's an <strong>exchange.</strong></p>
-        <p>You download v1.0. You use it. You change it. You make it yours. You discover what works and what doesn't.</p>
-        <p>When v1.1 is ready, we ask one thing: <strong>share what you changed.</strong> Your rules. Your learnings. What worked. What didn't. No personal content — just the rules you wrote and the patterns you discovered.</p>
-        <p>We read everyone's. We find the patterns. The best rules, the sharpest structures, the things that work across hundreds of people — those go into v1.1. And everyone who shared gets it.</p>
-        <p><strong>You give your rules. You get everyone else's.</strong> That's the exchange. Both sides gain.</p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- HOW YOU STAY CONNECTED -->
-    <section>
-        <div class="step-number">Staying connected</div>
-        <h2>Give us your email. Nothing else.</h2>
-        <p>To know when v1.1 is ready, we need one thing: your email. Not for newsletters. Not for marketing. One email when an update is available. That's it.</p>
-        <p>If you don't give your email, you keep v1.0 forever. It's still yours. It still works. You just won't know when the next version exists.</p>
-        <p>YOUR CHOICE. Not ours.</p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- THE COOPERATIVE -->
-    <section>
-        <div class="step-number">The bigger picture</div>
-        <h2>5,000 exchanges. Then you own it.</h2>
-        <p>Every person who participates in the exchange — shares their rules and receives an update — is on the founding register.</p>
-        <p>At 5,000 exchanges (or earlier if conditions are right), this project becomes a <strong>cooperative.</strong> Everyone on the register becomes a co-owner. One person. One vote. One share of profits.</p>
-        <p>The threshold is 5,000 maximum. It cannot be extended. That's a published, binding promise.</p>
-        <p style="color:#666;">There might not be a v1.1. This is a test project. It might not survive. We're promising honesty, not a roadmap. But even if this project dies tomorrow, YOUR terms don't. The file is yours. FOREVER. No subscription. No expiry. No one can take it away.</p>
+        <p>If you want to donate, even £1, it helps us build this community and reach more people. Every pound is proof that this can work. But it's not required. Zero is fine.</p>
     </section>
 
     <!-- CTA -->
-    <div class="cta-section">
-        <a href="/#buy" class="cta-button">Write Your Terms →</a>
+    <div class="btn-row" style="padding: 2rem 0;">
+        <a href="#" class="btn-take">Take</a>
+        <a href="#" class="btn-exchange">Exchange</a>
     </div>
 
-    <div style="text-align:center; padding:0.3rem 2rem 0.3rem;">
-        <a href="/" style="color:#444; text-decoration:none; border-bottom:1px solid #222; padding-bottom:2px; margin:0 1rem; font-size:0.9rem;">Home</a>
-        <a href="/why.html" style="color:#444; text-decoration:none; border-bottom:1px solid #222; padding-bottom:2px; margin:0 1rem; font-size:0.9rem;">Why?</a>
-        <a href="/about.html" style="color:#444; text-decoration:none; border-bottom:1px solid #222; padding-bottom:2px; margin:0 1rem; font-size:0.9rem;">About</a>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/why.html">Why?</a>
+        <a href="/about.html">About</a>
     </div>
-    <div style="text-align:center; padding:0.3rem 2rem 1.5rem;">
-        <p style="color:#555; font-style:italic; font-size:1rem;">If you don't write yours, the only ones that exist are those which are not yours.</p>
+
+    <div class="quote">
+        <p>If you don't write yours, the only ones that exist are those which are not yours.</p>
     </div>
 
 </body>
