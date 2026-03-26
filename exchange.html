@@ -233,8 +233,8 @@
         </div>
 
         <div style="margin-top:3rem; text-align:center;">
-            <p style="color:#555; font-style:italic; font-size:0.9rem; margin-bottom:1.5rem;">As humans, we just couldn't restrain ourselves from showing a little of our brain.</p>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2M9ro2krNb7nr7HSprkEgo?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p style="color:#777; font-style:italic; font-size:1rem; margin-bottom:1.5rem;">As humans, we just couldn't restrain ourselves from showing a little of our brain.</p>
+            <div id="spotifyPlayer"></div>
         </div>
     </div>
 
@@ -278,6 +278,9 @@
             // Show confirmation
             document.getElementById('formSection').style.display = 'none';
             document.getElementById('confirmation').classList.add('show');
+
+            // Inject Spotify player after click so autoplay works
+            document.getElementById('spotifyPlayer').innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2M9ro2krNb7nr7HSprkEgo?utm_source=generator&theme=0&autoplay=1" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>';
         }
     </script>
 </body>
