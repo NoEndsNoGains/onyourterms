@@ -220,9 +220,9 @@
         <p class="message">Thank you. You just made everyone's terms a little stronger.</p>
 
         <div style="text-align:left; margin:2rem 0; padding:2rem; border:1px solid #222; border-radius:8px;">
-            <p style="color:#fff; font-size:1.1rem; font-weight:600; margin-bottom:1.5rem;">Your file is downloading. Here's what to do with it:</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">1. Open the file.</strong> It's a text file — open it with any text editor.</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">2. Upload it to your AI.</strong><br>Claude Code: save it as CLAUDE.md in your project folder.<br>ChatGPT: paste the contents into Custom Instructions.<br>Other AIs: use whatever custom instructions or system prompt feature they offer.</p>
+            <p style="color:#fff; font-size:1.2rem; font-weight:700; margin-bottom:1.5rem; letter-spacing:0.1rem;">INSTRUCTIONS:</p>
+            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">1. Open the file,</strong> it opens like any document on your computer.</p>
+            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">2. Upload it to your AI as it is, or change it as you wish before uploading.</strong><br>Claude Code: save it as CLAUDE.md in your project folder.<br>ChatGPT: paste the contents into Custom Instructions.<br>Other AIs: use whatever custom instructions or system prompt feature they offer.</p>
             <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">3. Say:</strong> "Help me fill in the sections marked YOUR TURN"</p>
             <p style="color:#999;"><strong style="color:#ccc;">4. Start talking.</strong> Your AI now follows your rules.</p>
         </div>
@@ -233,7 +233,7 @@
         </div>
 
         <div style="margin-top:3rem; text-align:center;">
-            <p style="color:#777; font-style:italic; font-size:1rem; margin-bottom:1.5rem;">As humans, we just couldn't restrain ourselves from showing a little of our brain.</p>
+            <p style="color:#777; font-style:italic; font-size:1rem; margin-bottom:1.5rem;">Some music for you. Why not.</p>
             <div id="spotifyPlayer"></div>
         </div>
     </div>
@@ -280,7 +280,7 @@
             document.getElementById('confirmation').classList.add('show');
 
             // Inject Spotify player after click so autoplay works
-            document.getElementById('spotifyPlayer').innerHTML = '<iframe width="100%" height="200" src="https://www.youtube.com/embed/AIOAlaACuv4?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-radius:12px;"></iframe>';
+            document.getElementById('spotifyPlayer').innerHTML = '<iframe width="100%" height="250" src="https://www.youtube.com/embed/AIOAlaACuv4?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-radius:12px; border:1px solid #333;"></iframe>';
         }
     </script>
 </body>
