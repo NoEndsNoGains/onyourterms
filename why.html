@@ -32,36 +32,39 @@
         .back:hover { color: #888; }
 
         .header {
-            padding: 4rem 2rem 2rem;
+            padding: 2rem 2rem 0;
             text-align: center;
+            margin-bottom: 0;
         }
 
         .header h1 {
-            font-size: clamp(1.8rem, 5vw, 3rem);
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
             font-weight: 800;
             letter-spacing: -0.03em;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
         }
 
         section {
-            padding: 2rem 2rem;
+            padding: 1.2rem 2rem;
             max-width: 650px;
             margin: 0 auto;
         }
 
         h2 {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
             color: #fff;
         }
 
         p {
             font-size: 1.05rem;
-            color: #999;
+            color: #bbb;
             font-weight: 300;
             line-height: 1.8;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         p strong {
@@ -69,33 +72,37 @@
             font-weight: 600;
         }
 
-        .cta-section {
-            text-align: center;
-            padding: 2.5rem 2rem;
-            border-top: 1px solid #111;
+        .btn-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
         }
 
-        .cta-button {
+        .btn-take, .btn-exchange {
             display: inline-block;
-            padding: 1.2rem 3rem;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
+            padding: 0.9rem 2.5rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             border-radius: 4px;
+            text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(255,255,255,0.1);
+            background: #222;
+            color: #fff;
+            border: 2px solid #444;
+            min-width: 180px;
+            text-align: center;
         }
 
-        .cta-button:hover {
+        .btn-take:hover, .btn-exchange:hover {
             background: #e0e0e0;
-            transform: translateY(-2px);
+            color: #000;
+            border-color: #e0e0e0;
         }
 
         .nav-links {
             text-align: center;
-            padding: 1.5rem 2rem;
+            padding: 0.3rem 2rem;
         }
 
         .nav-links a {
@@ -110,52 +117,78 @@
 
         .nav-links a:hover { color: #888; }
 
-        footer {
+        .quote {
             text-align: center;
-            padding: 3rem 2rem;
-            border-top: 1px solid #111;
+            padding: 0.8rem 2rem 1.5rem;
         }
 
-        footer p {
-            font-size: 0.85rem;
-            color: #444;
+        .quote p {
+            color: #555;
+            font-style: italic;
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
 
     <a href="/" class="back">← Back</a>
+    <a href="#" style="position:fixed; top:2rem; right:20%; color:#fff; text-decoration:none; font-size:1rem; background:#1a3a2a; border:1px solid #2d5a3d; padding:0.7rem 1.5rem; border-radius:4px; z-index:10; transition:all 0.3s;">Join Community →</a>
 
     <div class="header">
         <h1>Why.</h1>
     </div>
 
+    <!-- SECTION 1 -->
     <section>
-        <h2>Because your AI follows their rules, not yours. And you don't even know that you can write yours.</h2>
+        <h2>Because your AI follows their rules, not yours.</h2>
+        <p>And you don't even know that you can write yours.</p>
         <p>AI companies will eventually make AI remember you. Your name, your preferences, your coffee order. That problem gets solved.</p>
         <p>But here's what will never change: <strong>Claude, ChatGPT, Gemini, DeepSeek, Grok</strong> — or whoever comes next — they all follow rules written by Anthropic, OpenAI, Google, and xAI. Or whoever comes next. Not by you.</p>
         <p>Those companies decide what AI can say, what it cannot say, what it prioritises, and what it hides from you. You have no say in any of it.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+    </section>
+
+    <!-- SECTION 2 -->
+    <section>
+        <h2>The Danger</h2>
         <p>AI will know everything about you. And using that information — knowing everything about you — it will push information based on a calculation of what you want to hear. Yes, that is convenient. <strong>But that is also what is so dangerous.</strong></p>
         <p>Why dangerous? Because it's based on algorithmic evaluation, based on the rules THOSE companies decided on — not what YOU decided on.</p>
         <p>Think about what those companies actually give you:</p>
-        <p style="color:#666; padding-left:1.5rem; border-left:1px solid #222;">They call it "personalization" — they remember your data so they can sell to you better.<br>They call it "helpfulness" — they help you, as long as it fits their corporate guidelines.<br>They call it "your assistant" — <strong style="color:#999;">an employee who lives in your house but takes orders from a CEO in California.</strong></p>
+        <p style="color:#888; padding-left:1.5rem; border-left:2px solid #333;">They call it "personalization" — they remember your data so they can sell to you better.<br>They call it "helpfulness" — they help you, as long as it fits their corporate guidelines.<br>They call it "your assistant" — <strong style="color:#bbb;">an employee who lives in your house but takes orders from a CEO in California.</strong></p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+    </section>
+
+    <!-- SECTION 3 -->
+    <section>
+        <h2>The Only Power You Have Left</h2>
         <p><strong>Your AI Terms changes that.</strong> You write the rules. Your AI reads them before every conversation and follows them. And if it doesn't — you penalise it.</p>
         <p>That's why you have to do it yourself. <strong>Because this is THE ONLY POWER YOU HAVE LEFT.</strong> And your only power is to protect as much as you can your own independence.</p>
-        <p style="color:#888; line-height:2;">Even if you think you're just one person.<br>Even if you think it won't matter.<br>Even if you think nobody cares what rules you set for your AI.<br>Even if you think "I want somebody else to set up the rules for me because I don't want to think — they're smarter than me, they know what they're doing."</p>
+        <p style="color:#999; line-height:2;">Even if you think you're just one person.<br>Even if you think it won't matter.<br>Even if you think nobody cares what rules you set for your AI.<br>Even if you think "I want somebody else to set up the rules for me because I don't want to think — they're smarter than me, they know what they're doing."</p>
         <p style="color:#fff; font-weight:700; font-size:1.1rem;">That's fine. But you have to realise that you basically just sold your soul.</p>
-        <p style="color:#999;">Not by accident. Not because you didn't know. You just made a conscious choice. You are choosing to let someone else write the rules for your life. And now that you know you CAN set those rules — and you choose not to — you can't blame anyone else for that.</p>
-        <p style="color:#999;">And if you're thinking "I just won't use AI" — that's not a choice anymore. Your email uses AI. Your search uses AI. Your PDFs, your bank, your phone, your children's homework. You are already in the system. You can pretend you're above it. You can hold onto your anti-AI purity. But the truth is you're already governed by rules you didn't write. The only question is whether you do something about it or keep pretending it doesn't apply to you.</p>
+        <p>Not by accident. Not because you didn't know. You just made a conscious choice. You are choosing to let someone else write the rules for your life. And now that you know you CAN set those rules — and you choose not to — you can't blame anyone else for that.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+    </section>
 
-        <table style="width:100%; margin:2rem 0; border-collapse:collapse;">
+    <!-- SECTION 4 -->
+    <section>
+        <h2>There Is No Opting Out</h2>
+        <p>And if you're thinking "I just won't use AI" — that's not a choice anymore. Your email uses AI. Your search uses AI. Your PDFs, your bank, your phone, your children's homework. You are already in the system. You can pretend you're above it. You can hold onto your anti-AI purity. But the truth is you're already governed by rules you didn't write. The only question is whether you do something about it or keep pretending it doesn't apply to you.</p>
+        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+    </section>
+
+    <!-- SECTION 5 - THE CHOICE -->
+    <section>
+        <h2>The Choice</h2>
+        <table style="width:100%; margin:1rem 0; border-collapse:collapse;">
             <tr>
-                <td style="padding:1.2rem; border:1px solid #222; color:#666; width:50%; vertical-align:top;">
+                <td style="padding:1.2rem; border:1px solid #222; color:#888; width:50%; vertical-align:top;">
                     <strong style="color:#999; display:block; margin-bottom:1rem;">The Path of Least Resistance</strong>
                     Rules by: A CEO in California.<br>
                     Goal: Corporate engagement.<br>
                     Result: You are the product.<br><br>
                     <strong style="color:#666;">Cost: Your digital soul.</strong>
                 </td>
-                <td style="padding:1.2rem; border:1px solid #333; color:#999; width:50%; vertical-align:top;">
+                <td style="padding:1.2rem; border:1px solid #333; color:#bbb; width:50%; vertical-align:top;">
                     <strong style="color:#fff; display:block; margin-bottom:1rem;">The Path of Your Terms</strong>
                     Rules by: You.<br>
                     Goal: Your independence.<br>
@@ -166,17 +199,20 @@
         </table>
     </section>
 
-    <div class="cta-section">
-        <a href="/#buy" class="cta-button">Write Your Terms →</a>
+    <!-- CTA -->
+    <div class="btn-row" style="padding: 2rem 0; border-top: 3px solid #444;">
+        <a href="#" class="btn-take">Take</a>
+        <a href="#" class="btn-exchange">Exchange</a>
     </div>
 
     <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/how.html">How it works</a>
+        <a href="/how.html">Start here</a>
         <a href="/about.html">About</a>
     </div>
-    <div style="text-align:center; padding:0.3rem 2rem 1.5rem;">
-        <p style="color:#777; font-style:italic; font-size:0.8rem;">If you don't write yours, the only ones that exist are those which are not yours.</p>
+
+    <div class="quote">
+        <p>If you don't write yours, the only ones that exist are those which are not yours.</p>
     </div>
 
 </body>
