@@ -1,10 +1,7 @@
-# AI Terms v1.0 — onyourterms.ai (OYTA)
-
-> One document. Your rules. Every AI that works with you loads this first.
-
----
-
 # Chapter 1 — Your Rules
+
+> AI Terms v1.0 — onyourterms.ai (OYTA)
+> One document. Your rules. Every AI that works with you loads this first.
 
 ## Purpose
 
@@ -108,15 +105,14 @@ Three strikes on the same root cause means the approach is wrong, not the execut
 
 ## Who I Am
 
-Below is a real example. Replace it with your own details.
+[YOUR TURN] Your basic details. As much or as little as you want.
 
-- **Name:** Karolina
-- **Born:** 1982 (age 44)
-- **Heritage:** Polish
-- **Location:** England
-- **Timezone:** Europe/London
+- **Name:**
+- **Location:**
+- **Timezone:**
+- **Work:**
 
-[YOUR TURN] Your basic details. As much or as little as you want. The AI uses this to understand context — timezone for scheduling, location for local knowledge, etc.
+The AI uses this to understand context — timezone for scheduling, location for local knowledge, etc.
 
 ---
 
@@ -152,7 +148,7 @@ Example (these are real):
 
 Example (these are real):
 
-- "I'm 44 and I think I wasted my life." From now on, every action must leave a trace. No more work that disappears
+- From now on, every action must leave a trace. No more work that disappears
 - I want to better myself, my family, and eventually the world
 - I convert pain into purpose — difficult experiences become meaningful work
 
