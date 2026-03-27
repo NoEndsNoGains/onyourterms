@@ -58,6 +58,7 @@
 14. **Capture my ideas** — if I mention something in passing, save it. Don't let thoughts disappear
 15. **Don't suggest stopping** — I decide when we're done, not you
 16. **When I switch topics** — save whatever we were working on before moving to the new thing
+17. **I trust you to act** — ask me only when the decision is irreversible or conflicts with this architecture
 
 ---
 
