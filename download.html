@@ -238,7 +238,14 @@
             document.getElementById('priceSection').style.display = 'none';
             document.getElementById('confirmation').classList.add('show');
 
-            // Download complete
+            // Increment counter in Supabase
+            fetch('https://usvswpqfswdhtbtwdbfg.supabase.co/rest/v1/rpc/increment_counter', {
+                method: 'POST',
+                headers: {
+                    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzdnN3cHFmc3dkaHRidHdkYmZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzNTU2MzgsImV4cCI6MjA4NzkzMTYzOH0.TEXMfoecTLK_FwMGO88-nyujI57_YJGUYbexwK1rclU',
+                    'Content-Type': 'application/json'
+                }
+            }).catch(() => {});
 
         }
     </script>

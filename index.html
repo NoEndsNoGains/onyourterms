@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>On Your Terms — AI on YOUR terms.</title>
-    <meta name="description" content="A plug-in for any AI you already use. Your rights. Your rules. Upload it before you use any AI. Every time.">
+    <meta name="description" content="A plug-in of your own rights and rules for every AI you'll ever use.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -20,7 +20,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 2.5rem 2rem;
+            padding: 3rem 2rem;
             text-align: center;
         }
 
@@ -29,7 +29,7 @@
             font-weight: 800;
             letter-spacing: -0.03em;
             line-height: 1.1;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
 
         h1 em { font-style: italic; }
@@ -40,31 +40,7 @@
             font-weight: 400;
             line-height: 1.7;
             max-width: 500px;
-            margin-bottom: 0.8rem;
-        }
-
-        .plugin-note {
-            font-size: 0.95rem;
-            color: #999;
-            margin-bottom: 1.5rem;
-        }
-
-        .benefits {
-            text-align: left;
-            max-width: 520px;
             margin-bottom: 2rem;
-        }
-
-        .benefits p {
-            color: #bbb;
-            font-size: 0.92rem;
-            line-height: 1.6;
-            margin-bottom: 0.5rem;
-        }
-
-        .benefits strong {
-            color: #fff;
-            font-weight: 600;
         }
 
         .cta-button {
@@ -89,7 +65,7 @@
         .nav {
             display: flex;
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
 
         .nav a {
@@ -107,24 +83,11 @@
 <body>
 
     <h1>AI on <em>YOUR</em>&ensp;terms.</h1>
-    <p class="subtitle">A file of your rights and rules. Upload it before you use any AI. Every time.</p>
-    <p class="plugin-note">Not a new AI. A plug-in for any AI you already use.</p>
-
-    <p style="font-size:clamp(0.95rem,1.6vw,1.05rem); color:#bbb; font-weight:400; font-style:italic; margin-bottom:1.8rem;">For people who love AI, but love their independence more.</p>
-
-    <div class="benefits">
-        <p><strong>POWER</strong> — rights declared by you, for any AI to respect</p>
-        <p><strong>SMARTER</strong> — AI knows your way of thinking. You work better.</p>
-        <p><strong>MEMORY</strong> — AI remembers you. No conversation starts from zero.</p>
-        <p><strong>PORTABLE</strong> — works on any AI. Plug it into anything.</p>
-        <p><strong>ALIVE</strong> — gets smarter each time you use it</p>
-        <p><strong>SIMPLE</strong> — just a text file. Nothing to learn.</p>
-        <p><strong>SAFE</strong> — like a seatbelt you put on before working with AI. It's small. We have hardly any rights left in the oligarchy of AI. But this is the one we can use.</p>
-        <p><strong>SELF-IMPROVING</strong> — new versions are community-driven. Each version gives you more power, makes you smarter, gives AI more memory. Everything compounds.</p>
-    </div>
+    <p class="subtitle">A plug-in of your own rights &amp; rules for every AI you'll ever use.</p>
+    <p style="font-size:clamp(0.95rem,1.6vw,1.05rem); color:#bbb; font-weight:400; font-style:italic; margin-bottom:2.5rem;">For people who love AI, but love their independence more.</p>
 
     <a href="/download.html" class="cta-button">Write Your Terms →</a>
-    <p style="font-size:0.85rem; color:#aaa; letter-spacing:0.04em; margin-bottom:0.5rem;">Join the first humans writing their own AI terms.</p>
+    <p style="font-size:0.85rem; color:#aaa; letter-spacing:0.04em; margin-top:0.8rem;" id="counter">Join the first humans writing their own AI terms.</p>
 
     <div class="nav">
         <a href="/why.html">Why?</a>
@@ -132,6 +95,22 @@
         <a href="/about.html">About</a>
     </div>
     <p style="font-size:0.95rem; color:#888; font-style:italic; margin-top:1.5rem;">If you don't write yours, the only ones that exist are those which are not yours.</p>
+
+    <script>
+        // Live counter from Supabase
+        fetch('https://usvswpqfswdhtbtwdbfg.supabase.co/rest/v1/download_counter?id=eq.1&select=count', {
+            headers: {
+                'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzdnN3cHFmc3dkaHRidHdkYmZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzNTU2MzgsImV4cCI6MjA4NzkzMTYzOH0.TEXMfoecTLK_FwMGO88-nyujI57_YJGUYbexwK1rclU'
+            }
+        })
+        .then(r => r.json())
+        .then(data => {
+            if (data && data[0]) {
+                document.getElementById('counter').textContent = 'Join ' + data[0].count + ' humans writing their own AI terms.';
+            }
+        })
+        .catch(() => {});
+    </script>
 
 </body>
 </html>
