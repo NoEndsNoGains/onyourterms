@@ -84,10 +84,12 @@
 
     <h1>AI on <em>YOUR</em>&ensp;terms.</h1>
 
-    <div style="text-align:center; max-width:540px; margin:0 auto 2.5rem; font-size:clamp(0.9rem,1.5vw,1rem); color:#bbb; line-height:1.9;">
-        <p style="margin-bottom:0.4rem; font-style:italic;">For people who love AI, but love their independence more.</p>
-        <p style="margin-bottom:0.4rem; font-style:italic;">A plug-in of your rights &amp; rules for every AI you'll ever use.</p>
-        <p style="font-style:italic;">Work smarter, have actual rights in the relationship, and stay in control as AI evolves.</p>
+    <div style="text-align:center; max-width:540px; margin:0 auto 2.5rem; font-size:clamp(0.85rem,1.4vw,0.95rem); color:#bbb; line-height:1.9;">
+        <div style="border-top:1px solid #333; padding-top:1.2rem; margin-bottom:1.2rem; border-bottom:1px solid #333; padding-bottom:1.2rem;">
+            <p style="margin-bottom:0.5rem; font-style:italic;">For people who love AI, but love their independence more.</p>
+            <p style="margin-bottom:0.5rem; font-style:italic;">A plug-in of your rights &amp; rules for every AI you'll ever use.</p>
+            <p style="font-style:italic;">Work smarter, have actual rights in the relationship, and stay in control as AI evolves.</p>
+        </div>
     </div>
 
     <a href="/download.html" class="cta-button">Write Your Terms →</a>
@@ -98,7 +100,7 @@
         <a href="/how.html">What you get</a>
         <a href="/about.html">About</a>
     </div>
-    <p style="font-size:0.95rem; color:#aaa; font-style:italic; margin-top:1rem;">If you don't write yours, the only ones that exist are those which are not yours.</p>
+    <p style="font-size:0.75rem; color:#777; font-style:italic; margin-top:1rem;">If you don't write yours, the only ones that exist are those which are not yours.</p>
 
     <script>
         // Live counter from Supabase
@@ -110,7 +112,9 @@
         .then(r => r.json())
         .then(data => {
             if (data && data[0]) {
-                document.getElementById('counter').textContent = 'Join ' + data[0].count + ' humans writing their own AI terms.';
+                var c = data[0].count;
+                var word = c == 1 ? 'human' : 'humans';
+                document.getElementById('counter').textContent = 'Join ' + c + ' ' + word + ' writing their own AI terms.';
             }
         })
         .catch(() => {});
