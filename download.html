@@ -211,7 +211,7 @@
             <p style="color:#555; font-size:0.85rem; margin-bottom:1.5rem; line-height:1.8;">Pay what you want, including nothing.</p>
             <a href="https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00" class="download-btn" style="text-decoration:none;">Get Your Terms →</a>
             <p style="margin-top:2.5rem;"><a href="https://www.skool.com/on-your-terms-1100" style="color:#00FF41; text-decoration:none; font-size:1.2rem; font-weight:600; border-bottom:2px solid #00FF41;">Join the community</a></p>
-            <p style="color:#555; font-size:0.8rem; line-height:1.6; margin-top:1rem;">It's the only way to know when new versions are available.</p>
+            <p style="color:#888; font-size:1rem; line-height:1.6; margin-top:1rem;">It's the only way to know when new versions are available.</p>
         </div>
 
         <!-- CONFIRMATION (shows after download) -->
@@ -226,79 +226,10 @@
         </div>
     </section>
 
-    <!-- PRICE MODAL -->
-    <div class="modal-overlay" id="priceModal">
-        <div class="modal">
-            <h3>OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></h3>
-            <p>Name your price for the framework.</p>
-            <p>We imagine most will pay around £10, with some going above to support the project.</p>
-            <p style="color:#555;">Zero is fine if you can't afford it. Every pound counts to keep this project alive.</p>
-            <div class="price-row">
-                <span>£</span>
-                <input type="number" id="modalPriceInput" min="0" step="1" placeholder="0">
-            </div>
-            <p class="error-msg" id="priceError">Please name your price.</p>
-            <div style="text-align:center;">
-                <button class="btn-confirm" onclick="confirmPrice()">Download →</button>
-                <p style="margin-top:1rem;"><a href="#" onclick="closeModal(); return false;" style="color:#555; text-decoration:underline; font-size:0.85rem;">Cancel</a></p>
-                <p style="margin-top:1.5rem; font-size:0.8rem; color:#444;">Changed your mind? <a href="https://www.skool.com/on-your-terms-1100" style="color:#555; text-decoration:underline; ">Join the Community instead.</a></p>
-            </div>
-        </div>
-    </div>
-
     <!-- FOOTER -->
     <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; text-align:center;">
         <p style="font-size:0.7rem; color:#444;">© 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
     </div>
 
-    <script>
-        function askPrice() {
-            document.getElementById('priceModal').classList.add('show');
-            document.getElementById('modalPriceInput').focus();
-        }
-
-        function closeModal() {
-            document.getElementById('priceModal').classList.remove('show');
-            document.getElementById('priceError').style.display = 'none';
-        }
-
-        function confirmPrice() {
-            var input = document.getElementById('modalPriceInput').value;
-            if (input === '') {
-                document.getElementById('priceError').style.display = 'block';
-                return;
-            }
-            var price = parseInt(input) || 0;
-            closeModal();
-            handleDownload(price);
-        }
-
-        function handleDownload(price) {
-
-            // Download the file
-            const link = document.createElement('a');
-            link.href = 'CLAUDE.md';
-            link.download = 'CLAUDE.md';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-
-            document.getElementById('priceSection').style.display = 'none';
-            document.getElementById('confirmation').classList.add('show');
-
-            // Open Stripe if paying
-            if (price > 0) {
-                window.open('https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00', '_blank');
-            }
-
-            fetch('https://usvswpqfswdhtbtwdbfg.supabase.co/rest/v1/rpc/increment_counter', {
-                method: 'POST',
-                headers: {
-                    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzdnN3cHFmc3dkaHRidHdkYmZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzIzNTU2MzgsImV4cCI6MjA4NzkzMTYzOH0.TEXMfoecTLK_FwMGO88-nyujI57_YJGUYbexwK1rclU',
-                    'Content-Type': 'application/json'
-                }
-            }).catch(() => {});
-        }
-    </script>
 </body>
 </html>
