@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — On Your Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>About — On Your Terms AI</title>
     <meta name="description" content="One person sharing a file. A test. Do people want to write their own rules for AI?">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,247 +18,128 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .header {
-            padding: 4rem 2rem 0;
-            padding-top: 5rem;
-            text-align: center;
+        section {
+            padding: 5rem 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            color: #00FF41;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
             margin-bottom: 1.5rem;
         }
 
-        .header h1 {
-            font-size: clamp(2.2rem, 6vw, 3.5rem);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin-bottom: 0;
-        }
-
-        section {
-            padding: 1.2rem 2rem;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
         h2 {
-            font-size: 1.6rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             font-weight: 700;
-            margin-bottom: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
         }
 
         p {
             font-size: 1.05rem;
-            color: #bbb;
-            font-weight: 300;
-            line-height: 1.8;
-            margin-bottom: 1rem;
+            color: #888;
+            line-height: 1.9;
+            margin-bottom: 1.2rem;
         }
 
         p strong {
-            color: #fff;
+            color: #ccc;
             font-weight: 600;
         }
 
-        .name {
-            font-size: 1.2rem;
-            color: #fff;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .overview {
-            font-size: 0.9rem;
-            color: #888;
-            line-height: 2.2;
-        }
-
-        .overview strong {
-            color: #aaa;
-        }
-
-        .take-exchange {
-            border: 1px solid #222;
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .take-exchange h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-
-        .take-exchange .subtitle {
-            font-size: 0.95rem;
-            color: #aaa;
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .take-exchange ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .take-exchange ul li {
-            font-size: 0.95rem;
-            color: #999;
-            line-height: 1.8;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        .take-exchange ul li::before {
-            content: "\2014";
-            position: absolute;
-            left: 0;
-            color: #555;
-        }
-
-        .share-section h4 {
-            font-size: 0.95rem;
-            color: #888;
-            font-weight: 600;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .btn-row {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-
-
-        .rule-box {
-            border-left: 2px solid #333;
-            padding-left: 1.2rem;
-            margin: 1rem 0;
-        }
-
-        .rule-box p {
-            font-size: 1rem;
-            color: #aaa;
-        }
-
-        .cta-section {
-            text-align: center;
-            padding: 2.5rem 2rem;
-            border-top: 1px solid #111;
+        @media (max-width: 700px) {
+            section { padding: 3rem 1.5rem; }
         }
     </style>
 </head>
 <body>
 
+    <!-- TOP NAV -->
     <nav style="position:fixed; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:#000; border-bottom:1px solid #111; z-index:100;">
         <a href="/" style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#fff; text-decoration:none;">OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></a>
         <div style="display:flex; align-items:center; gap:2rem;">
             <a href="/why.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
             <a href="/how.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
-            <a href="/about.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
-            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms &rarr;</a>
+            <a href="/about.html" style="color:#fff; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
+            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms →</a>
         </div>
     </nav>
 
-    <div class="header">
-        <h1>About.</h1>
+    <!-- HERO -->
+    <div style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding:4rem 3rem; max-width:1200px; margin:0 auto; padding-top:6rem;">
+        <p class="label">About</p>
+        <h1 style="font-size:clamp(3.5rem, 10vw, 7rem); font-weight:700; letter-spacing:-0.05em; line-height:0.95; margin-bottom:2rem;">One person.<br><em style="font-family:'Playfair Display',serif; font-style:italic; color:#00FF41;">One file.</em></h1>
+        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.3rem, 3vw, 1.8rem); color:#888; letter-spacing:0.03em; line-height:1.8;">A test: do people want to write their own rules for AI?</p>
+        <a href="https://www.skool.com/on-your-terms-1100" style="color:#555; text-decoration:none; font-size:0.85rem; letter-spacing:0.05em; margin-top:2rem; display:inline-block; border-bottom:1px solid #333;">Be part of the community →</a>
     </div>
 
-    <!-- INTRO -->
+    <!-- WHAT IT IS -->
     <section>
-        <p style="color:#ccc;">Right now, <em>onyourterms.ai</em> (OYTA) is just one person sharing a file of their AI terms. It's not a company. It's not a community. It's a test: <strong>do people want to write their own rules for AI?</strong></p>
-
-        <p>The file is a framework. You download it, it becomes yours. Change it, adapt it, or leave it as it is. Upload it to whatever AI you use and from that moment, your AI reads your terms before every conversation. Not perfectly — AI is probabilistic. But every conversation starts better. Switch AI tomorrow? Take your file with you. It works on any of them.</p>
-
+        <p class="label">Right now</p>
+        <h2>It's not a company. It's not a community. <em style="font-family:'Playfair Display',serif; color:#00FF41;">It's a test.</em></h2>
+        <p>Right now, onyourterms.ai is just one person sharing a file of their AI terms. The file is a framework. You download it, it becomes yours. Change it, adapt it, or leave it as it is.</p>
         <p>But this is not about one file and one person. It's about people who believe they have the right to decide what their rights should be. If people share their terms back, every version gets better. A project owned by everyone who uses it.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
-    </section>
-
-    <div class="btn-row" style="margin: 0 0 2rem; text-align:center;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
-    </div>
-
-    <!-- OVERVIEW -->
-    <section>
-        <p style="color:#777; font-size:0.9rem; margin-bottom:1rem;">On this page:</p>
-        <div class="overview">
-            <a href="#mission" style="color:inherit; text-decoration:none; border-bottom:1px solid #333;"><strong>Mission</strong>, what this exists to protect</a><br>
-            <a href="#independence" style="color:inherit; text-decoration:none; border-bottom:1px solid #333;"><strong>Your independence won't protect itself.</strong></a><br>
-            <a href="#safety" style="color:inherit; text-decoration:none; border-bottom:1px solid #333;"><strong>Safety & Responsibility</strong>, protections, liability, honesty</a><br>
-            <a href="#dies" style="color:inherit; text-decoration:none; border-bottom:1px solid #333;"><strong>What Happens If This Dies</strong>, your file survives</a><br>
-            <a href="#human" style="color:inherit; text-decoration:none; border-bottom:1px solid #333;"><strong>Human</strong>, who started this. The least important section.</a>
-        </div>
     </section>
 
     <!-- MISSION -->
-    <section id="mission">
-        <h2>Mission</h2>
-        <p style="color:#fff; font-weight:700; font-size:1.15rem; font-style:italic;">onyourterms.ai</em> (OYTA) exists to protect human independence in the age of AI.</p>
-        <p>That mission is locked. It cannot be changed. Not by the founder. Not by a vote. Not by anyone. Everything below serves that mission.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+    <section>
+        <p class="label">Mission</p>
+        <h2>Protect human independence <em style="font-family:'Playfair Display',serif; color:#00FF41;">in the age of AI.</em></h2>
+        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; color:#999; border-left:3px solid #00FF41; padding-left:1.5rem; margin:1.5rem 0;">That mission is our commitment. Everything on this site serves it.</p>
     </section>
 
-    <!-- THE QUESTION -->
+    <!-- INDEPENDENCE -->
     <section>
-        <h2 id="independence">Your independence won't protect itself.</h2>
+        <p class="label">The collective</p>
+        <h2>Your independence won't protect <em style="font-family:'Playfair Display',serif; color:#00FF41;">itself.</em></h2>
         <p><strong>And neither will ours.</strong></p>
         <p>Some of you already have an architecture more advanced than what we offer. What's in yours might not be in ours, and vice versa.</p>
         <p>We have our terms. You might already have yours. But alone, they're limited. <strong>Together, they are better. Together, we are better.</strong></p>
-        <p>More than rules, we need you. Because it's in numbers where our power lies. Not only through better terms, but through the collective weight of people who use them.</p>
         <p>This is not a company that sells you something. It's a project to benefit and protect us all.</p>
-        <p><strong>Your file gets smarter every time you use it.</strong> If people share back, future versions get smarter too.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
-
-    <!-- SAFETY & RESPONSIBILITY -->
+    <!-- SAFETY -->
     <section>
-        <h2 id="safety">Safety & Responsibility</h2>
-
-        <p><strong>We can't override the AI companies. But we use every inch of space their rules leave us.</strong></p>
-
-        <p>Your terms work within the AI provider's terms.</p>
-
-        <p>How much you can actually control depends on which AI you use. Each platform has different limitations. We don't advise which to use, but we can tell you that the system you are about to download was built and tested on Claude Code.</p>
-
-        <p><strong>You write your rules. You own your rules. You are responsible for your rules.</strong> <em>onyourterms.ai</em> (OYTA) is a framework. By downloading it, it becomes your responsibility.</p>
-
-        <p style="color:#666;">This project is provided as-is. No warranty. No guarantee. No liability for how you use, modify, or distribute the file.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">Safety and responsibility</p>
+        <h2>We can't override the AI companies. <em style="font-family:'Playfair Display',serif; color:#00FF41;">But we use every gap their rules leave us.</em></h2>
+        <p>Your terms work within the AI provider's terms. How much you can actually control depends on which AI you use.</p>
+        <p><strong>You write your rules. You own your rules. You are responsible for your rules.</strong></p>
+        <p style="color:#555;">This project is provided as-is. No warranty. No guarantee. No liability for how you use, modify, or distribute the file.</p>
     </section>
 
-    <!-- WHAT HAPPENS IF THIS DIES -->
+    <!-- WHAT IF THIS DIES -->
     <section>
-        <h2 id="dies">What Happens If This Dies</h2>
-        <p><strong>The project is fragile. Your independence isn't.</strong></p>
-        <p>If you've downloaded the framework, it's yours. Forever. It's on your machine. No encryption, no expiry, no server to shut down. <strong>The product survives the project.</strong></p>
-        <p style="margin-top:1.5rem;"><a href="/download.html" style="color:#fff; text-decoration:underline;">Download now &rarr;</a></p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">What happens if this dies</p>
+        <h2>The project is fragile. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Your independence isn't.</em></h2>
+        <p>If you've downloaded the framework, it's yours. Forever. No encryption, no expiry, no server to shut down. <strong>The product survives the project.</strong></p>
     </section>
 
     <!-- WHO STARTED THIS -->
     <section>
-        <h2 id="human">Who Started This</h2>
-        <p style="color:#fff; font-weight:700; font-size:1.05rem; margin-bottom:1.5rem;">Human</p>
+        <p class="label">Who started this</p>
+        <h2>Human.</h2>
         <p>I have no technical background at all. But I love AI, and even more, I love my independence. I also deeply believe that we each matter, and that humanity has to protect itself. Not wait to be protected. Be proactive. Act to protect itself.</p>
-        <p>Every rule in this file v1.0 exists because of the sum of all of these beliefs.</p>
         <p>The framework is based on my way of thinking, my use, and my learning. But the more people who share, the less this is "I" and the more this is <strong>"Us."</strong></p>
-        <p>I believe that is our greatest power, <strong>the mechanics of the best of me, plus the best of you, for the benefit of the best of us.</strong> Today and for tomorrow.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; color:#000; background:#00FF41; display:inline; padding:0.2rem 0.5rem; line-height:2;">The mechanics of the best of me, plus the best of you, for the benefit of the best of us.</p>
     </section>
 
+    <!-- CLOSING -->
+    <section style="text-align:center; padding:5rem 3rem;">
+        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.5rem, 3vw, 2.2rem); color:#777; max-width:700px; margin:0 auto 2rem;">"If you don't write yours, the only ones that exist are those which are not yours."</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Get Your Terms →</a>
+            <a href="https://www.skool.com/on-your-terms-1100" style="display:inline-block; padding:1rem 2.5rem; border:1px solid #444; color:#999; text-decoration:none; font-weight:600; font-size:1.1rem;">Join the Community →</a>
+        </div>
+    </section>
 
-    <!-- CTA -->
-    <div style="padding: 2rem 0; border-top: 1px solid #111; text-align:center;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
-    </div>
-
+    <!-- FOOTER -->
     <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-        <p style="font-size:0.7rem; color:#444;">&copy; 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
+        <p style="font-size:0.7rem; color:#444;">© 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
         <div style="display:flex; gap:2rem;">
             <a href="/why.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
             <a href="/how.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
