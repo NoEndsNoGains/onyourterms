@@ -217,7 +217,7 @@
     <!-- PRICE MODAL -->
     <div class="modal-overlay" id="priceModal">
         <div class="modal">
-            <h3>OYTA — On Your Terms AI</h3>
+            <h3>OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></h3>
             <p>Name your price for the framework.</p>
             <p>We imagine most will pay around £10, with some going above to support the project.</p>
             <p style="color:#555;">Zero is fine if you can't afford it. Every pound counts to keep this project alive.</p>
@@ -225,10 +225,11 @@
                 <span>£</span>
                 <input type="number" id="modalPriceInput" min="0" step="1" placeholder="0">
             </div>
-            <p class="error-msg" id="priceError">Please name your price. Zero is fine.</p>
-            <div class="btn-row">
+            <p class="error-msg" id="priceError">Please name your price.</p>
+            <div style="text-align:center;">
                 <button class="btn-confirm" onclick="confirmPrice()">Download →</button>
-                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <p style="margin-top:1rem;"><a href="#" onclick="closeModal(); return false;" style="color:#555; text-decoration:none; font-size:0.85rem;">cancel</a></p>
+                <p style="margin-top:1.5rem; font-size:0.8rem; color:#444;">Changed your mind? <a href="https://www.skool.com/on-your-terms-1100" style="color:#00FF41; text-decoration:none;">Join the Community instead.</a></p>
             </div>
         </div>
     </div>
