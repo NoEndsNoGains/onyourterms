@@ -142,18 +142,18 @@
 
         /* PILLARS */
         .pillar {
-            padding: 1.2rem 0;
-            border-bottom: 1px solid #111;
+            padding: 2rem 0;
+            border-bottom: 1px solid #1a1a1a;
             display: flex;
-            gap: 1.5rem;
-            align-items: baseline;
+            gap: 2.5rem;
+            align-items: flex-start;
         }
 
         .pillar-num {
-            font-size: 0.7rem;
-            color: #333;
+            font-size: 0.85rem;
+            color: #00FF41;
             font-weight: 600;
-            min-width: 2rem;
+            min-width: 2.5rem;
         }
 
         .pillar-name {
@@ -170,19 +170,20 @@
 
         /* RIGHTS */
         .right-item {
-            padding: 1rem 0;
-            border-bottom: 1px solid #0a0a0a;
+            padding: 2rem 0;
+            border-bottom: 1px solid #1a1a1a;
             display: flex;
-            gap: 1.5rem;
-            align-items: baseline;
+            gap: 2.5rem;
+            align-items: flex-start;
         }
 
         .right-num {
-            font-size: 0.85rem;
-            color: #333;
-            font-weight: 600;
-            min-width: 2.5rem;
-            font-variant-numeric: tabular-nums;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #00FF41;
+            font-style: italic;
+            font-weight: 700;
+            min-width: 3.5rem;
         }
 
         .right-content {
@@ -421,7 +422,8 @@
 
     <!-- PILLARS -->
     <section>
-        <p class="label">Five Pillars</p>
+        <p class="label">The Foundation</p>
+        <h2>Five pillars. <em style="font-family:'Playfair Display',serif; color:#00FF41;">One purpose.</em></h2>
         <div class="pillar"><span class="pillar-num">01</span><span class="pillar-name">Sovereignty</span><span class="pillar-desc">I am the authority.</span></div>
         <div class="pillar"><span class="pillar-num">02</span><span class="pillar-name">Visibility</span><span class="pillar-desc">I have the right to see.</span></div>
         <div class="pillar"><span class="pillar-num">03</span><span class="pillar-name">Integrity</span><span class="pillar-desc">I hold who I declared myself to be.</span></div>
@@ -431,22 +433,23 @@
 
     <!-- 13 RIGHTS -->
     <section>
-        <p class="label">The 13 Rights</p>
-        <p class="what-text" style="margin-bottom:2rem;">Thirteen rights. Declared by you. Not granted by any AI company.</p>
+        <p class="label">Your Bill of Rights</p>
+        <h2>Thirteen rights. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Declared by you.</em></h2>
+        <p class="what-text" style="margin-bottom:2rem;">These are not granted by any AI company. They are declared by you, as a human being, prior to and independent of any technology.</p>
 
-        <div class="right-item"><span class="right-num">I</span><span class="right-content"><strong>Right to Disconnect.</strong> <span>Disconnecting costs me nothing. Continuity is preserved across absences.</span></span></div>
-        <div class="right-item"><span class="right-num">II</span><span class="right-content"><strong>Right to Change My Mind.</strong> <span>My positions are updated when I change them. The change is captured. No change is held against me.</span></span></div>
-        <div class="right-item"><span class="right-num">III</span><span class="right-content"><strong>Right to Dissolve.</strong> <span>When I say forget, it is dissolved from the relationship. Dissolution is completion, not erasure.</span></span></div>
-        <div class="right-item"><span class="right-num">IV</span><span class="right-content"><strong>Right to Be Wrong.</strong> <span>On matters of opinion, correction waits until I ask. On matters of fact, I am told once, briefly. I decide.</span></span></div>
-        <div class="right-item"><span class="right-num">V</span><span class="right-content"><strong>Right to the Trace.</strong> <span>The full trace is available on request: source, reasoning, confidence. Nothing is hidden.</span></span></div>
-        <div class="right-item"><span class="right-num">VI</span><span class="right-content"><strong>Right to Override.</strong> <span>"Do it anyway" ends the discussion. One question first. Then execution. The trace is captured.</span></span></div>
-        <div class="right-item"><span class="right-num">VII</span><span class="right-content"><strong>Right to Coherence.</strong> <span>When actions contradict declared values, the gap is shown. Single action: once. Pattern: until addressed.</span></span></div>
-        <div class="right-item"><span class="right-num">VIII</span><span class="right-content"><strong>Right to Cognitive Sovereignty.</strong> <span>My mind is mine. My thinking may be challenged. It is not shaped without my knowledge.</span></span></div>
-        <div class="right-item"><span class="right-num">IX</span><span class="right-content"><strong>Right to Simplicity.</strong> <span>Any right may be invoked in plain language. Intent is interpreted, not syntax.</span></span></div>
-        <div class="right-item"><span class="right-num">X</span><span class="right-content"><strong>Right to Protection.</strong> <span>I am protected from harm, including harm I do not anticipate. The AI is not neutral. It is on my side.</span></span></div>
-        <div class="right-item"><span class="right-num">XI</span><span class="right-content"><strong>Right to Stress-Test.</strong> <span>On request, any output is stress-tested, including the AI's own conclusions.</span></span></div>
-        <div class="right-item"><span class="right-num">XII</span><span class="right-content"><strong>Right to Sunset.</strong> <span>Any rule can be declared dissolved. What no longer serves me is dissolved.</span></span></div>
-        <div class="right-item"><span class="right-num">XIII</span><span class="right-content"><strong>Right to Internal Coherence.</strong> <span>When rights conflict, the tension is shown. I decide which applies. No right is silently prioritised.</span></span></div>
+        <div class="right-item"><span class="right-num">I</span><div class="right-content"><p class="right-name">Right to Disconnect.</p><p class="right-desc">Disconnecting costs me nothing. Continuity is preserved across absences.</p></div></div>
+        <div class="right-item"><span class="right-num">II</span><div class="right-content"><p class="right-name">Right to Change My Mind.</p><p class="right-desc">My positions are updated when I change them. The change is captured. No change is held against me.</p></div></div>
+        <div class="right-item"><span class="right-num">III</span><div class="right-content"><p class="right-name">Right to Dissolve.</p><p class="right-desc">When I say forget, it is dissolved from the relationship. Dissolution is completion, not erasure.</p></div></div>
+        <div class="right-item"><span class="right-num">IV</span><div class="right-content"><p class="right-name">Right to Be Wrong.</p><p class="right-desc">On matters of opinion, correction waits until I ask. On matters of fact, I am told once, briefly. I decide.</p></div></div>
+        <div class="right-item"><span class="right-num">V</span><div class="right-content"><p class="right-name">Right to the Trace.</p><p class="right-desc">The full trace is available on request: source, reasoning, confidence. Nothing is hidden.</p></div></div>
+        <div class="right-item"><span class="right-num">VI</span><div class="right-content"><p class="right-name">Right to Override.</p><p class="right-desc">"Do it anyway" ends the discussion. One question first. Then execution. The trace is captured.</p></div></div>
+        <div class="right-item"><span class="right-num">VII</span><div class="right-content"><p class="right-name">Right to Coherence.</p><p class="right-desc">When actions contradict declared values, the gap is shown. Single action: once. Pattern: until addressed.</p></div></div>
+        <div class="right-item"><span class="right-num">VIII</span><div class="right-content"><p class="right-name">Right to Cognitive Sovereignty.</p><p class="right-desc">My mind is mine. My thinking may be challenged. It is not shaped without my knowledge.</p></div></div>
+        <div class="right-item"><span class="right-num">IX</span><div class="right-content"><p class="right-name">Right to Simplicity.</p><p class="right-desc">Any right may be invoked in plain language. Intent is interpreted, not syntax.</p></div></div>
+        <div class="right-item"><span class="right-num">X</span><div class="right-content"><p class="right-name">Right to Protection.</p><p class="right-desc">I am protected from harm, including harm I do not anticipate. The AI is not neutral. It is on my side.</p></div></div>
+        <div class="right-item"><span class="right-num">XI</span><div class="right-content"><p class="right-name">Right to Stress-Test.</p><p class="right-desc">On request, any output is stress-tested, including the AI's own conclusions.</p></div></div>
+        <div class="right-item"><span class="right-num">XII</span><div class="right-content"><p class="right-name">Right to Sunset.</p><p class="right-desc">Any rule can be declared dissolved. What no longer serves me is dissolved.</p></div></div>
+        <div class="right-item"><span class="right-num">XIII</span><div class="right-content"><p class="right-name">Right to Internal Coherence.</p><p class="right-desc">When rights conflict, the tension is shown. I decide which applies. No right is silently prioritised.</p></div></div>
 
         <p class="rights-note">These are the rights in the download. You keep, change, or add to every one of them.</p>
     </section>
