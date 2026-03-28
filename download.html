@@ -112,7 +112,7 @@
 
     <script>
         function askPrice() {
-            const input = prompt("Name your price for the framework (£).\n\nZero is fine if you can't afford it.\nIf you can, you're paying for someone who can't.\nEvery pound counts to keep this project alive.");
+            const input = prompt("Name your price for the framework (£).\n\nMost people pay £5.\n\nZero is fine if you can't afford it.\nIf you can, you're paying for someone who can't.\nEvery pound counts to keep this project alive.");
             if (input === null) return;
             const price = parseInt(input) || 0;
             handleDownload(price);
