@@ -119,10 +119,7 @@
 
         function handleDownload(price) {
 
-            if (price > 0) {
-                window.open('https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00', '_blank');
-            }
-
+            // Download the file first
             const link = document.createElement('a');
             link.href = 'CLAUDE.md';
             link.download = 'CLAUDE.md';
@@ -132,6 +129,13 @@
 
             document.getElementById('priceSection').style.display = 'none';
             document.getElementById('confirmation').classList.add('show');
+
+            // Then redirect to Stripe if paying
+            if (price > 0) {
+                setTimeout(function() {
+                    window.location.href = 'https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00';
+                }, 1000);
+            }
 
             fetch('https://usvswpqfswdhtbtwdbfg.supabase.co/rest/v1/rpc/increment_counter', {
                 method: 'POST',
