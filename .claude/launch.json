@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "onyourterms",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "C:/Users/User/Documents/My Projects/onyourterms", "-l", "3456"],
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npx serve C:\\Users\\User\\Documents\\My Projects\\onyourterms -l 3456"],
       "port": 3456
     }
   ]
