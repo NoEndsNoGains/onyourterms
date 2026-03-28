@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#000000"/>
+
+  <!-- Stem -->
+  <path d="M 200 80 Q 180 140 160 200" stroke="#00FF41" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 200 80 Q 220 140 240 200" stroke="#00FF41" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Leaf -->
+  <ellipse cx="210" cy="100" rx="30" ry="12" fill="#00FF41" transform="rotate(-30, 210, 100)"/>
+
+  <!-- Left cherry -->
+  <circle cx="155" cy="240" r="60" fill="#00FF41"/>
+
+  <!-- Right cherry -->
+  <circle cx="245" cy="250" r="55" fill="#00FF41"/>
+
+  <!-- Shine on left cherry -->
+  <circle cx="135" cy="220" r="12" fill="#000000" opacity="0.2"/>
+
+  <!-- Shine on right cherry -->
+  <circle cx="225" cy="230" r="10" fill="#000000" opacity="0.2"/>
+</svg>
