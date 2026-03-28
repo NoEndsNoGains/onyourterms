@@ -59,6 +59,120 @@
             display: block;
         }
 
+        /* CUSTOM PRICE MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 200;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal {
+            background: #111;
+            border: 1px solid #333;
+            padding: 3rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .modal p {
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .modal .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .modal .price-row span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00FF41;
+        }
+
+        .modal .price-row input {
+            background: #000;
+            border: 2px solid #333;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            width: 120px;
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        .modal .price-row input:focus {
+            outline: none;
+            border-color: #00FF41;
+        }
+
+        .modal .error-msg {
+            color: #ff4444;
+            font-size: 0.85rem;
+            display: none;
+            margin-bottom: 1rem;
+        }
+
+        .modal .btn-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .modal .btn-confirm {
+            padding: 0.8rem 2rem;
+            border: 2px dashed #00FF41;
+            background: none;
+            color: #00FF41;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .modal .btn-confirm:hover {
+            background: #00FF41;
+            color: #000;
+        }
+
+        .modal .btn-cancel {
+            padding: 0.8rem 2rem;
+            border: 1px solid #333;
+            background: none;
+            color: #666;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .modal .btn-cancel:hover {
+            color: #999;
+        }
+
         @media (max-width: 700px) {
             section { padding: 3rem 1.5rem !important; }
         }
@@ -100,6 +214,25 @@
         </div>
     </section>
 
+    <!-- PRICE MODAL -->
+    <div class="modal-overlay" id="priceModal">
+        <div class="modal">
+            <h3>OYTA — On Your Terms AI</h3>
+            <p>Name your price for the framework.</p>
+            <p>We imagine most will pay around £10, with some going above to support the project.</p>
+            <p style="color:#555;">Zero is fine if you can't afford it. Every pound counts to keep this project alive.</p>
+            <div class="price-row">
+                <span>£</span>
+                <input type="number" id="modalPriceInput" min="0" step="1" placeholder="0">
+            </div>
+            <p class="error-msg" id="priceError">Please name your price. Zero is fine.</p>
+            <div class="btn-row">
+                <button class="btn-confirm" onclick="confirmPrice()">Download →</button>
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
         <p style="font-size:0.7rem; color:#444;">© 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
@@ -112,14 +245,23 @@
 
     <script>
         function askPrice() {
-            var input = prompt("Name your price for the framework.\n\nWe imagine most will pay around £10, with some going above to support the project.\n\nZero is fine if you can't afford it.\nEvery pound counts to keep this project alive.\n\nEnter amount in £:", "£");
-            if (input === null) return;
-            input = input.replace('£', '').trim();
+            document.getElementById('priceModal').classList.add('show');
+            document.getElementById('modalPriceInput').focus();
+        }
+
+        function closeModal() {
+            document.getElementById('priceModal').classList.remove('show');
+            document.getElementById('priceError').style.display = 'none';
+        }
+
+        function confirmPrice() {
+            var input = document.getElementById('modalPriceInput').value;
             if (input === '') {
-                alert("Please name your price. Zero is fine.");
+                document.getElementById('priceError').style.display = 'block';
                 return;
             }
             var price = parseInt(input) || 0;
+            closeModal();
             handleDownload(price);
         }
 
