@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What You Get — On Your Terms</title>
-    <meta name="description" content="How to write your own AI constitution. No coding. No installation. Just a letter to your AI.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>What You Get — On Your Terms AI</title>
+    <meta name="description" content="One file. Your rules. A governance framework for your relationship with AI.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -18,218 +18,209 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .header {
-            padding: 4rem 2rem 0;
-            padding-top: 5rem;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .header h1 {
-            font-size: clamp(2.2rem, 6vw, 3.5rem);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin-bottom: 0;
-        }
-
         section {
-            padding: 1rem 2rem;
-            max-width: 650px;
+            padding: 5rem 3rem;
+            max-width: 900px;
             margin: 0 auto;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            color: #00FF41;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1.5rem;
         }
 
         h2 {
-            font-size: 1.6rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             font-weight: 700;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #fff;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
         }
 
         p {
             font-size: 1.05rem;
-            color: #bbb;
-            font-weight: 300;
-            line-height: 1.8;
-            margin-bottom: 1rem;
+            color: #888;
+            line-height: 1.9;
+            margin-bottom: 1.2rem;
         }
 
         p strong {
-            color: #fff;
+            color: #ccc;
             font-weight: 600;
         }
 
-        .inside-list {
-            list-style: none;
-            margin: 1.5rem 0;
-        }
-
-        .inside-list li {
-            padding: 1rem 0;
-            border-bottom: 1px solid #222;
-            font-size: 1.05rem;
-            color: #bbb;
-            font-weight: 300;
-        }
-
-        .inside-list li strong {
-            color: #fff;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-
-        .version-tag {
-            display: inline-block;
-            font-size: 0.75rem;
-            color: #666;
-            border: 1px solid #333;
-            padding: 0.3rem 0.8rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn-row {
+        .item {
+            padding: 2rem 0;
+            border-bottom: 1px solid #1a1a1a;
             display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
+            gap: 2.5rem;
+            align-items: flex-start;
         }
 
-        @media (max-width: 600px) {
-            section { padding: 1.2rem 1.5rem; }
+        .item-label {
+            font-size: 0.7rem;
+            color: #00FF41;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            min-width: 140px;
+        }
+
+        .item-desc {
+            font-size: 1rem;
+            color: #888;
+            line-height: 1.7;
+        }
+
+        .step {
+            padding: 2rem 0;
+            border-bottom: 1px solid #1a1a1a;
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            font-size: 0.85rem;
+            color: #00FF41;
+            font-weight: 600;
+            min-width: 2.5rem;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        .platform {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid #111;
+            display: flex;
+            gap: 2.5rem;
+            align-items: baseline;
+        }
+
+        .platform-name {
+            font-size: 0.85rem;
+            color: #00FF41;
+            font-weight: 600;
+            min-width: 120px;
+        }
+
+        .platform-desc {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        @media (max-width: 700px) {
+            section { padding: 3rem 1.5rem; }
+            .item, .step, .platform { flex-direction: column; gap: 0.5rem; }
         }
     </style>
 </head>
 <body>
 
+    <!-- TOP NAV -->
     <nav style="position:fixed; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:#000; border-bottom:1px solid #111; z-index:100;">
         <a href="/" style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#fff; text-decoration:none;">OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></a>
         <div style="display:flex; align-items:center; gap:2rem;">
             <a href="/why.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
-            <a href="/how.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
+            <a href="/how.html" style="color:#fff; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
             <a href="/about.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
-            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms &rarr;</a>
+            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms →</a>
         </div>
     </nav>
 
-    <div class="header">
-        <h1>What you get.</h1>
+    <!-- HERO -->
+    <div style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding:4rem 3rem; max-width:1200px; margin:0 auto; padding-top:6rem;">
+        <p class="label">What you get</p>
+        <h1 style="font-size:clamp(3.5rem, 10vw, 7rem); font-weight:700; letter-spacing:-0.05em; line-height:0.95; margin-bottom:2rem;">One file.<br><em style="font-family:'Playfair Display',serif; font-style:italic; color:#00FF41;">Your rules.</em></h1>
+        <p style="font-size:clamp(1.1rem, 2vw, 1.3rem); color:#888; max-width:700px; line-height:1.8;">A governance framework for your relationship with AI. Not a plugin. Not an app. A text file you own completely, that you give to any AI.</p>
     </div>
-
-    <!-- INTRO -->
-    <section>
-        <p style="color:#ccc;"><strong style="color:#fff;">You get the example of someone's terms, made publicly available to everyone. It's a framework — a starting point to upload to any AI you will ever use.</strong></p>
-        <div style="text-align:center; margin-top:1.5rem;">
-            <img src="/concept.png" alt="On Your Terms — people feed into the terms, terms feed into every AI" style="max-width:280px; width:100%; border-radius:6px;">
-        </div>
-    </section>
 
     <!-- WHAT'S INSIDE -->
     <section>
-        <h2>Five sections. One file. (v0.1)</h2>
+        <p class="label">What's inside</p>
+        <h2>Six sections. <em style="font-family:'Playfair Display',serif; color:#00FF41;">All yours to change.</em></h2>
 
-        <ul class="inside-list">
-            <li>
-                <strong>Your Rules</strong>
-                Pre-written rules about what your AI can and cannot do. Edit any of them.
-            </li>
-            <li>
-                <strong>Who You Are</strong>
-                All about you. What you want AI to know — and where you draw the line of what it should not remember or know.
-            </li>
-            <li>
-                <strong>Your Projects</strong>
-                A list of your projects so AI (any you plug your architecture into) knows your context without you re-explaining every session.
-            </li>
-            <li>
-                <strong>What Happened</strong>
-                A log of what happened in each session. Your AI reads it next time so you never start from zero.
-            </li>
-            <li>
-                <strong>How We Learn</strong>
-                A learning loop. Each session teaches the next.
-            </li>
-        </ul>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <div class="item"><span class="item-label">Your Bill of Rights</span><span class="item-desc">Thirteen rights you hold in every AI interaction, from the right to disconnect to the right to cognitive sovereignty. You keep, change, or add to every one of them.</span></div>
+        <div class="item"><span class="item-label">How Your Brain Works</span><span class="item-desc">The section most AI tools never ask about. How you process information. What you need. What derails you. What helps you think. This is what makes the framework yours.</span></div>
+        <div class="item"><span class="item-label">Communication Rules</span><span class="item-desc">How you want the AI to talk to you. Short or long. Direct or exploratory. What it should never do. What it should always do. Written in plain language.</span></div>
+        <div class="item"><span class="item-label">Your Projects</span><span class="item-desc">A list of what you're working on so AI knows your context without you re-explaining every session.</span></div>
+        <div class="item"><span class="item-label">What Happened</span><span class="item-desc">A log of each session. Your AI reads it next time. No conversation starts from zero.</span></div>
+        <div class="item"><span class="item-label">How We Learn</span><span class="item-desc">A learning loop. Mistakes are logged. What works is captured. Each session teaches the next.</span></div>
     </section>
 
-    <!-- WHAT IT GIVES YOU -->
+    <!-- HOW IT WORKS -->
     <section>
-        <h2>What it gives you.</h2>
-        <ul class="inside-list">
-            <li><strong>POWER</strong> Rights declared by you, for any AI to respect.</li>
-            <li><strong>SMARTER</strong> AI knows your rules, your context, and who you are — within the limits you set. Every conversation starts better.</li>
-            <li><strong>MEMORY</strong> AI remembers you. No conversation starts from zero — unless you tell it to forget.</li>
-            <li><strong>PORTABLE</strong> Works on any AI. Upload it to anything.</li>
-            <li><strong>ALIVE</strong> Your file evolves. What works stays. What doesn't gets fixed.</li>
-            <li><strong>SIMPLE</strong> Just a text file.</li>
-        </ul>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">How it works</p>
+        <h2>Three steps. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Two minutes.</em></h2>
+        <p style="color:#555; margin-bottom:2rem;">If you can copy and paste, you can do this.</p>
+
+        <div class="step"><span class="step-num">01</span><div><p class="step-title">Download</p><p class="step-desc">Get the framework file. Pay what you want, including nothing.</p></div></div>
+        <div class="step"><span class="step-num">02</span><div><p class="step-title">Give it to your AI</p><p class="step-desc">Upload or paste it into any AI you use.</p></div></div>
+        <div class="step"><span class="step-num">03</span><div><p class="step-title">Your AI walks you through it</p><p class="step-desc">Every section is presented to you. You accept, change, or reject. Then you start.</p></div></div>
     </section>
 
-    <!-- DOWNLOAD -->
-    <section style="text-align:center;">
-        <div style="margin:1rem 0;">
-            <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
-        </div>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
-    </section>
-
-    <!-- HOW TO USE IT -->
+    <!-- WHERE DOES IT GO -->
     <section>
-        <h2>Four steps. Two minutes.</h2>
-        <p><strong>1. Download the file.</strong> It's a text file. Like a Word document but simpler.</p>
-        <p><strong>2. Give it to your AI.</strong> Drop the file where your AI can see it, or paste the contents into your AI's custom instructions.</p>
-        <p><strong>3. Your AI walks you through it.</strong> Each section asks: "keep this or change it?" You decide as you go.</p>
-        <p><strong>4. Start talking.</strong> Your AI now reads your terms before every conversation. It knows who you are and what you expect. Not every rule will be followed perfectly — but every conversation starts from your terms, not theirs.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">Where does it go</p>
+        <h2>Works on <em style="font-family:'Playfair Display',serif; color:#00FF41;">any AI.</em></h2>
+        <p>Built and tested on Claude Code. Works anywhere your AI lets you give it instructions.</p>
+
+        <div class="platform"><span class="platform-name">Claude Code</span><span class="platform-desc">Save as CLAUDE.md in your project folder. It reads it automatically every session.</span></div>
+        <div class="platform"><span class="platform-name">Claude chat</span><span class="platform-desc">Paste into a Project's custom instructions, or upload at the start of a conversation.</span></div>
+        <div class="platform"><span class="platform-name">ChatGPT</span><span class="platform-desc">Paste into Settings → Personalization → Custom Instructions. Or upload as a file.</span></div>
+        <div class="platform"><span class="platform-name">Gemini</span><span class="platform-desc">Paste into a Gem's instructions, or upload at the start of a conversation.</span></div>
+        <div class="platform"><span class="platform-name">Any other AI</span><span class="platform-desc">If it has a custom instructions field or lets you upload files, it works. Copy, paste, go.</span></div>
     </section>
 
-    <!-- TESTED ON -->
+    <!-- MULTI-PLATFORM SYNC -->
     <section>
-        <h2>Where does the file go?</h2>
-        <p>This framework was built and tested on <strong>Claude Code</strong> — that's where it works best. But it works on any AI that lets you give it instructions. Here's how:</p>
-        <ul style="list-style:none; padding:0; margin:1rem 0;">
-            <li style="padding:0.8rem 0; border-bottom:1px solid #222; color:#bbb; font-size:1rem;"><strong style="color:#fff;">Claude Code</strong> — save as CLAUDE.md in your project folder. It reads it automatically every session.</li>
-            <li style="padding:0.8rem 0; border-bottom:1px solid #222; color:#bbb; font-size:1rem;"><strong style="color:#fff;">Claude chat</strong> — paste into a Project's custom instructions, or upload the file at the start of a conversation.</li>
-            <li style="padding:0.8rem 0; border-bottom:1px solid #222; color:#bbb; font-size:1rem;"><strong style="color:#fff;">ChatGPT</strong> — paste into Settings &rarr; Personalization &rarr; Custom Instructions. Or upload as a file in any conversation.</li>
-            <li style="padding:0.8rem 0; border-bottom:1px solid #222; color:#bbb; font-size:1rem;"><strong style="color:#fff;">Gemini</strong> — paste into a Gem's instructions, or upload at the start of a conversation.</li>
-            <li style="padding:0.8rem 0; color:#bbb; font-size:1rem;"><strong style="color:#fff;">Any other AI</strong> — if it has a custom instructions field or lets you upload files, it works. Copy, paste, go.</li>
-        </ul>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">Multiple AIs</p>
+        <h2>One file. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Every AI.</em></h2>
+        <p>Your terms work on all of them. One master copy on your computer. Start every session by uploading the latest. At the end, ask: "What changed in my terms this session?" Save changes back.</p>
+        <p>The file already tells your AI to flag changes at session end. One master, many AIs, always in sync.</p>
     </section>
 
-    <!-- MULTI-PLATFORM -->
+    <!-- WHEN AI FAILS -->
     <section>
-        <h2>You use more than one AI. So does your file.</h2>
-        <p>Claude today, ChatGPT tomorrow, Manus next week. Your terms work on all of them. But if each AI evolves your file independently, you end up with different versions and lose control.</p>
-        <p><strong>The rule: one file, one master copy, every platform gets the latest.</strong></p>
-        <ul style="list-style:none; padding:0; margin:1rem 0;">
-            <li style="padding:0.6rem 0; color:#bbb; font-size:1rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">1.</span> Keep one master copy on your computer.</li>
-            <li style="padding:0.6rem 0; color:#bbb; font-size:1rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">2.</span> Start every session by uploading the latest version.</li>
-            <li style="padding:0.6rem 0; color:#bbb; font-size:1rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">3.</span> At the end, ask your AI: "What changed in my terms this session?"</li>
-            <li style="padding:0.6rem 0; color:#bbb; font-size:1rem; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">4.</span> Copy changes back to your master file.</li>
-        </ul>
-        <p style="color:#999;">The file already tells your AI to flag changes at session end. You just need to save them back. One master, many AIs, always in sync.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
+        <p class="label">When the AI fails</p>
+        <h2>You have a system. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Not a complaint.</em></h2>
+        <p>When the AI breaks a rule, you log the failure. You examine the rule. Was it unclear? Was it addressing the wrong mechanism? You strengthen it. You try again.</p>
+        <p>Three failures on the same root cause and you know the approach needs to change, not just the wording. The failure becomes the test case for a stronger version.</p>
+        <p>A document that has been violated and repaired is more robust than one that has never been tested. Violations make your terms stronger, not weaker.</p>
     </section>
 
     <!-- DONATION -->
     <section>
-        <h2>Download is based on donation.</h2>
-        <p>You decide how much you pay. If you can't afford it, pay zero. If you can pay more, pay more, it covers those who couldn't.</p>
-        <p>Every pound goes directly into keeping this project running.</p>
+        <p class="label">Pricing</p>
+        <h2>Pay what you want. <em style="font-family:'Playfair Display',serif; color:#00FF41;">Including nothing.</em></h2>
+        <p>If you can't afford it, pay zero. If you can pay more, you're paying for someone who can't. Every pound goes directly into keeping this project running.</p>
     </section>
 
-    <section>
-        <p style="color:#999; font-style:italic;">Not all rules will be followed. But it's your voice, recorded to be heard. It's your vote for how AI treats you.</p>
+    <!-- CLOSING -->
+    <section style="text-align:center; padding:5rem 3rem;">
+        <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.5rem, 3vw, 2.2rem); color:#777; max-width:700px; margin:0 auto 2rem;">"If you don't write yours, the only ones that exist are those which are not yours."</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Get Your Terms →</a>
+            <a href="https://www.skool.com/on-your-terms-1100" style="display:inline-block; padding:1rem 2.5rem; border:1px solid #444; color:#999; text-decoration:none; font-weight:600; font-size:1.1rem;">Join the Community →</a>
+        </div>
     </section>
 
+    <!-- FOOTER -->
     <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-        <p style="font-size:0.7rem; color:#444;">&copy; 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
+        <p style="font-size:0.7rem; color:#444;">© 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
         <div style="display:flex; gap:2rem;">
             <a href="/why.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
             <a href="/how.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
