@@ -293,8 +293,75 @@
 
         .footer em { font-style: italic; }
 
+        /* TOP NAV */
+        .topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            background: #000;
+            border-bottom: 1px solid #111;
+            z-index: 100;
+        }
+
+        .topnav-brand {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .topnav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .topnav-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .topnav-links a:hover { color: #fff; }
+
+        .topnav-cta {
+            padding: 0.5rem 1.2rem;
+            border: 1px dashed #00FF41;
+            color: #00FF41;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+        }
+
+        .topnav-cta:hover {
+            background: #00FF41;
+            color: #000;
+        }
+
+        .version-label {
+            font-size: 0.7rem;
+            color: #00FF41;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1.5rem;
+        }
+
         @media (max-width: 700px) {
             .hero, section, .nav, .footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+            .topnav { padding: 1rem 1.5rem; }
+            .topnav-links a:not(.topnav-cta) { display: none; }
             .what-grid { grid-template-columns: 1fr; gap: 2rem; }
             .pillar, .step { flex-direction: column; gap: 0.3rem; }
         }
@@ -302,8 +369,20 @@
 </head>
 <body>
 
+    <!-- TOP NAV -->
+    <nav class="topnav">
+        <a href="/" class="topnav-brand">OYTA &mdash; On Your Terms</a>
+        <div class="topnav-links">
+            <a href="/why.html">Why?</a>
+            <a href="/how.html">What you get</a>
+            <a href="/about.html">About</a>
+            <a href="/download.html" class="topnav-cta">Get Your Terms →</a>
+        </div>
+    </nav>
+
     <!-- HERO -->
-    <div class="hero">
+    <div class="hero" style="padding-top: 6rem;">
+        <p class="version-label">onyourterms.ai — v0.1</p>
         <h1>AI on<br><em>YOUR</em><br>terms.</h1>
         <p class="tagline">For people who use AI, but refuse to kneel to it.</p>
         <a href="/download.html" class="cta">Write Your Terms →</a>
