@@ -6,33 +6,21 @@
     <title>About — On Your Terms</title>
     <meta name="description" content="One person sharing a file. A test. Do people want to write their own rules for AI?">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
             background: #000;
             color: #fff;
             -webkit-font-smoothing: antialiased;
         }
 
-        .back {
-            position: fixed;
-            top: 2rem;
-            left: 2rem;
-            color: #777;
-            text-decoration: none;
-            font-size: 1.1rem;
-            letter-spacing: 0.05em;
-            transition: color 0.3s;
-            z-index: 10;
-        }
-
-        .back:hover { color: #888; }
-
         .header {
             padding: 4rem 2rem 0;
+            padding-top: 5rem;
             text-align: center;
             margin-bottom: 1.5rem;
         }
@@ -124,7 +112,7 @@
         }
 
         .take-exchange ul li::before {
-            content: "—";
+            content: "\2014";
             position: absolute;
             left: 0;
             color: #555;
@@ -162,40 +150,19 @@
             padding: 2.5rem 2rem;
             border-top: 1px solid #111;
         }
-
-        .nav-links {
-            text-align: center;
-            padding: 0.3rem 2rem;
-        }
-
-        .nav-links a {
-            color: #999;
-            text-decoration: none;
-            border-bottom: 1px solid #222;
-            padding-bottom: 2px;
-            margin: 0 1rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover { color: #888; }
-
-        .quote {
-            text-align: center;
-            padding: 0.8rem 2rem 1.5rem;
-        }
-
-        .quote p {
-            color: #777;
-            font-style: italic;
-            font-size: 0.75rem;
-        }
     </style>
 </head>
 <body>
 
-    <a href="/" class="back">← Back</a>
-    <a href="https://www.skool.com/on-your-terms-1100" style="position:fixed; top:2rem; right:2rem; color:#fff; text-decoration:none; font-size:0.9rem; background:#1a3a2a; border:1px solid #2d5a3d; padding:0.6rem 1.2rem; border-radius:4px; z-index:10; transition:all 0.3s;">Join Community →</a>
+    <nav style="position:fixed; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:#000; border-bottom:1px solid #111; z-index:100;">
+        <a href="/" style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#fff; text-decoration:none;">OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></a>
+        <div style="display:flex; align-items:center; gap:2rem;">
+            <a href="/why.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
+            <a href="/how.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
+            <a href="/about.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
+            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms &rarr;</a>
+        </div>
+    </nav>
 
     <div class="header">
         <h1>About.</h1>
@@ -208,11 +175,11 @@
         <p>The file is a framework. You download it, it becomes yours. Change it, adapt it, or leave it as it is. Upload it to whatever AI you use and from that moment, your AI reads your terms before every conversation. Not perfectly — AI is probabilistic. But every conversation starts better. Switch AI tomorrow? Take your file with you. It works on any of them.</p>
 
         <p>But this is not about one file and one person. It's about people who believe they have the right to decide what their rights should be. If people share their terms back, every version gets better. A project owned by everyone who uses it.</p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <div class="btn-row" style="margin: 0 0 2rem; text-align:center;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 3rem; background:#fff; color:#000; text-decoration:none; font-weight:700; font-size:1.1rem; border-radius:4px;">Download →</a>
+        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
     </div>
 
     <!-- OVERVIEW -->
@@ -232,7 +199,7 @@
         <h2>Mission</h2>
         <p style="color:#fff; font-weight:700; font-size:1.15rem; font-style:italic;">onyourterms.ai</em> (OYTA) exists to protect human independence in the age of AI.</p>
         <p>That mission is locked. It cannot be changed. Not by the founder. Not by a vote. Not by anyone. Everything below serves that mission.</p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <!-- THE QUESTION -->
@@ -244,7 +211,7 @@
         <p>More than rules, we need you. Because it's in numbers where our power lies. Not only through better terms, but through the collective weight of people who use them.</p>
         <p>This is not a company that sells you something. It's a project to benefit and protect us all.</p>
         <p><strong>Your file gets smarter every time you use it.</strong> If people share back, future versions get smarter too.</p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
 
@@ -261,7 +228,7 @@
         <p><strong>You write your rules. You own your rules. You are responsible for your rules.</strong> <em>onyourterms.ai</em> (OYTA) is a framework. By downloading it, it becomes your responsibility.</p>
 
         <p style="color:#666;">This project is provided as-is. No warranty. No guarantee. No liability for how you use, modify, or distribute the file.</p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <!-- WHAT HAPPENS IF THIS DIES -->
@@ -269,8 +236,8 @@
         <h2 id="dies">What Happens If This Dies</h2>
         <p><strong>The project is fragile. Your independence isn't.</strong></p>
         <p>If you've downloaded the framework, it's yours. Forever. It's on your machine. No encryption, no expiry, no server to shut down. <strong>The product survives the project.</strong></p>
-        <p style="margin-top:1.5rem;"><a href="/download.html" style="color:#fff; text-decoration:underline;">Download now →</a></p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <p style="margin-top:1.5rem;"><a href="/download.html" style="color:#fff; text-decoration:underline;">Download now &rarr;</a></p>
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <!-- WHO STARTED THIS -->
@@ -281,24 +248,22 @@
         <p>Every rule in this file v1.0 exists because of the sum of all of these beliefs.</p>
         <p>The framework is based on my way of thinking, my use, and my learning. But the more people who share, the less this is "I" and the more this is <strong>"Us."</strong></p>
         <p>I believe that is our greatest power, <strong>the mechanics of the best of me, plus the best of you, for the benefit of the best of us.</strong> Today and for tomorrow.</p>
-        <hr style="border:none; border-top:3px solid #444; margin-top:2rem;">
+        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
 
     <!-- CTA -->
     <div style="padding: 2rem 0; border-top: 1px solid #111; text-align:center;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 3rem; background:#fff; color:#000; text-decoration:none; font-weight:700; font-size:1.1rem; border-radius:4px;">Download →</a>
+        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
     </div>
 
-
-    <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/why.html">Why?</a>
-        <a href="/how.html">What you get</a>
-    </div>
-
-    <div class="quote">
-        <p>If you don't write yours, the only ones that exist are those which are not yours.</p>
+    <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <p style="font-size:0.7rem; color:#444;">&copy; 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
+        <div style="display:flex; gap:2rem;">
+            <a href="/why.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
+            <a href="/how.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
+            <a href="/about.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
+        </div>
     </div>
 
 </body>
