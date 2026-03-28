@@ -289,11 +289,9 @@
             document.getElementById('priceSection').style.display = 'none';
             document.getElementById('confirmation').classList.add('show');
 
-            // Then redirect to Stripe if paying
+            // Open Stripe if paying
             if (price > 0) {
-                setTimeout(function() {
-                    window.location.href = 'https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00';
-                }, 1000);
+                window.open('https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00', '_blank');
             }
 
             fetch('https://usvswpqfswdhtbtwdbfg.supabase.co/rest/v1/rpc/increment_counter', {
