@@ -112,9 +112,14 @@
 
     <script>
         function askPrice() {
-            const input = prompt("Name your price for the framework (£).\n\nWe imagine most will pay around £10, with some going above to support the project.\n\nZero is fine if you can't afford it.\nEvery pound counts to keep this project alive.");
-            if (input === null || input.trim() === '') return;
-            const price = parseInt(input) || 0;
+            var input = prompt("Name your price for the framework.\n\nWe imagine most will pay around £10, with some going above to support the project.\n\nZero is fine if you can't afford it.\nEvery pound counts to keep this project alive.\n\nEnter amount in £:", "£");
+            if (input === null) return;
+            input = input.replace('£', '').trim();
+            if (input === '') {
+                alert("Please name your price. Zero is fine.");
+                return;
+            }
+            var price = parseInt(input) || 0;
             handleDownload(price);
         }
 
