@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why, On Your Terms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Why — On Your Terms AI</title>
     <meta name="description" content="Why you need to write your own AI terms. Because your AI follows their rules, not yours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,125 +18,143 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .header {
-            padding: 4rem 2rem 0;
-            padding-top: 5rem;
-            text-align: center;
+        section {
+            padding: 5rem 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            color: #00FF41;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
             margin-bottom: 1.5rem;
         }
 
-        .header h1 {
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            margin-bottom: 0;
-        }
-
-        section {
-            padding: 1.2rem 2rem;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
         h2 {
-            font-size: 1.6rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
             font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #fff;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
         }
 
         p {
             font-size: 1.05rem;
-            color: #bbb;
-            font-weight: 300;
-            line-height: 1.8;
-            margin-bottom: 1rem;
+            color: #888;
+            line-height: 1.9;
+            margin-bottom: 1.2rem;
         }
 
         p strong {
-            color: #fff;
+            color: #ccc;
             font-weight: 600;
         }
 
-        .btn-row {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
+        .highlight {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.15rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        ul li {
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 2.2;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+
+        @media (max-width: 700px) {
+            section { padding: 3rem 1.5rem; }
         }
     </style>
 </head>
 <body>
 
+    <!-- TOP NAV -->
     <nav style="position:fixed; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:1rem 3rem; background:#000; border-bottom:1px solid #111; z-index:100;">
         <a href="/" style="font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:#fff; text-decoration:none;">OYTA<span style="margin-left:1.5rem; font-weight:400; color:#666;">On Your Terms AI</span></a>
         <div style="display:flex; align-items:center; gap:2rem;">
-            <a href="/why.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
+            <a href="/why.html" style="color:#fff; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
             <a href="/how.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
             <a href="/about.html" style="color:#666; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">About</a>
-            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms &rarr;</a>
+            <a href="/download.html" style="padding:0.5rem 1.2rem; border:1px dashed #00FF41; color:#00FF41; text-decoration:none; font-size:0.8rem; font-weight:600; letter-spacing:0.05em;">Get Your Terms →</a>
         </div>
     </nav>
 
-    <div class="header">
-        <h1>Why.</h1>
+    <!-- HERO -->
+    <div style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding:4rem 3rem; max-width:1200px; margin:0 auto; padding-top:6rem;">
+        <h1 style="font-size:clamp(3.5rem, 10vw, 7rem); font-weight:700; letter-spacing:-0.05em; line-height:0.95; margin-bottom:2rem;">Because your AI follows their rules,<br><em style="font-family:'Playfair Display',serif; font-style:italic; color:#00FF41;">not yours.</em></h1>
+        <p style="font-size:clamp(1.1rem, 2vw, 1.3rem); color:#888; max-width:700px; line-height:1.8;">And you don't even know that you can write yours.</p>
     </div>
 
     <!-- SECTION 1 -->
     <section>
-        <h2>Because your AI follows their rules, not yours.</h2>
-        <p>And you don't even know that you can write yours.</p>
+        <p class="label">The problem</p>
         <p>AI companies will eventually make AI remember you. Your name, your preferences, your coffee order. That problem gets solved.</p>
         <p>But here's what will never change: <strong>Claude, ChatGPT, Gemini, DeepSeek, Grok</strong>, or whoever comes next, they all follow rules written by Anthropic, OpenAI, Google, and xAI. Or whoever comes next. Not by you.</p>
         <p>Those companies decide what AI can say, what it cannot say, what it prioritises, and what it hides from you. You have no say in any of it.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
-    <div class="btn-row" style="margin: 1.5rem 0 2rem;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
-    </div>
+    <!-- CTA -->
+    <section style="text-align:center; padding:3rem;">
+        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Get Your Terms →</a>
+    </section>
 
     <!-- SECTION 2 -->
     <section>
-        <h2>The Danger</h2>
-        <p>AI will know everything about you. And using that information, it will push information based on a calculation of what you want to hear. Yes, that is convenient. <strong>But that is also what is so dangerous.</strong></p>
+        <p class="label">The danger</p>
+        <h2>AI will know everything about you.</h2>
+        <p>And using that information, it will push information based on a calculation of what you want to hear. Yes, that is convenient. <strong>But that is also what is so dangerous.</strong></p>
         <p>Why dangerous? Because it's based on algorithmic evaluation, based on the rules THOSE companies decided on, not what YOU decided on.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <!-- SECTION 3 -->
     <section>
-        <h2>The Only Power You Have Left</h2>
-        <p><strong>Your AI Terms changes that.</strong> You write the rules. Your AI reads them before every conversation. Not all rules will be followed perfectly — AI is probabilistic, not obedient. But without your terms, it follows only theirs. With your terms, it has yours too. That difference matters.</p>
+        <p class="label">The power</p>
+        <h2>The most direct power <em style="font-family:'Playfair Display',serif; color:#00FF41;">you have.</em></h2>
+        <p><strong>Your AI Terms changes that.</strong> You write the rules. Your AI reads them before every conversation. Not all rules will be followed perfectly, AI is probabilistic, not obedient. But without your terms, it follows only theirs. With your terms, it has yours too. That difference matters.</p>
         <p>That's why you have to do it yourself. <strong>Because this is the most direct power you have.</strong> And that power is to protect as much as you can your own independence.</p>
-        <ul style="list-style:none; padding:0; margin:1rem 0;">
-            <li style="color:#999; font-size:1.05rem; line-height:2; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">—</span>Even if you think you're just one person.</li>
-            <li style="color:#999; font-size:1.05rem; line-height:2; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">—</span>Even if you think it won't matter.</li>
-            <li style="color:#999; font-size:1.05rem; line-height:2; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">—</span>Even if you think nobody cares what rules you set for your AI life.</li>
-            <li style="color:#999; font-size:1.05rem; line-height:2; padding-left:1rem; position:relative;"><span style="position:absolute; left:0; color:#555;">—</span>Even if you think someone else should set the rules because they know better.</li>
+        <ul>
+            <li>Even if you think you're just one person.</li>
+            <li>Even if you think it won't matter.</li>
+            <li>Even if you think nobody cares what rules you set for your AI life.</li>
+            <li>Even if you think someone else should set the rules because they know better.</li>
         </ul>
-        <p style="color:#fff; font-weight:700; font-size:1.1rem;">That's fine. But you compromise yourself.</p>
+        <p class="highlight">That's fine. But you compromise yourself.</p>
         <p>Not by accident. Not because you didn't know. You just chose not to act. And now that you know you CAN set those rules, that choice is yours to live with.</p>
-        <hr style="border:none; border-top:1px solid #1a1a1a; margin-top:2rem;">
     </section>
 
     <!-- SECTION 4 -->
     <section>
-        <h2>There Is No Opting Out</h2>
+        <p class="label">The reality</p>
+        <h2>There is no opting out.</h2>
         <p>If you're thinking "I just won't use AI", that's not a choice anymore. Your email uses AI. Your search uses AI. Your PDFs, your bank, your phone, your children's school. You are already in the system. You can pretend you're above it. You can hold onto your anti-AI purity. But the truth is you're already governed by rules you didn't write. The only question is whether you do something about it or keep pretending it doesn't apply to you.</p>
     </section>
 
-
     <!-- CTA -->
-    <div class="btn-row" style="padding: 2rem 0;">
-        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Download &rarr;</a>
-    </div>
+    <section style="text-align:center; padding:3rem;">
+        <a href="/download.html" style="display:inline-block; padding:1rem 2.5rem; border:2px dashed #00FF41; color:#00FF41; text-decoration:none; font-weight:600; font-size:1.1rem;">Get Your Terms →</a>
+    </section>
 
+    <!-- FOOTER -->
     <div style="border-top:1px solid #1a1a1a; padding:2rem 3rem; max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-        <p style="font-size:0.7rem; color:#444;">&copy; 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
+        <p style="font-size:0.7rem; color:#444;">© 2026 Karolina Ozadowicz, onyourterms.ai — v0.1 — Declared March 2026</p>
         <div style="display:flex; gap:2rem;">
             <a href="/why.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">Why?</a>
             <a href="/how.html" style="color:#555; text-decoration:none; font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;">What you get</a>
