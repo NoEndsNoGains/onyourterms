@@ -90,7 +90,7 @@
 
         <!-- CONFIRMATION (shows after download) -->
         <div class="confirmation" id="confirmation">
-            <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.5rem; color:#00FF41; margin:2rem 0;">It's yours.</p>
+            <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.5rem; color:#00FF41; margin:2rem 0;">Thank you. It's yours.</p>
 
             <div style="text-align:left; margin:2rem 0; padding:2rem 0; border-top:1px solid #1a1a1a;">
                 <p style="font-size:0.7rem; color:#00FF41; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:1.5rem;">What to do next</p>
@@ -113,7 +113,7 @@
     <script>
         function askPrice() {
             const input = prompt("Name your price for the framework (£).\n\nWe imagine most will pay around £10, with some going above to support the project.\n\nZero is fine if you can't afford it.\nEvery pound counts to keep this project alive.");
-            if (input === null) return;
+            if (input === null || input.trim() === '') return;
             const price = parseInt(input) || 0;
             handleDownload(price);
         }
