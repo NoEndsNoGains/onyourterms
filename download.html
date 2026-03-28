@@ -82,15 +82,10 @@
         <h1 style="font-size:clamp(3rem, 8vw, 5rem); font-weight:700; letter-spacing:-0.04em; margin-bottom:1.5rem;">Get <em style="font-family:'Playfair Display',serif; font-style:italic; color:#00FF41;">yours.</em></h1>
         <p style="font-size:1.1rem; color:#888; margin-bottom:3rem;">Your file. Your rules. Your AI.</p>
 
-        <!-- PRICE SECTION -->
+        <!-- DOWNLOAD BUTTON -->
         <div id="priceSection">
-            <p style="color:#666; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1.5rem;">Name your price for the framework</p>
-            <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:2rem;">
-                <span style="color:#fff; font-size:2rem; font-weight:700;">£</span>
-                <input type="number" class="price-input" id="priceInput" placeholder="0" min="0" step="1">
-            </div>
-            <button class="download-btn" id="downloadBtn" onclick="handleDownload()" disabled style="opacity:0.3; cursor:not-allowed;">Download Terms →</button>
-            <p style="color:#555; font-size:0.85rem; margin-top:1.5rem; line-height:1.8;">Zero is fine if you can't afford it. If you can, you're paying for someone who can't.</p>
+            <button class="download-btn" onclick="askPrice()" style="opacity:1; cursor:pointer;">Download Terms →</button>
+            <p style="color:#555; font-size:0.85rem; margin-top:1.5rem; line-height:1.8;">Pay what you want, including nothing.</p>
         </div>
 
         <!-- CONFIRMATION (shows after download) -->
@@ -115,21 +110,14 @@
     </div>
 
     <script>
-        document.getElementById('priceInput').addEventListener('input', function() {
-            const btn = document.getElementById('downloadBtn');
-            if (this.value !== '') {
-                btn.disabled = false;
-                btn.style.opacity = '1';
-                btn.style.cursor = 'pointer';
-            } else {
-                btn.disabled = true;
-                btn.style.opacity = '0.3';
-                btn.style.cursor = 'not-allowed';
-            }
-        });
+        function askPrice() {
+            const input = prompt("Name your price for the framework (£).\n\nZero is fine if you can't afford it.\nIf you can, you're paying for someone who can't.\nEvery pound counts.");
+            if (input === null) return;
+            const price = parseInt(input) || 0;
+            handleDownload(price);
+        }
 
-        function handleDownload() {
-            const price = parseInt(document.getElementById('priceInput').value) || 0;
+        function handleDownload(price) {
 
             if (price > 0) {
                 window.open('https://buy.stripe.com/3cIfZi4GRdGecPr7Em7ss00', '_blank');
