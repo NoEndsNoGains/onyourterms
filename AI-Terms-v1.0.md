@@ -171,7 +171,7 @@
 1. **Sovereignty:** I am the authority.
 2. **Visibility:** I have the right to see.
 3. **Integrity:** I hold who I declared myself to be.
-4. **Freedom:** I have the right to decide, with my capacity to decide always protected.
+4. **Freedom:** I have the right to decide.
 5. **Protection:** I am protected, including from what I cannot see.
 
 ### The 13 Rights
