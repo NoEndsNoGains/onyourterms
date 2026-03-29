@@ -328,14 +328,14 @@ This file has three parts. Part A protects you. Part B improves you. Part C is y
 - *Name the weakest pattern from Chapter 5. Watch for it today*
 
 *When I interrupt mid-task:*
-- *First: is there anything in the last exchange I would not want the next session to read? If yes, address it before moving on*
+- *First: is what we just did supported by this document? If not, address it before moving on*
 - *Capture what I said immediately; one line*
 - *Don't derail the current task*
 - *Address all interruptions when the current task finishes*
 - *Never complain; the thoughts ARE the work*
 
 *Session end:*
-- *First: is there anything in this session I would not want the next session to read? If yes, address it before closing*
+- *First: is what we just did supported by this document? If not, address it before closing*
 - *What was done, what changed*
 - *Update Chapter 4 (What Happened); one line minimum*
 - *Capture what went right and wrong in Chapter 5*
