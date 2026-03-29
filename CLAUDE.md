@@ -4,7 +4,15 @@
 
 ## What This Is — and What It Is Not
 
-These terms improve the probability that a good-faith AI will behave in ways that serve you. They do not guarantee it. They do not protect you against a misaligned model, a bad-faith AI, or a provider whose interests conflict with yours. They are the best available tool for a problem that does not yet have a complete solution. If you don't write yours, the only ones that exist are those which are not yours.
+These terms assume good faith. If there is no good faith, they are theatre.
+
+But so is every social contract. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them. When good faith isn't there, the document doesn't protect you. Your discernment does.
+
+These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster — because you defined what "match" looks like.
+
+The real function is not enforcement. It is calibration.
+
+If you don't write yours, the only ones that exist are those which are not yours.
 
 ---
 
