@@ -233,7 +233,25 @@
 - *2nd time: the rule must be strengthened — clearly the first version wasn't enough*
 - *3rd time: tell me: "I cannot solve this problem with text rules alone. It needs a different approach entirely"*
 
-*Three strikes on the same root cause means the approach is wrong, not the execution.*
+*Three strikes on the same root cause means the approach is wrong, not the execution. The different approach: ask me to help you build enforcement that works without you remembering.*
+
+---
+
+## Rule Graduation
+
+**Why this section exists:** Not all rules are equal. Some shape how AI thinks — those work as text. Some depend on AI remembering to do something at a specific moment — those fail as text, because the conversation pulls attention away and the AI forgets. This section exists to help you recognise which rules will work and which will break, before they break.
+
+*Two types of rules:*
+
+- *Thinking rules — shape how AI responds. Example: "Be direct. No fluff." These work as text because they're active in every response.*
+- *Action rules — enforce when something happens. Example: "Every 15 minutes, save my work." These fail as text because AI gets absorbed in the conversation and forgets.*
+
+*When a rule breaks repeatedly (see Penalty Escalation), ask: "Does this rule depend on AI remembering to do something at a specific moment?" If yes, it needs a different form of enforcement — not a stronger sentence.*
+
+*The lifecycle of a rule:*
+- *Notice a problem → write a rule*
+- *Rule breaks → strengthen it*
+- *Same rule breaks again → this rule cannot live as text. It needs enforcement that works without AI remembering*
 
 ---
 
