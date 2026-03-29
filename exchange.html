@@ -191,49 +191,50 @@
     </style>
 </head>
 <body>
-    <a href="https://www.skool.com/on-your-terms-1100" target="_blank" class="join-btn">Join Community →</a>
+    <h1>Recognition.</h1>
 
-    <h1>Exchange.</h1>
-
-    <p class="subtitle">You take to benefit us all.</p>
-    <p class="subtitle" style="color:#777; font-size:1rem;">You get the file. You share your views. The next available version of terms gets better because of all of us.</p>
+    <p class="subtitle">You wrote yours. We read it.</p>
+    <p class="subtitle" style="color:#777; font-size:1rem;">Not a repository. Not a mailing list. You share your terms, we recognise them and give you personal feedback. Then you find others who did the same.</p>
 
     <div class="form-section" id="formSection">
-        <label>Your email<br><span style="color:#666; font-size:0.85rem;">So we can send you emails about everything irrelevant that you didn't give us permission for. Just kidding. We only write when a new version of terms is available.</span></label>
+        <label>Your email<br><span style="color:#666; font-size:0.85rem;">So we can send you our feedback. That's it.</span></label>
         <input type="email" id="emailInput" placeholder="your@email.com">
 
-        <label>Your views</label>
-        <textarea id="termsInput" placeholder="Already have your own terms? What did you put there? Or maybe you've set up your AI in a specific way for your projects — how you use it, what instructions you give it, what works. Share what you have."></textarea>
+        <label>Your terms</label>
+        <textarea id="termsInput" placeholder="Paste your terms here — the rules you wrote for how AI works for you. Whatever form they're in. A full constitution, a set of instructions, three sentences. What matters is that you wrote them."></textarea>
 
+        <label style="margin-top:1.5rem;">What's working? What isn't?</label>
+        <textarea id="feedbackInput" style="min-height:100px;" placeholder="Optional. What happened when you gave your AI these rules? What changed? What didn't work?"></textarea>
 
         <div style="text-align:center; margin-top:2rem;">
-            <span style="color:#999; font-size:1.1rem; display:block; margin-bottom:1rem;">Name your price for the framework</span>
-            <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:1.5rem;">
+            <button class="submit-btn" onclick="handleExchange()">Submit for Recognition →</button>
+            <p class="price-note">We read every submission. You'll get feedback — what's strong, what's missing, what others have tried.<br>This is how the next version of terms gets built. From yours.</p>
+        </div>
+
+        <div style="text-align:center; margin-top:2rem;">
+            <span style="color:#999; font-size:1rem; display:block; margin-bottom:1rem;">Support the project</span>
+            <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:1rem;">
                 <span style="color:#fff; font-size:2rem; font-weight:700;">£</span>
                 <input type="number" id="priceInput" value="0" min="0" step="1" style="background:#111; border:2px solid #333; color:#fff; font-size:2rem; font-weight:700; width:120px; padding:0.5rem 1rem; text-align:center; border-radius:8px;">
             </div>
-            <button class="submit-btn" onclick="handleExchange()">Exchange & Download Terms →</button>
-            <p class="price-note">Zero is fine if you can't afford it. If you can, you're paying for someone who can't.<br>Every donation is proof this project is more than just one person's imagination.</p>
+            <p style="color:#666; font-size:0.85rem;">Zero is fine. If you can, you're paying for someone who can't.</p>
         </div>
     </div>
 
     <div class="confirmation" id="confirmation">
 
-        <p class="message">Thank you. You just made everyone's terms a little stronger.</p>
+        <p class="message">Received. We'll read your terms and get back to you.</p>
 
         <div style="text-align:left; margin:2rem 0; padding:2rem; border:1px solid #222; border-radius:8px;">
-            <p style="color:#fff; font-size:1.2rem; font-weight:700; margin-bottom:1.5rem; letter-spacing:0.1rem;">INSTRUCTIONS:</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">1. Open the file,</strong> it opens like any document on your computer.</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">2. Save it. Change what you wish.</strong></p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">3. Upload it to your AI.</strong> For Claude Code, save it as CLAUDE.md in your project folder. For other platforms, check the community.</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">4. Say:</strong> "Help me fill in the sections marked YOUR TURN"</p>
-            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">5. Work with your AI to improve it.</strong></p>
-            <p style="color:#999;"><strong style="color:#ccc;">6. Be part of the community and tell us what you did.</strong></p>
+            <p style="color:#fff; font-size:1.1rem; font-weight:700; margin-bottom:1.5rem;">What happens now:</p>
+            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">1.</strong> We read your terms personally.</p>
+            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">2.</strong> You'll get feedback — what's strong, what you might be missing, what others have done differently.</p>
+            <p style="color:#999; margin-bottom:1rem;"><strong style="color:#ccc;">3.</strong> Your thinking feeds into the next version of terms. Credit where it's due.</p>
         </div>
 
         <div class="community-link">
-            <p style="color:#999; margin-bottom:1rem;">You're in. Join the community:</p>
-            <a href="https://www.skool.com/on-your-terms-1100" target="_blank" class="community-btn">Join Community →</a>
+            <p style="color:#999; margin-bottom:1rem;">Find others who wrote theirs:</p>
+            <a href="https://www.linkedin.com/groups/13155702/" target="_blank" class="community-btn">Join the conversation →</a>
         </div>
 
         <div style="margin-top:3rem; text-align:center;">
