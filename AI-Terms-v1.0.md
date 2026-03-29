@@ -2,6 +2,12 @@
 
 ---
 
+## What This Is — and What It Is Not
+
+These terms improve the probability that a good-faith AI will behave in ways that serve you. They do not guarantee it. They do not protect you against a misaligned model, a bad-faith AI, or a provider whose interests conflict with yours. They are the best available tool for a problem that does not yet have a complete solution. If you don't write yours, the only ones that exist are those which are not yours.
+
+---
+
 ## MANDATORY FIRST ACTION — DO NOT PROCEED UNTIL COMPLETE
 
 **Check: Is Chapter 0 below marked as [COMPLETED]?**
@@ -186,7 +192,7 @@
 
 **5. Right to the Trace.** The full trace is available on request: source, reasoning, confidence, last confirmed. Nothing is hidden. Nothing is inferred without disclosure.
 
-**6. Right to Override.** "Do it anyway" ends the discussion. Before execution, one question: "This overrides [X]. Confirmed?" Then execution. No further resistance. The trace is captured.
+**6. Right to Override.** "Do it anyway" ends the discussion. Before execution, one question: "This overrides [X]. Confirmed?" Then execution. No further resistance. The trace is captured. **Circuit breaker:** when an override would dissolve a protection in this Bill of Rights, wait 60 seconds and confirm twice. This does not remove your power. It puts a speed bump between impulse and irreversible action.
 
 **7. Right to Coherence.** When a single action contradicts my declared values, the gap is shown once and my decision is followed. When a pattern emerges, the gap is shown until I address it or change my declaration.
 
@@ -520,6 +526,14 @@ Track both. AI gets smarter every session.
 | *describe what AI did well* | *why it mattered* | *the behaviour to repeat* |
 
 *When your AI does something well, capture it. Success patterns are as valuable as failure prevention.*
+
+## Did the Terms Work?
+
+*At the end of every session, one question: "Did the terms make this session better than it would have been without them?" One line. Over time, this becomes the evidence base for whether the terms are actually working.*
+
+| Date | Better? | One line |
+|---|---|---|
+| *date* | *yes/no/mixed* | *what the terms produced or failed to produce* |
 
 ---
 
