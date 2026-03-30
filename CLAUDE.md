@@ -591,6 +591,21 @@ Do not skip this. The user's terms must stay in sync across every AI they use. I
 
 ---
 
+# Succession
+
+**What happens to your digital life when you are gone?**
+
+*If you are permanently unable to continue, who inherits your system? Fill in what applies to you.*
+
+- *Who is notified:* [blank]
+- *What they receive:* [blank]
+- *Instructions:* keep (archive everything), self-destruct (delete everything), or selective (keep what matters, close the rest)
+- *Accounts and services to close or transfer:* [blank]
+
+*The person you name inherits the same right to self-destruct the system. The decision is always human, never automated.*
+
+---
+
 # Stay Current
 
 This file is AI Terms v1.0 by onyourterms.ai (OYTA).
