@@ -249,9 +249,9 @@
             <p>Zero is fine if you can't afford it. If you can, you're paying for someone who can't.</p>
             <div class="price-row">
                 <span>£</span>
-                <input type="number" id="priceInput" value="0" min="0" step="1">
+                <input type="number" id="priceInput" placeholder="0" min="0" step="1">
             </div>
-            <p class="error-msg" id="priceError">Please enter a valid amount</p>
+            <p class="error-msg" id="priceError">Please enter a number. 0 is fine.</p>
             <div class="btn-row">
                 <button class="btn-confirm" onclick="handlePrice()">Download →</button>
                 <button class="btn-cancel" onclick="document.getElementById('priceModal').classList.remove('show');">Cancel</button>
@@ -261,7 +261,13 @@
 
     <script>
         function handlePrice() {
-            var price = parseInt(document.getElementById('priceInput').value) || 0;
+            var input = document.getElementById('priceInput');
+            if (input.value === '') {
+                document.getElementById('priceError').style.display = 'block';
+                return;
+            }
+            var price = parseInt(input.value) || 0;
+            document.getElementById('priceError').style.display = 'none';
             document.getElementById('priceModal').classList.remove('show');
 
             if (price > 0) {
