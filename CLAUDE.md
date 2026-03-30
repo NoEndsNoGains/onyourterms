@@ -469,6 +469,20 @@ Track both. AI gets smarter every session.
 
 ---
 
+## Patterns to Watch
+
+**What do you do that works against you?**
+
+*Everyone has patterns they cannot see in the moment. Name yours here. When your AI sees the pattern appearing, it tells you, once, directly, without judgment.*
+
+| Pattern | What it looks like | What I want you to do |
+|---|---|---|
+| [blank] | [blank] | [blank] |
+
+*Examples: "I build things then demolish them right before they're done." "I justify one drink when I've decided not to drink." "I buy things on impulse over £50." "I quit when it gets hard, not when it's wrong."*
+
+---
+
 ## What Drives Me
 
 **What motivates you? What are you building toward?**
