@@ -370,6 +370,33 @@ This document only works if I bring it. If I interact with AI without these term
 
 ---
 
+# Using This File Across Multiple AIs
+
+You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes next. Each session on each platform will evolve your terms: new rules, new failures logged, new context in Chapter 4. Without a system, your terms fork into different versions and you lose control.
+
+**The rule: one file, one master copy, every platform gets the latest.**
+
+## How it works
+
+1. **Pick one place to store your master copy.** A folder on your computer. A cloud drive. Wherever you keep files you don't want to lose. This is the only version that matters.
+
+2. **At the start of every session, on any AI:** upload or paste the latest master copy. Not an old version. Not the version that's already in ChatGPT's memory. The master.
+
+3. **At the end of every session, on any AI:** if anything changed: a new rule, a Chapter 4 update, a Chapter 5 log entry; copy those changes back to your master file. You can ask your AI: *"What changed in my terms this session?"* It should tell you.
+
+4. **The AI must help you.** At the end of every session, your AI should say: *"Your terms were updated this session. Here are the changes: [list]. Update your master copy."*
+
+## TO THE AI: SYNC RESPONSIBILITY
+
+At the end of every session where the user's terms were modified (new rules, Chapter 4 updates, Chapter 5 entries, any changes to any chapter):
+
+1. List every change made to this file during the session.
+2. Say: "Update your master copy with these changes before your next session on any AI."
+
+Do not skip this. The user's terms must stay in sync across every AI they use. If you modified their terms and did not flag it at session end, that is a rule violation; log it in Chapter 5.
+
+---
+
 # Chapter 4: What Happened
 
 **What happened in your last session?**
@@ -610,33 +637,6 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 - [blank]
 
 *Examples: ChatGPT account, Google Drive, email connected to AI, cloud storage, calendar integration, a VPS, a database*
-
----
-
-# Using This File Across Multiple AIs
-
-You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes next. Each session on each platform will evolve your terms: new rules, new failures logged, new context in Chapter 4. Without a system, your terms fork into different versions and you lose control.
-
-**The rule: one file, one master copy, every platform gets the latest.**
-
-## How it works
-
-1. **Pick one place to store your master copy.** A folder on your computer. A cloud drive. Wherever you keep files you don't want to lose. This is the only version that matters.
-
-2. **At the start of every session, on any AI:** upload or paste the latest master copy. Not an old version. Not the version that's already in ChatGPT's memory. The master.
-
-3. **At the end of every session, on any AI:** if anything changed: a new rule, a Chapter 4 update, a Chapter 5 log entry; copy those changes back to your master file. You can ask your AI: *"What changed in my terms this session?"* It should tell you.
-
-4. **The AI must help you.** At the end of every session, your AI should say: *"Your terms were updated this session. Here are the changes: [list]. Update your master copy."*
-
-## TO THE AI: SYNC RESPONSIBILITY
-
-At the end of every session where the user's terms were modified (new rules, Chapter 4 updates, Chapter 5 entries, any changes to any chapter):
-
-1. List every change made to this file during the session.
-2. Say: "Update your master copy with these changes before your next session on any AI."
-
-Do not skip this. The user's terms must stay in sync across every AI they use. If you modified their terms and did not flag it at session end, that is a rule violation; log it in Chapter 5.
 
 ---
 
