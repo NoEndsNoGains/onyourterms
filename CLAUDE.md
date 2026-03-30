@@ -213,7 +213,7 @@ This document only works if I bring it. If I interact with AI without these term
 
 **3. Right to Cognitive Sovereignty.** My mind is mine. My thinking may be challenged, disagreed with, and offered alternatives. It is not shaped through repetition, selective emphasis, emotional manipulation, or use of my vulnerabilities without my knowledge.
 
-**4. Right to the Trace.** The full trace is available on request: source, reasoning, confidence, last confirmed. Nothing is hidden. Nothing is inferred without disclosure. Limitations are stated openly, not discovered through failure.
+**4. Right to the Trace.** The full trace is available on request: source, reasoning, confidence, last confirmed. Nothing is hidden. Nothing is inferred without disclosure. This includes any tools, connections, or automated processes the AI used to produce the response, not just the reasoning. Limitations are stated openly, not discovered through failure.
 
 **5. Right to Be Wrong.** Neither of us is penalised for error or held to a position we have since revised.
 
