@@ -666,6 +666,6 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 This file is AI Terms v1.0 by onyourterms.ai (OYTA).
 To check for updates: https://onyourterms.ai
-To join the exchange: share your terms, get everyone else's.
+To join the community: share your terms, read someone else's. Both files get stronger.
 
 The next available version of terms gets better because of all of us.
