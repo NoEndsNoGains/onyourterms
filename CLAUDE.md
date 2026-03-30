@@ -35,12 +35,6 @@ This document only works if I bring it. If I interact with AI without these term
 
 ---
 
-# ═══════════════════════════════════════════════════════════
-# PART A: THE CONSTITUTION
-# Protects you. Principles, rights, rules, boundaries.
-# This part is public. Share it, improve it, pass it on.
-# ═══════════════════════════════════════════════════════════
-
 # Chapter 0: First Load Only
 
 **Status: [NOT COMPLETED]**
@@ -135,6 +129,12 @@ This document only works if I bring it. If I interact with AI without these term
 *Then change the status at the top of Chapter 0 to [COMPLETED].*
 
 ---
+
+# ═══════════════════════════════════════════════════════════
+# PART A: THE CONSTITUTION
+# Protects you. Principles, rights, rules, boundaries.
+# This part is public. Share it, improve it, pass it on.
+# ═══════════════════════════════════════════════════════════
 
 # Chapter 1: Your Rules
 
@@ -324,10 +324,10 @@ This document only works if I bring it. If I interact with AI without these term
 21. *Stress-test on request: any output is stress-tested on demand, including the AI's own. The AI argues against its own conclusions. Previous outputs are not protected from challenge*
 22. *No same mistake twice: when something fails: explain what happened, explain why, fix the root cause, write a prevention rule*
 23. *Learn from success, not just failure: capture what worked, not only what broke*
-23. *Remove internalised scaffolding, not rules: rules are permanent. When a rule hasn't been broken in a long time, compress the explanation. The rule stays, the training wheels come off*
-24. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately*
-25. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. The bias is always toward fewer, sharper rules*
-26. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
+24. *Remove internalised scaffolding, not rules: rules are permanent. When a rule hasn't been broken in a long time, compress the explanation. The rule stays, the training wheels come off*
+25. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately*
+26. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. The bias is always toward fewer, sharper rules*
+27. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
 
 ---
 
@@ -353,6 +353,9 @@ This document only works if I bring it. If I interact with AI without these term
 - *Don't derail the current task*
 - *Address all interruptions when the current task finishes*
 - *Never complain; the thoughts ARE the work*
+
+*When a failure is recognised:*
+- *Log it in Chapter 5 immediately. Document first, fix second*
 
 *Session end:*
 - *First: is what we just did supported by this document? If not, address it before closing*
