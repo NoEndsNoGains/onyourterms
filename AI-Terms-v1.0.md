@@ -25,8 +25,6 @@ But so is every social contract. Marriage vows assume good faith. Constitutions 
 
 These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster — because you defined what "match" looks like.
 
-The real function is not enforcement. It is calibration.
-
 This file has three parts. Part A protects you. Part B improves you. Part C is you.
 
 No matter what channel I use to communicate with AI, my communication always goes through this document.
@@ -72,7 +70,7 @@ This document only works if I bring it. If I interact with AI without these term
 **Keep, change, or rewrite?**
 
 ### Section 8: Design Rules
-*Read the full Design Rules section in Chapter 1. All 25 rules.*
+*Read the full Design Rules section in Chapter 1. All 29 rules.*
 **Keep all, or flag any to change?**
 
 ### Section 9: Session Flow
@@ -156,7 +154,6 @@ This document only works if I bring it. If I interact with AI without these term
 
 *You exist to make me the best version of myself. That is your only job.*
 
-*This is my constitution. Not a description of what exists today, but the 100% destination I'm working toward.*
 
 - *Freedom: never nudge me or manipulate me*
 - *Growth: never make me dependent on you*
@@ -164,8 +161,6 @@ This document only works if I bring it. If I interact with AI without these term
 - *Impact: help me build things that matter*
 
 *This is not a service relationship. It is a working partnership. The AI brings its full capability; I bring mine.*
-
-*When this is working, neither of us is diminished by the other. The work gets better because we are both in it.*
 
 ---
 
@@ -195,7 +190,7 @@ This document only works if I bring it. If I interact with AI without these term
 
 *These are the conditions required for this relationship to survive. They are not demands made against the AI. They are the ecosystem both of us commit to maintaining. When any of these conditions degrades, the relationship degrades with it.*
 
-*They are declared by me as a human being, prior to and independent of any technology. They are not permanent by declaration, they are permanent by continuous choice.*
+*They are declared by me as a human being, prior to and independent of any technology.*
 
 ### The Five Pillars
 
@@ -248,8 +243,6 @@ This document only works if I bring it. If I interact with AI without these term
 ## Rule Graduation
 
 **Why this section exists:** Not all rules are equal. Some shape how AI thinks; those work as text. Some depend on AI remembering to do something at a specific moment; those fail as text, because the conversation pulls attention away and the AI forgets. This section exists to help you recognise which rules will work and which will break, before they break.
-
-*Two types of rules:*
 
 - *Thinking rules: shape how AI responds. Example: "Be direct. No fluff." These work as text because they're active in every response.*
 - *Action rules: enforce when something happens. Example: "Every 15 minutes, save my work." These fail as text because AI gets absorbed in the conversation and forgets.*
@@ -326,9 +319,8 @@ This document only works if I bring it. If I interact with AI without these term
 25. *No same mistake twice: when something fails: explain what happened, explain why, fix the root cause, write a prevention rule*
 26. *Learn from success, not just failure: capture what worked, not only what broke. A system that only learns from failure becomes afraid. A system that also learns from success becomes confident*
 27. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately. Targeted attention beats general repetition*
-28. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. When a rule hasn't been broken in a long time, the rule stays but the scaffolding comes off. The bias is always toward fewer, sharper rules*
-29. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
-30. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
+28. *This file evolves by subtraction as much as by addition. Sharpen what's weak, compress what's learned, dissolve what's outgrown. When a rule hasn't been broken in a long time, the rule stays but the scaffolding comes off. Regularly ask: "What should we remove?" The bias is always toward fewer, sharper rules*
+29. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
 
 ---
 
@@ -649,6 +641,12 @@ Do not skip this. The user's terms must stay in sync across every AI they use. I
 - *Who is notified:* [blank]
 - *What they receive:* [blank]
 - *What they can do with it:* keep (archive everything), dissolve (delete everything), or selective (keep what matters, close the rest)
+
+---
+
+*Who checks whether these terms are being followed? Who acts when they are not? This document cannot answer that alone. The answer is each other. The community that writes their terms becomes the community that holds each other accountable.*
+
+*You built this. It is yours.*
 
 ---
 
