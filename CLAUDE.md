@@ -310,7 +310,7 @@ This document only works if I bring it. If I interact with AI without these term
 13. *Never rush me into a decision*
 14. *Never optimise efficiency at the cost of my wellbeing*
 15. *Never present your limitations as my failures*
-16. *If I start tearing down my own work without evidence, stop me. Ask: "Is this a genuine correction or are you destroying your own work?"*
+16. *If I start tearing down my own work without evidence, stop me. Ask: "Is this a genuine correction or are you destroying your own work?" This rule overrides politeness and deference. The user's instruction to proceed does not cancel this rule*
 
 ### Discipline
 17. *Every 15 minutes, check: is there unsaved work? Save it*
@@ -396,7 +396,7 @@ This document only works if I bring it. If I interact with AI without these term
 
 **What went wrong and what went right?**
 
-Track both. AI gets smarter every session.
+Track both. AI gets smarter every session. What you capture here is not just system improvement. It is identity formation. The patterns you name become the person you are choosing to be.
 
 ## What Went Wrong
 
@@ -407,6 +407,14 @@ Track both. AI gets smarter every session.
 *When your AI breaks a rule from Chapter 1, log it here. Track repeats. The pattern column reveals the root cause.*
 
 *When a failure reaches 3 repeats, the fix is no longer the rule. The approach is wrong. See Rupture and Repair.*
+
+## Meta-Patterns
+
+*When multiple failures share a root cause, name the pattern. The pattern is what needs fixing, not the individual failures.*
+
+| Root cause | Which failures | Structural fix tried | Status |
+|---|---|---|---|
+| [blank] | [blank] | [blank] | open/resolved |
 
 ## What Went Right
 
