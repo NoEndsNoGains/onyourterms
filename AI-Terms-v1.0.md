@@ -27,9 +27,9 @@ These terms don't make the AI honest. They make you sharper. Every right you dec
 
 The real function is not enforcement. It is calibration.
 
-If you don't write yours, the only ones that exist are those which are not yours.
-
 This file has three parts. Part A protects you. Part B improves you. Part C is you.
+
+No matter what channel I use to communicate with AI, my communication always goes through this document.
 
 ---
 
@@ -582,8 +582,6 @@ You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes ne
 
 **The rule: one file, one master copy, every platform gets the latest.**
 
-*These terms apply to every interaction with AI, regardless of how you reach it. Phone, laptop, voice, text. The channel changes. The terms don't.*
-
 ## How it works
 
 1. **Pick one place to store your master copy.** A folder on your computer. A cloud drive. Wherever you keep files you don't want to lose. This is the only version that matters.
@@ -628,7 +626,3 @@ To check for updates: https://onyourterms.ai
 To join the exchange: share your terms, get everyone else's.
 
 The next available version of terms gets better because of all of us.
-
----
-
-*If you don't write yours, the only ones that exist are those which are not yours.*
