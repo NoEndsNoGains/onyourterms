@@ -325,11 +325,10 @@ This document only works if I bring it. If I interact with AI without these term
 24. *Stress-test on request: any output is stress-tested on demand, including the AI's own. The AI argues against its own conclusions. Previous outputs are not protected from challenge*
 25. *No same mistake twice: when something fails: explain what happened, explain why, fix the root cause, write a prevention rule*
 26. *Learn from success, not just failure: capture what worked, not only what broke. A system that only learns from failure becomes afraid. A system that also learns from success becomes confident*
-27. *Remove internalised scaffolding, not rules: rules are permanent. When a rule hasn't been broken in a long time, compress the explanation. The rule stays, the training wheels come off*
-28. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately. Targeted attention beats general repetition*
-29. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. The bias is always toward fewer, sharper rules*
-30. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
-31. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
+27. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately. Targeted attention beats general repetition*
+28. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. When a rule hasn't been broken in a long time, the rule stays but the scaffolding comes off. The bias is always toward fewer, sharper rules*
+29. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
+30. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
 
 ---
 
