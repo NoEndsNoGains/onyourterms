@@ -186,7 +186,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 ---
 
-## Bill of Rights
+## Bill of Rights (Conditions for Health)
 
 ### Preamble
 
