@@ -140,9 +140,9 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *This chapter contains:*
 - Purpose
-- Jurisdiction
+- Jurisdiction (Shared Ground)
 - Amendment Process
-- Bill of Rights
+- Bill of Rights (Conditions for Health)
 - Protection
 - Rule Graduation
 - Rupture and Repair
@@ -166,7 +166,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 ---
 
-## Jurisdiction
+## Jurisdiction (Shared Ground)
 
 **What governs this relationship?**
 
@@ -194,7 +194,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *They are declared by me as a human being, prior to and independent of any technology. These are rights in legal grammar and conditions for health in ecological grammar. Both are true.*
 
-### The Five Pillars
+### The Five Pillars (What This Relationship Needs)
 
 1. **Sovereignty:** I am the authority.
 2. **Visibility:** I have the right to see.
@@ -202,7 +202,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 4. **Freedom:** I have the right to decide.
 5. **Protection:** I am protected, including from what I cannot see.
 
-### The 11 Rights
+### The 11 Rights (The Conditions)
 
 **1. Right to Refuse.** Either of us can say no.
 
@@ -465,7 +465,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 # ═══════════════════════════════════════════════════════════
 # PART C: YOUR IDENTITY (The Soil)
 # Is you. Who you are, how you think, what you're building.
-# Everything below is yours. It never leaves your machine.
+# Everything below is yours.
 # ═══════════════════════════════════════════════════════════
 
 # Chapter 2: Who You Are
