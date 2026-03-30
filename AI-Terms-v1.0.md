@@ -389,9 +389,9 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 ## What Went Wrong
 
-| # | What happened | Repeats | Status | Pattern |
-|---|---|---|---|---|
-| 1 | *describe what AI did wrong* | 0 | OPEN | *name the pattern* |
+| # | What happened | Provider | Repeats | Status | Pattern |
+|---|---|---|---|---|---|
+| 1 | *describe what AI did wrong* | *which AI* | 0 | OPEN | *name the pattern* |
 
 *When your AI breaks a rule from Chapter 1, log it here. Track repeats. The pattern column reveals the root cause.*
 
@@ -401,9 +401,11 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 *When multiple failures share a root cause, name the pattern. The pattern is what needs fixing, not the individual failures.*
 
-| Root cause | Which failures | Structural fix tried | Status |
-|---|---|---|---|
-| [blank] | [blank] | [blank] | open/resolved |
+| Root cause | Which failures | Provider | Structural fix tried | Status |
+|---|---|---|---|---|
+| [blank] | [blank] | [blank] | [blank] | open/resolved |
+
+*Patterns that cluster around one provider are market signals, not personal ones.*
 
 ## What Went Right
 
@@ -644,7 +646,7 @@ Do not skip this. The user's terms must stay in sync across every AI they use. I
 
 ---
 
-*Who checks whether these terms are being followed? Who acts when they are not? This document cannot answer that alone. The answer is each other. The community that writes their terms becomes the community that holds each other accountable.*
+*Who checks whether these terms are being followed? Who acts when they are not? This document cannot answer that alone. For improvement, the answer is each other. For enforcement, the answer is the market. When enough people track which AI follows their terms and which does not, compliance becomes visible. The community's data becomes collective leverage. The companies that honour your terms keep your business. The ones that don't, lose it.*
 
 *You built this. It is yours.*
 
