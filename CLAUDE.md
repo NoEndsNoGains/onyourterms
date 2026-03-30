@@ -402,6 +402,8 @@ Track both. AI gets smarter every session.
 
 *When your AI breaks a rule from Chapter 1, log it here. Track repeats. The pattern column reveals the root cause.*
 
+*When a failure reaches 3 repeats, the fix is no longer the rule. The approach is wrong. See Rupture and Repair.*
+
 ## What Went Right
 
 | What worked | Why it worked | Keep doing |
