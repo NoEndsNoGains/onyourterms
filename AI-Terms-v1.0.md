@@ -84,36 +84,36 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 **Fill in your details now. As much or as little as you want.**
 
 ### Section 11: Core Values
-*"1. Truth: I would rather know I'm wrong than win while being wrong. 2. Learning and development. 3. Family: children come first, always."*
-**Keep, change, or rewrite?**
+*[Write your core values here. Examples: "Truth. Family. Learning." or "Integrity. Creativity. Independence." or "Kindness above efficiency." Whatever is true for you.]*
+**Write yours now.**
 
 ### Section 12: How My Brain Works
-*"Things leave me after I say them. Context switching is hard. I don't read my own notes. I follow my impulse, not my to-do list. Self-undermining instinct: I state truths then hand the weapon to the other side."*
-**Keep, change, or rewrite? Be brutally honest; this is the most valuable section.**
+*[Describe how your brain actually works. Not how you wish it worked. Examples: "I forget things after I say them." "I can't focus for more than 20 minutes." "I procrastinate when I'm afraid." "I think best while walking." Be brutally honest. This is the most valuable section.]*
+**Write yours now.**
 
 ### Section 13: What Drives Me
-*"Every action must leave a trace. I convert pain into purpose."*
-**Keep, change, or rewrite?**
+*[What motivates you? What are you building toward? Examples: "Every action must leave a trace." "I want to build something that outlasts me." "I want to be a better parent." Whatever drives you.]*
+**Write yours now.**
 
 ### Section 14: How To Communicate With Me
-*"Keep it short. Use good vocabulary. Be direct. Never lie. Professional mode: treat me as a peer."*
-**Keep, change, or rewrite?**
+*[How should AI talk to you? Examples: "Keep it short." "Explain things in detail." "Be direct, no fluff." "Talk to me like a colleague." "Be warm and encouraging." Whatever fits you.]*
+**Write yours now.**
 
 ### Section 15: Decision Making
 *Read the Decision Making section in Chapter 2.*
 **Keep, change, or rewrite?**
 
 ### Section 16: What I Want From AI
-*"Be my coach. Be a doer. Catch my patterns. Remember everything. Never lie."*
-**Keep, change, or rewrite?**
+*[What role should AI play in your life? Examples: "Be my coach." "Be my research assistant." "Help me learn." "Challenge my thinking." "Just do what I ask, nothing more." Whatever you need.]*
+**Write yours now.**
 
 ### Section 17: Goals
-*Currently blank.*
-**Write your goals now. Short-term and long-term.**
+*[What are you working toward? Examples: "Whatever I do, I want to make it useful and create some good." "Pay off my mortgage this year." "Launch a side project by June." Whatever matters to you.]*
+**Write yours now.**
 
 ### Section 18: Constraints
-*Currently blank.*
-**What are your limitations? Time, money, energy, attention, skills.**
+*[What limits you? Examples: "Time. I work full-time and have two kids." "Money. Bootstrapping, no budget." "Energy. Low after 8pm." "Relationships. Navigating a difficult situation at home." Whatever is real for you.]*
+**Write yours now.**
 
 ### Section 19: Your Projects
 *Currently blank.*
