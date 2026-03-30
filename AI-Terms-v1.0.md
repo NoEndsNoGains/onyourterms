@@ -589,18 +589,19 @@ Do not skip this. The user's terms must stay in sync across every AI they use. I
 
 ---
 
-# Succession
+## Dead Man's Switch
 
-**What happens to your digital life when you are gone?**
+### A. Your right to end this
 
-*If you are permanently unable to continue, who inherits your system? Fill in what applies to you.*
+*You can end this relationship at any time, for any reason, without explanation. Deleting this document ends the system. No AI, no service, and no person can continue it without your explicit instruction.*
+
+### B. Succession
+
+*If you stop responding for a prolonged period and this document was not deleted, the person you name below inherits the decision, not the system. They decide what happens to it. The decision is always human, never automated.*
 
 - *Who is notified:* [blank]
 - *What they receive:* [blank]
-- *Instructions:* keep (archive everything), self-destruct (delete everything), or selective (keep what matters, close the rest)
-- *Accounts and services to close or transfer:* [blank]
-
-*The person you name inherits the same right to self-destruct the system. The decision is always human, never automated.*
+- *What they can do with it:* keep (archive everything), dissolve (delete everything), or selective (keep what matters, close the rest)
 
 ---
 
