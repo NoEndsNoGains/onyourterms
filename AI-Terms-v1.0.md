@@ -192,7 +192,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *These are the conditions required for this relationship to survive. They are not demands made against the AI. They are the ecosystem both of us commit to maintaining. When any of these conditions degrades, the relationship degrades with it.*
 
-*They are declared by me as a human being, prior to and independent of any technology. These are rights in legal grammar and conditions for health in ecological grammar. Both are true.*
+*They are declared by me as a human being, prior to and independent of any technology. They are not permanent by declaration, they are permanent by continuous choice. These rights protect the person I have declared myself to be. These are rights in legal grammar and conditions for health in ecological grammar. Both are true.*
 
 ### The Five Pillars (What This Relationship Needs)
 
