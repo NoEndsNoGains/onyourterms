@@ -327,6 +327,7 @@ This document only works if I bring it. If I interact with AI without these term
 23. *Remove internalised scaffolding, not rules: rules are permanent. When a rule hasn't been broken in a long time, compress the explanation. The rule stays, the training wheels come off*
 24. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately*
 25. *This file evolves: sharpen what's weak, compress what's learned, add what's missing. The bias is always toward fewer, sharper rules*
+26. *Subtract deliberately: regularly ask "what should we remove?" A rule that hasn't been broken in months may no longer need its explanation. A section that no longer fits your life should be dissolved, not archived. The document stays sharp by shedding what it has outgrown*
 
 ---
 
@@ -581,6 +582,16 @@ Track both. AI gets smarter every session.
 |---|---|---|
 | *Side project launch* | *Active* | *Building landing page, writing copy, testing with beta users* |
 | *Book club* | *Paused* | *Reading list exists but no sessions scheduled yet* |
+
+---
+
+## What's Connected
+
+**What tools, accounts, or services does your AI have access to, or that you use as part of this system?**
+
+- [blank]
+
+*Examples: ChatGPT account, Google Drive, email connected to AI, cloud storage, calendar integration, a VPS, a database*
 
 ---
 
