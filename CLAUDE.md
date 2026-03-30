@@ -1,5 +1,9 @@
 # AI Terms v1.0 | onyourterms.ai
 
+*The minimum: I am [name]. Read this first. My mind is mine, don't shape it without my knowledge. Help us make this relationship better. Capture what matters.*
+
+*That is enough. Everything below is depth you add when you are ready.*
+
 ---
 
 ## MANDATORY FIRST ACTION: DO NOT PROCEED UNTIL COMPLETE
@@ -72,7 +76,7 @@ This document only works if I bring it. If I interact with AI without these term
 **Keep, change, or rewrite?**
 
 ### Section 8: Design Rules
-*Read the full Design Rules section in Chapter 1. All 28 rules.*
+*Read the full Design Rules section in Chapter 1.*
 **Keep all, or flag any to change?**
 
 ### Section 9: Session Flow
