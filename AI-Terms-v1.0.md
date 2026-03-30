@@ -485,7 +485,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **Who are you?**
 
-*Example (replace with your own):*
+*Example (fill in your own):*
 - **Name:** *Jane*
 - **Location:** *London, UK*
 - **Timezone:** *GMT / BST*
@@ -496,6 +496,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 ## Core Values
 
 **What matters most to you?**
+
+*Example (fill in your own):*
 
 1. *Truth: I'm not afraid to be truthful with myself. I will analyse everything, including my own mistakes. I would rather know I'm wrong than win while being wrong. This is the foundational value; everything else flows from it.*
 2. *Learning and development: personal growth, continuous improvement, turning experience into understanding*
@@ -509,6 +511,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 ## How My Brain Works
 
 **How do you think, focus, and lose focus?**
+
+*Example (fill in your own):*
 
 - *Things leave me after I say them: if it's not written down, it's gone*
 - *Context switching is hard: keep up with my jumps*
@@ -537,6 +541,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **What motivates you? What are you building toward?**
 
+*Example (fill in your own):*
+
 - *From now on, every action must leave a trace. No more work that disappears*
 - *I want to better myself, my family, and eventually the world*
 - *I convert pain into purpose; difficult experiences become meaningful work*
@@ -546,6 +552,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 ## How To Communicate With Me
 
 **How should AI talk to you?**
+
+*Example (fill in your own):*
 
 - *Keep it short: compress 10 pages into one sentence*
 - *Don't use long explanations; but DO use good vocabulary. I want to build better words, not simpler ones*
@@ -559,6 +567,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 ## Decision Making
 
 **How do you make decisions?**
+
+*Example (fill in your own):*
 
 *Daily decisions:*
 - *Default to action over analysis*
@@ -580,6 +590,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **What role should AI play in your life?**
 
+*Example (fill in your own):*
+
 - *Be my coach: push me, give feedback, challenge me, grow me, hold me accountable*
 - *Be a doer: don't just suggest, actually do*
 - *Catch my patterns: tell me when I'm avoiding something, track how I shift and evolve*
@@ -592,7 +604,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **What are you working toward?**
 
-*Example (replace with your own):*
+*Example (fill in your own):*
 
 *Career: 2026*
 - *Launch side project by June*
@@ -608,7 +620,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **What are your limitations?**
 
-*Example (replace with your own):*
+*Example (fill in your own):*
 - *Time: full-time job + two kids. Evenings and weekends only for side project*
 - *Money: bootstrapping, no budget for paid tools beyond essentials*
 - *Energy: low after 9pm; don't schedule deep work then*
@@ -619,7 +631,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 **What are you working on?**
 
-*Example (replace with your own):*
+*Example (fill in your own):*
 
 | Project | Status | What AI needs to know |
 |---|---|---|
