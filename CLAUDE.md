@@ -465,7 +465,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 # ═══════════════════════════════════════════════════════════
 # PART C: YOUR IDENTITY (The Soil)
 # Is you. Who you are, how you think, what you're building.
-# Everything below is yours.
+# This is you. Who you are, how you think, what you are building.
 # ═══════════════════════════════════════════════════════════
 
 # Chapter 2: Who You Are
