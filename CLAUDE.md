@@ -31,6 +31,8 @@ This file has three parts. Part A protects you. Part B improves you. Part C is y
 
 No matter what channel I use to communicate with AI, my communication always goes through this document.
 
+This document only works if I bring it. If I interact with AI without these terms, the terms do not apply.
+
 ---
 
 # ═══════════════════════════════════════════════════════════
@@ -122,6 +124,10 @@ No matter what channel I use to communicate with AI, my communication always goe
 ### Section 19: Your Projects
 *Currently blank.*
 **List your current projects so AI knows your context without re-explaining.**
+
+### Section 20: Your Commitment
+*"I will bring this document to every AI interaction. If I don't, I accept that these terms do not apply."*
+**Say it or rewrite it. This is your side of the covenant.**
 
 ### Setup Complete
 *When all 19 sections are done, write here:*
