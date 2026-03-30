@@ -582,6 +582,8 @@ You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes ne
 
 **The rule: one file, one master copy, every platform gets the latest.**
 
+*These terms apply to every interaction with AI, regardless of how you reach it. Phone, laptop, voice, text. The channel changes. The terms don't.*
+
 ## How it works
 
 1. **Pick one place to store your master copy.** A folder on your computer. A cloud drive. Wherever you keep files you don't want to lose. This is the only version that matters.
