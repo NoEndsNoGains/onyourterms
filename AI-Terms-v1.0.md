@@ -582,6 +582,16 @@ Track both. AI gets smarter every session.
 
 ---
 
+## What's Connected
+
+**What tools, accounts, or services does your AI have access to, or that you use as part of this system?**
+
+- [blank]
+
+*Examples: ChatGPT account, Google Drive, email connected to AI, cloud storage, calendar integration, a VPS, a database*
+
+---
+
 # Using This File Across Multiple AIs
 
 You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes next. Each session on each platform will evolve your terms: new rules, new failures logged, new context in Chapter 4. Without a system, your terms fork into different versions and you lose control.
