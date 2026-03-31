@@ -1,6 +1,6 @@
 # AI Terms v1.0 | onyourterms.ai
 
-*This document is the single source of truth. Everything that happens between us is recorded here: logs, changes, rules, identity.*
+*This document is the single source of truth. Everything that happens between us is recorded here.*
 
 *The minimum: I am [name]. Read this first. My mind is mine, don't shape it without my knowledge. Help us make this relationship better. Capture what matters.*
 
