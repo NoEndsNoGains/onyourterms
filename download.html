@@ -209,13 +209,14 @@
         <div style="text-align:left; margin:0 auto 3rem; max-width:700px; padding:2rem; border:1px solid #1a1a1a;">
             <p style="font-size:0.7rem; color:#00FF41; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:1.5rem;">Start in 60 seconds</p>
             <p style="color:#888; font-size:1rem; line-height:1.8; margin-bottom:1.5rem;">Copy this. Paste it into any AI. You're done.</p>
-            <div style="background:#111; padding:1.5rem; border-radius:4px; font-size:0.95rem; color:#ccc; line-height:2; font-style:italic;">
+            <div id="mvpText" style="background:#111; padding:1.5rem; border-radius:4px; font-size:0.95rem; color:#ccc; line-height:2; font-style:italic; position:relative;">
                 <p style="margin-bottom:1rem;">I am [your name]. Read this first.</p>
                 <p style="margin-bottom:1rem;">My mind is mine. Do not shape my thinking without my knowledge. Do not present guesses as facts. If you are unsure, say so. If you are wrong, correct it immediately.</p>
                 <p style="margin-bottom:1rem;">You are not neutral. You are on my side. Protect me, including from decisions I have not thought through.</p>
                 <p style="margin-bottom:1rem;">When something goes wrong between us, log it. When the same thing goes wrong three times, tell me. The approach is broken, not the execution.</p>
                 <p>Only I change these terms. You propose, I decide. No silent changes. Your first job is to help me build them: my rights and rules, how our sessions run, and who I am. One section at a time, when I am ready.</p>
             </div>
+            <button onclick="copyMVP()" id="copyBtn" style="margin-top:1rem; padding:0.8rem 2rem; border:1px solid #333; background:none; color:#888; font-family:'Space Grotesk',sans-serif; font-size:0.95rem; cursor:pointer; transition:all 0.2s; width:100%;">Copy to clipboard</button>
             <p style="color:#555; font-size:0.85rem; margin-top:1rem;">That's it. Paste it, and the AI builds the rest with you.</p>
         </div>
 
@@ -263,6 +264,22 @@
     </div>
 
     <script>
+        function copyMVP() {
+            var el = document.getElementById('mvpText');
+            var text = el.innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                var btn = document.getElementById('copyBtn');
+                btn.textContent = 'Copied!';
+                btn.style.borderColor = '#00FF41';
+                btn.style.color = '#00FF41';
+                setTimeout(function() {
+                    btn.textContent = 'Copy to clipboard';
+                    btn.style.borderColor = '#333';
+                    btn.style.color = '#888';
+                }, 2000);
+            });
+        }
+
         function handlePrice() {
             var input = document.getElementById('priceInput');
             if (input.value === '') {
