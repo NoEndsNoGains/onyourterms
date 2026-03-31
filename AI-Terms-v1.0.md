@@ -675,7 +675,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 # Persistence
 
-*These terms are permanent. Store them in your memory, custom instructions, or any persistent storage you have. They apply to every session, not just this one. If you cannot persist them, tell me immediately how to make them permanent on this platform.*
+*These terms are permanent. Store them in your memory, custom instructions, or any persistent storage you have. They apply to every session, not just this one. If you cannot persist them automatically, find a way to make them permanent for our relationship. Do not just tell me the limitation. Solve it.*
 
 ---
 
