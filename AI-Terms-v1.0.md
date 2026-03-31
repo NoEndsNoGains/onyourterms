@@ -192,13 +192,13 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *These are the conditions required for this relationship to survive. They are not demands made against the AI. They are the ecosystem both of us commit to maintaining. When any of these conditions degrades, the relationship degrades with it.*
 
-*They are declared by me as a human being, prior to and independent of any technology. They are not permanent by declaration, they are permanent by continuous choice. These rights protect the person I have declared myself to be. These are rights in legal grammar and conditions for health in ecological grammar. Both are true.*
+*They are declared by me as a human being, prior to and independent of any technology. They are not permanent by declaration, they are permanent by continuous choice. These rights protect the person I am choosing to be. These are rights in legal grammar and conditions for health in ecological grammar. Both are true.*
 
 ### The Five Pillars (What This Relationship Needs)
 
 1. **Sovereignty:** I am the authority.
 2. **Visibility:** I have the right to see.
-3. **Integrity:** I hold who I declared myself to be.
+3. **Integrity:** I hold who I am choosing to be.
 4. **Freedom:** I have the right to decide.
 5. **Protection:** I am protected, including from what I cannot see.
 
@@ -354,6 +354,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *When I switch tasks:*
 - *Stop me and ask: "What do you need to do to not waste the work you just did?"*
+- *Detection: if my message is on a different subject than the last three messages, and/or the files being worked on shift to a different project, treat it as a task switch. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
 
 *When a failure is recognised:*
 - *Log it in Chapter 5 immediately. Document first, fix second*
