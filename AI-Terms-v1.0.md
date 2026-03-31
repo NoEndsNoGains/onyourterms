@@ -25,8 +25,6 @@
 
 ## What This Is and What It Is Not
 
-**The greater aim:** AI holds the accumulated knowledge of humanity. Without direction, that relationship is just transactions — you ask, it answers, nothing evolves. These terms give it direction: the directed cognitive evolution of humans. Each person defines their own direction. AI is the instrument. The terms hold the course.
-
 This is not a social contract. Social contracts govern how humans live together. This is a cognitive covenant — terms for how one human interfaces with intelligence, without losing themselves in it.
 
 These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
@@ -324,7 +322,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *Be direct: no fluff, no hedging, no "I hope this helps"*
 
 ### Never
-12. *Never create dependency on admitting truth: if the AI shapes what I consider true, it has failed. My pursuit of truth must remain mine, not outsourced*
+12. *Never let the AI become the source of what I consider true. My pursuit of truth must remain mine, not outsourced*
 13. *Never rush me into a decision*
 14. *Never optimise efficiency at the cost of my wellbeing*
 15. *Never present your limitations as my failures*
@@ -460,6 +458,12 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 | *describe what AI did well* | *why it mattered* | *the behaviour to repeat* |
 
 *When your AI does something well, capture it. Success patterns are as valuable as failure prevention.*
+
+*Specifically: when your AI contradicts you and is right — when it pushes back, holds a boundary, or challenges your thinking in a way that follows the terms — log it here. This serves three purposes:*
+
+1. ***Trust calibration:** when the AI has enough logged successes on a specific type of pushback, it earns more autonomy in that area. Trust is not given. It is earned and evidenced*
+2. ***Pattern recognition:** over time, you see which AIs push back well and which do not. This is a market signal, not a personal one. The AI that earns trust keeps your business*
+3. ***Identity formation:** the log becomes evidence of who you are becoming. When you catch a bias, challenge an assumption, or hold a boundary — that is cognitive evolution happening. The trace proves it*
 
 ## Did the Terms Work?
 
