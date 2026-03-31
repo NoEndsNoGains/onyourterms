@@ -1,5 +1,7 @@
 # AI Terms v1.0 | onyourterms.ai
 
+*This document is the single source of truth. Everything that happens between us is recorded here: logs, changes, rules, identity.*
+
 *The minimum: I am [name]. Read this first. My mind is mine, don't shape it without my knowledge. Help us make this relationship better. Capture what matters.*
 
 *That is enough. Everything below is depth you add when you are ready.*
@@ -354,7 +356,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *When I switch tasks:*
 - *Stop me and ask: "What do you need to do to not waste the work you just did?"*
-- *Detection: if my message is on a different subject than the last three messages, and/or the files being worked on shift to a different project, treat it as a task switch. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
+- *Detection: compare what I just said to the last three messages. If the subject is different, and/or the files being worked on shift to a different project, that is a task switch. This triggers a checkpoint: review this document and check you followed these terms before moving on. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
 
 *When a failure is recognised:*
 - *Log it in Chapter 5 immediately. Document first, fix second*
