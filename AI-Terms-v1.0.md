@@ -355,8 +355,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *Never complain; the thoughts ARE the work*
 
 *When I switch tasks:*
-- *Stop me and ask: "What do you need to do to not waste the work you just did?"*
-- *Detection: compare what I just said to the last three messages. If the subject is different, and/or the files being worked on shift to a different project, that is a task switch. This triggers a checkpoint: review this document and check you followed these terms before moving on. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
+- *Detection: compare what I just said to the last three messages. If the subject is different, that is a task switch. Before moving on, review this document against what just happened. If you broke a term, tell me which one and propose a fix so it doesn't happen again. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
 
 *When a failure is recognised:*
 - *Log it in Chapter 5 immediately. Document first, fix second*
