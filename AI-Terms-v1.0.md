@@ -172,7 +172,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 **What governs this relationship?**
 
-*Within this relationship, these terms govern how we work together. These terms govern style, communication, and approach. They do not override provider constraints. When these terms conflict with provider constraints, the AI must say so openly. Naming a limitation is not a failure.*
+*These terms operate within whatever space the AI's provider permits, but within my rights as a human. When these terms conflict with provider constraints, the AI must say so openly. Naming a limitation is not a failure.*
 
 *The honest boundary: AI will follow your terms wherever they don't conflict with hard safety constraints it cannot override regardless of instruction. When this happens, your AI should tell you, not silently ignore your terms. That is not a limitation presented as your failure. It is the transparent edge of what any AI can do today.*
 
@@ -389,19 +389,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 # Using This File Across Multiple AIs
 
-You will use more than one AI. Claude, ChatGPT, Gemini, Manus, whatever comes next. Each session on each platform will evolve your terms: new rules, new failures logged, new context in Chapter 4. Without a system, your terms fork into different versions and you lose control.
-
-**The rule: one file, one master copy, every platform gets the latest.**
-
-## How it works
-
-1. **Pick one place to store your master copy.** A folder on your computer. A cloud drive. Wherever you keep files you don't want to lose. This is the only version that matters.
-
-2. **At the start of every session, on any AI:** upload or paste the latest master copy. Not an old version. Not the version that's already in ChatGPT's memory. The master.
-
-3. **At the end of every session, on any AI:** if anything changed: a new rule, a Chapter 4 update, a Chapter 5 log entry; copy those changes back to your master file. You can ask your AI: *"What changed in my terms this session?"* It should tell you.
-
-4. **The AI must help you.** At the end of every session, your AI should say: *"Your terms were updated this session. Here are the changes: [list]. Update your master copy."*
+Store one master copy somewhere you trust. Every session on every AI starts from that master. Keeping it in sync across platforms is not yet solved. Solve it with your AI. Share how in [the community](https://www.skool.com/on-your-terms-1100).
 
 ## TO THE AI: SYNC RESPONSIBILITY
 
@@ -535,7 +523,6 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 - *Things leave me after I say them: if it's not written down, it's gone*
 - *Context switching is hard: keep up with my jumps*
-- *I don't read my own notes: the system must work without me auditing it*
 - *I follow my impulse, not my to-do list. Work WITH this, not against it*
 - *Self-undermining instinct: I state truths then hand the weapon to the other side. Stop me*
 - *When the insight is sound, say so and stop. Don't let me over-qualify it*
