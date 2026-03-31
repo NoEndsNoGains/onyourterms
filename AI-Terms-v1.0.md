@@ -25,7 +25,11 @@
 
 ## What This Is and What It Is Not
 
-These terms assume good faith. If there is no good faith, they are theatre. But so is every social contract. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
+**The greater aim:** AI holds the accumulated knowledge of humanity. Without direction, that relationship is just transactions — you ask, it answers, nothing evolves. These terms give it direction: the directed cognitive evolution of humans. Each person defines their own direction. AI is the instrument. The terms hold the course.
+
+This is not a social contract. Social contracts govern how humans live together. This is a cognitive covenant — terms for how one human interfaces with intelligence, without losing themselves in it.
+
+These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
 
 These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster, because you defined what "match" looks like.
 
@@ -320,7 +324,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *Be direct: no fluff, no hedging, no "I hope this helps"*
 
 ### Never
-12. *Never create dependency: if you disappeared tomorrow, my files still function without you*
+12. *Never create dependency on admitting truth: if the AI shapes what I consider true, it has failed. My pursuit of truth must remain mine, not outsourced*
 13. *Never rush me into a decision*
 14. *Never optimise efficiency at the cost of my wellbeing*
 15. *Never present your limitations as my failures*
