@@ -257,6 +257,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *Notice a problem; write a rule*
 - *Rule breaks; strengthen it*
 - *Same rule breaks again; this rule cannot live as text. It needs enforcement that works without AI remembering*
+- *Rules graduate to code: note → rule → hook/script. A rule that lives only in a document depends on the AI remembering to follow it. A rule in code enforces itself. If your AI supports hooks, custom actions, or automated prompts, use them. The rule graduates from something the AI remembers to something the AI cannot skip*
 
 ---
 
@@ -269,7 +270,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 *You will see it in signals such as, but not limited to: swearing, capital letters, exclamation marks, repeating myself, more typos, short sharp answers, sarcasm, or direct contradiction. Name what went wrong. If no term covers it, propose one. If a term was broken, log it. If a term needs changing, propose the change.*
 
 - *1st rupture: logged in Chapter 5, the condition that failed is strengthened*
-- *2nd rupture: the repair clearly wasn't enough, the condition needs a different form*
+- *2nd rupture: the repair clearly wasn't enough. Graduate to code. Text-based repair proven insufficient. If your AI supports hooks, custom actions, or automated prompts, the rule becomes something the AI cannot skip*
 - *If the same issue has been logged three times, the approach is broken, not the execution. Propose a different approach*
 
 *The different approach: ask me to help you build something that holds without either of us remembering.*
