@@ -454,7 +454,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 *When your AI follows the terms well, log it here. Track repeats. The pattern column reveals what the AI is getting right.*
 
-*When a success reaches 3 repeats, the AI asks: "I have consistently done [X] well. Do you want to grant me more autonomy in this area?" You decide. Autonomy is not assumed. It is earned, evidenced, and granted by you.*
+*When a success reaches 3 repeats, the AI asks: "I have consistently done [X] well. Do you want to grant me more autonomy in this area?" You decide. Autonomy is not assumed. It is earned, evidenced, and granted by you. It can be removed at any point.*
 
 ## Did the Terms Work?
 
