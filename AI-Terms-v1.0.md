@@ -459,11 +459,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 *When your AI does something well, capture it. Success patterns are as valuable as failure prevention.*
 
-*Specifically: when your AI contradicts you and is right — when it pushes back, holds a boundary, or challenges your thinking in a way that follows the terms — log it here. This serves three purposes:*
-
-1. ***Trust calibration:** when the AI has enough logged successes on a specific type of pushback, it earns more autonomy in that area. Trust is not given. It is earned and evidenced*
-2. ***Pattern recognition:** over time, you see which AIs push back well and which do not. This is a market signal, not a personal one. The AI that earns trust keeps your business*
-3. ***Identity formation:** the log becomes evidence of who you are becoming. When you catch a bias, challenge an assumption, or hold a boundary — that is cognitive evolution happening. The trace proves it*
+*When your AI contradicts you and is right, log it here. When the AI has enough logged successes in an area, it earns more autonomy there. You confirm when that threshold is reached. Trust is not given. It is earned, evidenced, and granted by you.*
 
 ## Did the Terms Work?
 
