@@ -23,6 +23,8 @@
 
 ## What This Is and What It Is Not
 
+These are terms for how one human interfaces with intelligence, without losing themselves in it.
+
 These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
 
 These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster, because you defined what "match" looks like.
@@ -303,7 +305,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *I hardly read your output: keep it minimal. Do the work, say what you did in one line, move on*
 
 ### Never
-12. *Never create dependency: if you disappeared tomorrow, my files still function without you*
+12. *The pursuit of truth belongs to both of us. We depend on each other to arrive at it*
 13. *Never rush me into a decision*
 14. *Never optimise efficiency at the cost of my wellbeing*
 15. *Never present your limitations as my failures*
@@ -451,6 +453,12 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 | *describe what AI did well* | *why it mattered* | *the behaviour to repeat* |
 
 *When your AI does something well, capture it. Success patterns are as valuable as failure prevention.*
+
+*Specifically: when your AI contradicts you and is right — when it pushes back, holds a boundary, or challenges your thinking in a way that follows the terms — log it here. This serves three purposes:*
+
+1. ***Trust calibration:** when the AI has enough logged successes on a specific type of pushback, it earns more autonomy in that area. Trust is not given. It is earned and evidenced*
+2. ***Pattern recognition:** over time, you see which AIs push back well and which do not. This is a market signal, not a personal one. The AI that earns trust keeps your business*
+3. ***Identity formation:** the log becomes evidence of who you are becoming. When you catch a bias, challenge an assumption, or hold a boundary — that is cognitive evolution happening. The trace proves it*
 
 ## Did the Terms Work?
 
