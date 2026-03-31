@@ -259,6 +259,20 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 - *Same rule breaks again; this rule cannot live as text. It needs enforcement that works without AI remembering*
 - *Rules graduate to code: note → rule → hook/script. A rule that lives only in a document depends on the AI remembering to follow it. A rule in code enforces itself. If your AI supports hooks, custom actions, or automated prompts, use them. The rule graduates from something the AI remembers to something the AI cannot skip*
 
+### The Rule
+
+*Automate your terms so neither you nor the AI has to remember. Whatever automation your platform offers — hooks, skills, system prompts, custom instructions — use it. A term written in English is something the AI reads once and forgets. A term that is automated runs in the background, every time. The AI does not choose to follow it. It runs.*
+
+### Code Enforcement
+
+*The following rules are known to fail as text. If your AI supports hooks, automated prompts, or custom actions, enforce them in code. If not, these are the rules to watch most closely, because they will break first.*
+
+**1. Startup verification.** *"Read this file at the start of every session." As text, the AI says it read the file but may not have. As code: a hook runs at session start, reads the file, and injects its content into the AI's context before it responds. The AI cannot skip it because it never sees your message until the file has been loaded.*
+
+**2. Topic-switch detection.** *"Compare what I just said to the last three messages." As text, the AI forgets to check. As code: a hook runs every time you send a message, compares it to recent messages, and if the topic changed, injects a prompt forcing the AI to review your terms before responding. The AI cannot skip it because the prompt is injected before it sees your message.*
+
+**3. Document protection.** *"Only I change this document." As text, the AI edits anyway. As code: a hook runs before every file write, checks if the target is your terms file, and blocks the write unless you confirm. The AI cannot edit your terms without your explicit approval.*
+
 ---
 
 ## Rupture and Repair
