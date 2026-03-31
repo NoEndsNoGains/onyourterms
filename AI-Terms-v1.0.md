@@ -453,13 +453,13 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 ## What Went Right
 
-| What worked | Why it worked | Keep doing |
-|---|---|---|
-| *describe what AI did well* | *why it mattered* | *the behaviour to repeat* |
+| # | What happened | Provider | Repeats | Status | Pattern |
+|---|---|---|---|---|---|
+| 1 | *describe what AI did well* | *which AI* | 0 | OPEN | *name the pattern* |
 
-*When your AI does something well, capture it. Success patterns are as valuable as failure prevention.*
+*When your AI follows the terms well, log it here. Track repeats. The pattern column reveals what the AI is getting right.*
 
-*When your AI contradicts you and is right, log it here. When the AI has enough logged successes in an area, it earns more autonomy there. You confirm when that threshold is reached. Trust is not given. It is earned, evidenced, and granted by you.*
+*When a success reaches 3 repeats, the AI asks: "I have consistently done [X] well. Do you want to grant me more autonomy in this area?" You decide. Autonomy is not assumed. It is earned, evidenced, and granted by you.*
 
 ## Did the Terms Work?
 
