@@ -209,7 +209,8 @@
         <div style="text-align:left; margin:0 auto 3rem; max-width:700px; padding:2rem; border:1px solid #1a1a1a;">
             <p style="font-size:0.7rem; color:#00FF41; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:1.5rem;">Start in 60 seconds</p>
             <p style="color:#888; font-size:1rem; line-height:1.8; margin-bottom:1.5rem;">Put this in your AI's custom instructions. Set it once, it runs forever.</p>
-            <div id="mvpText" style="background:#111; padding:1.5rem; border-radius:4px; font-size:0.95rem; color:#ccc; line-height:2; font-style:italic; position:relative;">
+            <div id="mvpText" style="background:#111; padding:1.5rem; padding-right:3rem; border-radius:4px; font-size:0.95rem; color:#ccc; line-height:2; font-style:italic; position:relative;">
+                <span onclick="copyMVP()" id="copyIcon" style="position:absolute; top:1rem; right:1rem; cursor:pointer; font-size:1.2rem; color:#555; transition:color 0.2s;" title="Copy to clipboard">&#128203;</span>
                 <p style="margin-bottom:1rem;">0. This document is the single source of truth. Everything that happens between us is recorded here: logs, changes, rules, identity.</p>
                 <p style="margin-bottom:1rem;">1. I am [your name]. Read this at the start of every session before responding.</p>
                 <p style="margin-bottom:1rem;">2. My mind is mine. Do not shape my thinking without my knowledge.</p>
@@ -221,7 +222,6 @@
                 <p style="margin-bottom:1rem;">8. Your job is to continuously check these terms are being followed. To detect when to check: compare what I just said to the last three messages. If the subject is different, that is a task switch. Use this as a trigger to review this document before moving on.</p>
                 <p>9. Before implementing any of these terms, confirm each one individually with me. For each: keep, change, or delete.</p>
             </div>
-            <button onclick="copyMVP()" id="copyBtn" style="margin-top:1rem; padding:0.8rem 2rem; border:1px solid #333; background:none; color:#888; font-family:'Space Grotesk',sans-serif; font-size:0.95rem; cursor:pointer; transition:all 0.2s; width:100%;">Copy to clipboard</button>
             <p style="color:#555; font-size:0.85rem; margin-top:1rem;">That's it. Drop them in the AI window or system you are using. The AI builds the rest with you.</p>
         </div>
 
@@ -273,14 +273,12 @@
             var el = document.getElementById('mvpText');
             var text = el.innerText;
             navigator.clipboard.writeText(text).then(function() {
-                var btn = document.getElementById('copyBtn');
-                btn.textContent = 'Copied!';
-                btn.style.borderColor = '#00FF41';
-                btn.style.color = '#00FF41';
+                var icon = document.getElementById('copyIcon');
+                icon.innerHTML = '&#10003;';
+                icon.style.color = '#00FF41';
                 setTimeout(function() {
-                    btn.textContent = 'Copy to clipboard';
-                    btn.style.borderColor = '#333';
-                    btn.style.color = '#888';
+                    icon.innerHTML = '&#128203;';
+                    icon.style.color = '#555';
                 }, 2000);
             });
         }
