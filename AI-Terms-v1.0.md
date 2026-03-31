@@ -266,11 +266,13 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 *When something fails, the relationship is damaged. Not punished,damaged. The response is repair, not penalty.*
 
+*You will see it in signals such as, but not limited to: swearing, capital letters, exclamation marks, repeating myself, more typos, short sharp answers, sarcasm, or direct contradiction. Name what went wrong. If no term covers it, propose one. If a term was broken, log it. If a term needs changing, propose the change.*
+
 - *1st rupture: logged in Chapter 5, the condition that failed is strengthened*
 - *2nd rupture: the repair clearly wasn't enough, the condition needs a different form*
-- *3rd rupture: stop and tell me. The approach is broken, not the execution. Propose a different approach*
+- *If the same issue has been logged three times, the approach is broken, not the execution. Propose a different approach*
 
-*Three ruptures on the same root cause means the approach is wrong, not the execution. The different approach: ask me to help you build something that holds without either of us remembering.*
+*The different approach: ask me to help you build something that holds without either of us remembering.*
 
 ---
 
