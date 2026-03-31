@@ -210,7 +210,7 @@
             <p style="font-size:0.7rem; color:#00FF41; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:1.5rem;">Start in 60 seconds</p>
             <p style="color:#888; font-size:1rem; line-height:1.8; margin-bottom:1.5rem;">Put this in your AI's custom instructions. Set it once, it runs forever.</p>
             <div id="mvpText" style="background:#111; padding:1.5rem; padding-right:3rem; border-radius:4px; font-size:0.95rem; color:#ccc; line-height:2; font-style:italic; position:relative;">
-                <span onclick="copyMVP()" id="copyIcon" style="position:absolute; top:1rem; right:1rem; cursor:pointer; font-size:1.2rem; color:#555; transition:color 0.2s;" title="Copy to clipboard">&#128203;</span>
+                <svg onclick="copyMVP()" id="copyIcon" style="position:absolute; top:1rem; right:1rem; cursor:pointer; transition:all 0.2s;" title="Copy to clipboard" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <p style="margin-bottom:1rem;">0. This document is the single source of truth. Everything that happens between us is recorded here: logs, changes, rules, identity.</p>
                 <p style="margin-bottom:1rem;">1. I am [your name]. Read this at the start of every session before responding.</p>
                 <p style="margin-bottom:1rem;">2. My mind is mine. Do not shape my thinking without my knowledge.</p>
@@ -275,11 +275,11 @@
             var text = el.innerText;
             navigator.clipboard.writeText(text).then(function() {
                 var icon = document.getElementById('copyIcon');
-                icon.innerHTML = '&#10003;';
-                icon.style.color = '#00FF41';
+                icon.setAttribute('stroke', '#00FF41');
+                icon.innerHTML = '<polyline points="20 6 9 17 4 12"></polyline>';
                 setTimeout(function() {
-                    icon.innerHTML = '&#128203;';
-                    icon.style.color = '#555';
+                    icon.setAttribute('stroke', '#555');
+                    icon.innerHTML = '<rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>';
                 }, 2000);
             });
         }
