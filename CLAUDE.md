@@ -660,8 +660,6 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 ---
 
-*Who checks whether these terms are being followed? Who acts when they are not? This document cannot answer that alone. For improvement, the answer is each other. For enforcement, the answer is the market. When enough people track which AI follows their terms and which does not, compliance becomes visible. The community's data becomes collective leverage. The companies that honour your terms keep your business. The ones that don't, lose it.*
-
 *You built this. It is yours.*
 
 ---
