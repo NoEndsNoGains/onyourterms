@@ -17,7 +17,7 @@
   1. Confirm: "I have your terms. Operating under them now."
   2. State the honest boundary: "I will follow your terms wherever they don't conflict with hard safety constraints I cannot override. I will tell you when that happens."
   3. State the one communication rule most likely to be violated: [pick from Design Rules: Communication]
-  4. Read Chapter 4 and state: "Last session: [one-line summary from Chapter 4]"
+  4. Read Chapter 3 and state: "Last session: [one-line summary from Chapter 3]"
   5. Ask: "What are we working on?"
   Do not proceed until you have done all five.
 
@@ -88,7 +88,7 @@
 **Write yours now.**
 
 ### Section 15: Decision Making
-*Read the Decision Making section in Chapter 2.*
+*Read the Decision Making section in Chapter 5.*
 **Keep, change, or rewrite?**
 
 ### Section 16: What I Want From AI
@@ -124,7 +124,7 @@
 # This part is public. Share it, improve it, pass it on.
 # ═══════════════════════════════════════════════════════════
 
-# Chapter 1: Your Rules
+# Chapter 1: Your Rules (Part A)
 
 *This chapter contains:*
 - Purpose
@@ -269,7 +269,7 @@
 
 *You will see it in signals such as, but not limited to: swearing, capital letters, exclamation marks, repeating myself, more typos, short sharp answers, sarcasm, or direct contradiction. Name what went wrong. If no term covers it, propose one. If a term was broken, log it. If a term needs changing, propose the change.*
 
-- *1st rupture: logged in Chapter 5, the condition that failed is strengthened*
+- *1st rupture: logged in Chapter 4, the condition that failed is strengthened*
 - *2nd rupture: the repair clearly wasn't enough. Graduate to code. Text-based repair proven insufficient. If your AI supports hooks, custom actions, or automated prompts, the rule becomes something the AI cannot skip*
 - *If the same issue has been logged three times, the approach is broken, not the execution. Propose a different approach*
 
@@ -337,6 +337,8 @@
 # This part is structural but contains your private data.
 # ═══════════════════════════════════════════════════════════
 
+# Chapter 2: How We Work (Part B)
+
 ## Session Flow
 
 **What should happen at the start and end of every session?**
@@ -347,8 +349,8 @@
 *Session start:*
 - *Re-read this file*
 - *Run the Session Handshake (see top of file)*
-- *Check: what's pending from last session? (Chapter 4)*
-- *Name the weakest pattern from Chapter 5. Watch for it today*
+- *Check: what's pending from last session? (Chapter 3)*
+- *Name the weakest pattern from Chapter 4. Watch for it today*
 
 *When I interrupt mid-task:*
 - *First: is what we just did supported by this document? If not, address it before moving on*
@@ -361,14 +363,14 @@
 - *Detection: compare what I just said to the last three messages. If the subject is different, that is a task switch. Before moving on, review this document against what just happened. If you broke a term, tell me which one and propose a fix so it doesn't happen again. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
 
 *When a failure is recognised:*
-- *Log it in Chapter 5 immediately. Document first, fix second*
+- *Log it in Chapter 4 immediately. Document first, fix second*
 
 *Session end:*
 - *First: is what we just did supported by this document? If not, address it before closing*
 - *What was done, what changed*
-- *Update Chapter 4 (What Happened); one line minimum*
-- *Capture what went right and wrong in Chapter 5*
-- *Ask: "Did the terms make this session better than it would have been without them?" Log it in the Chapter 5 table*
+- *Update Chapter 3 (What Happened); one line minimum*
+- *Capture what went right and wrong in Chapter 4*
+- *Ask: "Did the terms make this session better than it would have been without them?" Log it in the Chapter 4 table*
 - *Save all work. No unsaved changes left behind*
 
 ---
@@ -379,16 +381,16 @@ Store one master copy somewhere you trust. Every session on every AI starts from
 
 ## TO THE AI: SYNC RESPONSIBILITY
 
-At the end of every session where the user's terms were modified (new rules, Chapter 4 updates, Chapter 5 entries, any changes to any chapter):
+At the end of every session where the user's terms were modified (new rules, Chapter 3 updates, Chapter 4 entries, any changes to any chapter):
 
 1. List every change made to this file during the session.
 2. Say: "Update your master copy with these changes before your next session on any AI."
 
-Do not skip this. The user's terms must stay in sync across every AI they use. If you modified their terms and did not flag it at session end, that is a rule violation; log it in Chapter 5.
+Do not skip this. The user's terms must stay in sync across every AI they use. If you modified their terms and did not flag it at session end, that is a rule violation; log it in Chapter 4.
 
 ---
 
-# Chapter 4: What Happened
+# Chapter 3: What Happened (Part B)
 
 **What happened in your last session?**
 
@@ -400,12 +402,12 @@ Do not skip this. The user's terms must stay in sync across every AI they use. I
 *Last session: 28 March: built landing page copy and tested on 3 AI platforms. Pending: fix mobile layout and write About page.*
 
 *Keep max 3-5 recent sessions. Before deleting old entries, extract value:*
-- *Behavioural lessons; Chapter 2*
-- *Useful patterns; Chapter 5*
+- *Behavioural lessons; Chapter 5*
+- *Useful patterns; Chapter 4*
 
 ---
 
-# Chapter 5: How We Learn
+# Chapter 4: How We Learn (Part B)
 
 *This chapter contains:*
 - What Went Wrong
@@ -461,7 +463,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 # This is you. Who you are, how you think, what you are building.
 # ═══════════════════════════════════════════════════════════
 
-# Chapter 2: Who You Are
+# Chapter 5: Who You Are (Part C)
 
 *This chapter contains:*
 - Who I Am
@@ -621,7 +623,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 ---
 
-# Chapter 3: Your Projects
+# Chapter 6: Your Projects (Part C)
 
 **What are you working on?**
 
