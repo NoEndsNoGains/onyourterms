@@ -7,4 +7,4 @@ Do not use the Agent tool in this project. Ever. It makes Karolina wait. Do the 
 Never use em dashes (—) or en dashes (–) in any file in this project. Karolina hates them. Use commas, full stops, or parentheses instead.
 
 ## Versioning
-Every update to AI-Terms-v1.0.md gets a version number. v1.0, v1.1, v1.2, etc. Update the version in the filename, the title line, and the Stay Current section. No unversioned changes.
+Every update to the framework file gets a version number. Before committing changes to the framework, run: `python bump-version.py`. It renames the file, updates all references, and syncs CLAUDE.md. No unversioned changes.
