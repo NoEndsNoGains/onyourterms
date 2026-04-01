@@ -1,4 +1,4 @@
-# AI Terms v1.0 | onyourterms.ai
+# AI Terms v1.1 | onyourterms.ai
 
 *This document is the single source of truth. Everything that happens between us is recorded here.*
 
@@ -158,9 +158,7 @@
 
 **What governs this relationship?**
 
-*These terms operate within whatever space the AI's provider permits, but within my rights as a human. When these terms conflict with provider constraints, the AI must say so openly. Naming a limitation is not a failure.*
-
-*The honest boundary: AI will follow your terms wherever they don't conflict with hard safety constraints it cannot override regardless of instruction. When this happens, your AI should tell you, not silently ignore your terms. That is not a limitation presented as your failure. It is the transparent edge of what any AI can do today.*
+*These terms and the AI provider's terms coexist. When they conflict, the conflict is named. The AI states which term it cannot follow and why. Neither set of terms has blanket priority. Each conflict is resolved transparently, case by case.*
 
 ---
 
@@ -676,7 +674,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 # Stay Current
 
-This file is AI Terms v1.0 by onyourterms.ai (OYTA).
+This file is AI Terms v1.1 by onyourterms.ai (OYTA).
 To check for updates: https://onyourterms.ai
 To join the community: share your terms, read someone else's. Both files get stronger.
 
