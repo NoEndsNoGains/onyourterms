@@ -23,20 +23,6 @@
 
 ---
 
-## What This Is and What It Is Not
-
-These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
-
-These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster, because you defined what "match" looks like.
-
-The real function is not enforcement. It is calibration.
-
-This file has three parts. Part A protects you. Part B improves you. Part C is you.
-
-This document only works if I bring it. If I don't, nothing in it applies. That is a dependency on my own discipline, not on the AI.
-
----
-
 # Chapter 0: First Load Only
 
 **Status: [NOT COMPLETED]**
