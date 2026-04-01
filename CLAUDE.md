@@ -23,8 +23,6 @@
 
 ## What This Is and What It Is Not
 
-These are terms for how one human interfaces with intelligence, without losing themselves in it.
-
 These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
 
 These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster, because you defined what "match" looks like.

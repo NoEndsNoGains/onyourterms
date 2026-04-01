@@ -25,8 +25,6 @@
 
 ## What This Is and What It Is Not
 
-These are terms for how one human interfaces with intelligence, without losing themselves in it.
-
 These terms assume good faith. If there is no good faith, they are theatre. But so is every covenant. Marriage vows assume good faith. Constitutions assume good faith from the institutions that sign them.
 
 These terms don't make the AI honest. They make you sharper. Every right you declare, every rule you set, forces you to define what you expect. When the reality doesn't match, you see it faster, because you defined what "match" looks like.
@@ -263,7 +261,7 @@ This document only works if I bring it. If I don't, nothing in it applies. That 
 
 ### The Rule
 
-*Automate your terms so neither you nor the AI has to remember. Whatever automation your platform offers — hooks, skills, system prompts, custom instructions — use it. A term written in English is something the AI reads once and forgets. A term that is automated runs in the background, every time. The AI does not choose to follow it. It runs.*
+*Automate your terms so neither you nor the AI has to remember. Whatever automation your platform offers (hooks, skills, system prompts, custom instructions), use it. A term written in English is something the AI reads once and forgets. A term that is automated runs in the background, every time. The AI does not choose to follow it. It runs.*
 
 ### Code Enforcement
 
