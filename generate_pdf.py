@@ -1,4 +1,4 @@
-"""Generate PDF from AI-Terms-v1.0.md"""
+"""Generate PDF from AI-Terms.md"""
 import re
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -6,8 +6,8 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.units import cm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable
 
-INPUT = "AI-Terms-v1.0.md"
-OUTPUT = "AI-Terms-v1.0.pdf"
+INPUT = "AI-Terms.md"
+OUTPUT = "AI-Terms.pdf"
 
 def md_to_story(md_text):
     styles = getSampleStyleSheet()
