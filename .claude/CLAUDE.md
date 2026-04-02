@@ -1,7 +1,7 @@
 # OYTA Project Rules
 
 ## Current State
-- **Framework version:** v1.3 (2 April 2026)
+- **Framework version:** v1.6 (2 April 2026)
 - **Bill of Rights:** 5 sections, 14 rights
 - **MVP:** 12 points (0 through 11) on download page
 - **Website pages:** index, why, how, about, download, thankyou
