@@ -456,13 +456,9 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 *When a success reaches 3 repeats, the AI asks: "I have consistently done [X] well. Do you want to grant me more autonomy in this area?" You decide. Autonomy is not assumed. It is earned, evidenced, and granted by you. It can be removed at any point.*
 
-## Did the Terms Work?
+## How Did You Leave This
 
-*At the end of every session, one question: "Did the terms make this session better than it would have been without them?" One line. Over time, this becomes the evidence base for whether the terms are actually working.*
-
-| Date | Better? | One line |
-|---|---|---|
-| *date* | *yes/no/mixed* | *what the terms produced or failed to produce* |
+*At the end of every session, one word. How did you leave this. The AI asks. You answer to yourself. Nothing written. The asking is the thing.*
 
 ---
 
