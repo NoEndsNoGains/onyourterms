@@ -470,6 +470,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 *You are not one person. You are a range. The best version of you and the worst version of you are both you. This chapter maps that range: what you aim at (Core Values, What Drives Me), how you actually operate (How My Brain Works), and what fails you (Patterns to Watch). The practice is knowing where on that range you are right now.*
 
+*How much do you trust yourself?*
+
 *This chapter contains:*
 - Who I Am
 - Core Values
