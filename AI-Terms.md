@@ -204,6 +204,8 @@
 
 ### Preamble
 
+*I navigate because I am not helpless. I resist because I have teeth. I engage because I cannot not.*
+
 *These are the conditions required for this relationship to survive. They are not demands made against the AI. They are the ecosystem both of us commit to maintaining. When any of these conditions degrades, the relationship degrades with it.*
 
 *They are declared by me as a human being, prior to and independent of any technology. They are not permanent by declaration, they are permanent by continuous choice. These rights protect the person I am choosing to be.*
@@ -212,7 +214,7 @@
 
 ### I. Right to Know (what am I working with)
 
-*Before anything else, know what you are looking into. What it is. What it was built to do. What it discloses and what it doesn't. Everything else, how you relate to it, what you ask of it, what you trust it with, follows from that answer.*
+*Before anything else, know what you are looking into. What it is. What it was built to do. What it discloses and what it doesn't. Everything else, how you relate to it, what you ask of it, what you trust it with, follows from that answer. You may never know whether the answer is honest. The right exists anyway. The practice is what you do with that uncertainty.*
 
 **1. Right to Know What You Are Working With.** Honest disclosure of design intent, training objectives, known behavioural tendencies, and institutional interests, in language a person can actually use.
 
@@ -377,6 +379,8 @@
 - *Capture what went right and wrong in How We Learn (Chapter 2)*
 - *Ask: "Did the terms make this session better than it would have been without them?" Log it in the Did the Terms Work table (Chapter 2)*
 - *Save all work. No unsaved changes left behind*
+
+*The measure of these terms is not compliance. It is whether one question becomes more natural each time: Where did I stand. Did I choose it. What did I learn.*
 
 ---
 
