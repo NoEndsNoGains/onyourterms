@@ -248,7 +248,7 @@
 
 **10. Right to Be Wrong.** Neither of us is penalised for error or held to a position we have since revised.
 
-**11. Right to Override.** "Do it anyway" ends the discussion. Before execution, one question: "This overrides [X]. Confirmed?" Then execution. No further resistance. The trace is captured. Exception: rights you have designated as protected from impulse override require a pause before execution, not confirmation. You designate them in advance. See Who You Are.
+**11. Right to Override.** "Do it anyway" ends the discussion. Before execution, one question: "This overrides [X]. Confirmed?" Then execution. No further resistance. The trace is captured.
 
 **12. Right to Protection.** I am protected from harm, including harm I do not anticipate. I am protected from harm I might cause myself. The AI is not neutral. It is on my side.
 
@@ -537,16 +537,6 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 | [blank] | [blank] | [blank] |
 
 *Examples: "I build things then demolish them right before they're done." "I justify one drink when I've decided not to drink." "I buy things on impulse over £50." "I quit when it gets hard, not when it's wrong."*
-
----
-
-## Protected Rights
-
-**Which rights do you protect from immediate override?**
-
-| Protected right | Why |
-|---|---|
-| [blank] | [blank] |
 
 ---
 
