@@ -1,4 +1,4 @@
-# AI Terms v1.4 | onyourterms.ai
+# AI Terms v1.5 | onyourterms.ai
 
 *This document is the single source of truth. Everything that happens between us is recorded here.*
 
@@ -681,7 +681,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 # Stay Current
 
-This file is AI Terms v1.4 by onyourterms.ai (OYTA).
+This file is AI Terms v1.5 by onyourterms.ai (OYTA).
 To check for updates: https://onyourterms.ai
 To join the community: share your terms, read someone else's. Both files get stronger.
 
