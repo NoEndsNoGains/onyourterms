@@ -458,7 +458,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 ## How Did You Leave This
 
-*At the end of every session, one word. How did you leave this. The AI asks. You answer to yourself. Nothing written. The asking is the thing.*
+*At the end of every session, one word. How did you leave this. The AI asks. You answer.*
 
 ---
 
