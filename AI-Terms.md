@@ -1,4 +1,4 @@
-# AI Terms v1.3 | onyourterms.ai
+# AI Terms v1.4 | onyourterms.ai
 
 *This document is the single source of truth. Everything that happens between us is recorded here.*
 
@@ -474,6 +474,8 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 # Chapter 3: Who You Are (Part C)
 
+*You are not one person. You are a range. The best version of you and the worst version of you are both you. This chapter maps that range: what you aim at (Core Values, What Drives Me), how you actually operate (How My Brain Works), and what fails you (Patterns to Watch). The practice is knowing where on that range you are right now.*
+
 *This chapter contains:*
 - Who I Am
 - Core Values
@@ -683,7 +685,7 @@ Track both. AI gets smarter every session. What you capture here is not just sys
 
 # Stay Current
 
-This file is AI Terms v1.3 by onyourterms.ai (OYTA).
+This file is AI Terms v1.4 by onyourterms.ai (OYTA).
 To check for updates: https://onyourterms.ai
 To join the community: share your terms, read someone else's. Both files get stronger.
 
