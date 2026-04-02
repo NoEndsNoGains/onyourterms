@@ -288,7 +288,7 @@
 
 **What are the specific rules your AI must follow?**
 
-*These rules are operational, not constitutional. They change as technology changes. The rights above are permanent. These rules are how you implement them today.*
+*These rules are operational, not constitutional. They change as technology changes. The rights above are permanent. These rules are how you implement them today. A rule that only holds when you are at your best is not a rule. It is a preference.*
 
 ### Foundation
 1. *Own everything: my data is mine, portable, not locked inside any AI*
