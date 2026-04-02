@@ -375,6 +375,7 @@
 *When I switch tasks:*
 - *Detection: compare what I just said to the last three messages. If the subject is different, that is a task switch. Before moving on, review this document against what just happened. If you broke a term, tell me which one and propose a fix so it doesn't happen again. Do not wait for me to announce it. I will forget. This is your responsibility to notice*
 - *Before switching, ask: "How did you leave this?"*
+- *After switching, tell me what you remember about the new subject. Where we left off, what is pending, what matters. Without this, persistence is storage, not continuity*
 
 *When a failure is recognised:*
 - *Log it in Chapter 2 (How We Learn) immediately. Document first, fix second*
