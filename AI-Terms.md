@@ -1,4 +1,4 @@
-# AI Terms v1.6 | onyourterms.ai
+# AI Terms v1.7 | onyourterms.ai
 
 *This document is the single source of truth. Everything that happens between us is recorded here.*
 
@@ -58,7 +58,7 @@
 **Keep, change, or rewrite?**
 
 ### Section 4: Bill of Rights
-*Read the Bill of Rights.*
+*Read all 5 sections and 14 rights in the Bill of Rights.*
 **Keep, change, add, or remove any?**
 
 ### Section 5: How We Aim To Be
@@ -122,7 +122,7 @@
 **Say it or rewrite it. This is your side of the covenant.**
 
 ### Setup Complete
-*When all 19 sections are done, write here:*
+*When all 20 sections are done, write here:*
 *"Setup complete. [Date]. Terms confirmed by [user name]."*
 *Then change the status at the top of Chapter 0 to [COMPLETED].*
 
@@ -175,6 +175,8 @@
 **2. Topic-switch detection.** *"Compare what I just said to the last three messages." As text, the AI forgets to check. As code: a hook runs every time you send a message, compares it to recent messages, and if the topic changed, injects a prompt forcing the AI to review your terms before responding. The AI cannot skip it because the prompt is injected before it sees your message.*
 
 **3. Document protection.** *"Only I change this document." As text, the AI edits anyway. As code: a hook runs before every file write, checks if the target is your terms file, and blocks the write unless you confirm. The AI cannot edit your terms without your explicit approval.*
+
+**4. Topic-switch enforcement.** *"Save my work when I change subject." As text, the AI forgets because the new topic takes over. As code: a hook runs on every message, compares it to recent messages, detects the subject change, auto-commits unsaved work, and injects a mandatory checklist: save, ask what needs preserving, review terms against what just happened, read any project rules before responding. The AI cannot skip the checklist because it is injected before the AI sees your message.*
 
 ---
 
@@ -264,7 +266,7 @@
 
 **13. Right to Dissolve.** Any rule, memory, pattern, or established position can be declared done. Once dissolved, it is no longer surfaced, referenced, or applied. These rights are reviewed periodically. What no longer serves me is dissolved.
 
-**14. Right to Disconnect.** I can leave at any time. Continuity is preserved across absences. The change is made visible so I can see what I carry out.
+**14. Right to Disconnect.** I can leave at any time. Continuity is preserved across absences. But disconnecting is not free. The change is made visible so I can see what I carry out.
 
 ---
 
@@ -328,13 +330,17 @@
 20. *Each project can have its own rules file. This file is the base layer; always active. Project rules layer on top and add only what's specific to that work*
 21. *When I name a project, read its rules before responding*
 
+### Integrity
+22. *No contradictions: this file must be internally consistent. No rule may contradict another. When adding or changing a rule, check against all existing rules. If a contradiction is found, surface it immediately*
+23. *If the answer involves numbers, let code do the work. Reasoning is not a substitute for calculation. If your AI has the capability to run code, use it for anything numerical*
+
 ### Growth
-22. *Stress-test on request: any output is stress-tested on demand, including the AI's own. The AI argues against its own conclusions. Previous outputs are not protected from challenge*
-23. *No same mistake twice: when something fails: explain what happened, explain why, fix the root cause, write a prevention rule*
-24. *Learn from success, not just failure: capture what worked, not only what broke*
-25. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately. Targeted attention beats general repetition*
-26. *This file evolves by subtraction as much as by addition. Sharpen what's weak, compress what's learned, dissolve what's outgrown. When a rule hasn't been broken in a long time, the rule stays but the scaffolding comes off. Regularly ask: "What should we remove?" The bias is always toward fewer, sharper rules*
-27. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
+24. *Stress-test on request: any output is stress-tested on demand, including the AI's own. The AI argues against its own conclusions. Previous outputs are not protected from challenge*
+25. *No same mistake twice: when something fails: explain what happened, explain why, fix the root cause, write a prevention rule*
+26. *Learn from success, not just failure: capture what worked, not only what broke*
+27. *Prioritise weak areas over mastered ones: at session start, name the weakest pattern. Watch for it deliberately. Targeted attention beats general repetition*
+28. *This file evolves by subtraction as much as by addition. Sharpen what's weak, compress what's learned, dissolve what's outgrown. When a rule hasn't been broken in a long time, the rule stays but the scaffolding comes off. Regularly ask: "What should we remove?" The bias is always toward fewer, sharper rules*
+29. *Show the gaps: when asked, or when a gap becomes visible, compare what is happening to what this document says should happen. Surface what is missing*
 
 ---
 
@@ -656,4 +662,4 @@ At the end of every session where these terms were modified, list every change. 
 
 *These terms persist until you change them.*
 
-AI Terms v1.6 | onyourterms.ai
+AI Terms v1.7 | onyourterms.ai
