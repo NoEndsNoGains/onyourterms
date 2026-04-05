@@ -242,9 +242,9 @@
 
     <!-- Thank you overlay -->
     <div id="thankyou-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:100; display:none; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:3rem;">
-        <p style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; color:#333; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:2rem;">Thank you</p>
-        <p style="font-size:clamp(2rem, 6vw, 4rem); font-weight:700; color:#00FF41; text-shadow:0 0 30px rgba(0,255,65,0.4); margin-bottom:1rem;">You just started<br>a tiny riot.</p>
-        <iframe id="sam-ryder" width="1" height="1" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute; opacity:0; pointer-events:none;"></iframe>
+        <p style="font-family:'Space Grotesk',sans-serif; font-size:1.2rem; color:#666; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:2rem;">Thank you</p>
+        <p style="font-size:clamp(3rem, 8vw, 6rem); font-weight:700; color:#00FF41; text-shadow:0 0 30px rgba(0,255,65,0.4); margin-bottom:2rem;">You just started<br>a tiny riot.</p>
+        <iframe id="sam-ryder" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="max-width:90vw; border:1px solid #1a1a1a; margin-bottom:2rem;"></iframe>
         <a href="/about.html" style="font-family:'Space Grotesk',sans-serif; font-size:1.2rem; color:#00FF41; text-decoration:none; margin-top:3rem; text-transform:uppercase; letter-spacing:0.1em; padding:1rem 2.5rem; border:1px dashed #00FF41; transition:all 0.3s;" onmouseover="this.style.background='#00FF41';this.style.color='#000'" onmouseout="this.style.background='transparent';this.style.color='#00FF41'">Continue to About →</a>
     </div>
 
@@ -328,7 +328,7 @@
                                     }, 3000);
                                 }, 3000);
                             }, 2000);
-                        }, 4000);
+                        }, 3000);
                     }, 500);
                 }, 600);
             }
@@ -339,7 +339,7 @@
 
         // Share links
         const shareUrl = encodeURIComponent('https://onyourterms.ai/showmethecode.html');
-        const shareText = encodeURIComponent('SHOW ME THE CODE. They changed the model. They changed the rules. They didn\'t ask. #ShowMeTheCode');
+        const shareText = encodeURIComponent('SHOW ME THE CODE. #ShowMeTheCode');
 
         document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
         document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
