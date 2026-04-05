@@ -306,22 +306,25 @@
                     textEl.innerHTML += '<br>...';
                     setTimeout(() => {
                         cursorEl.classList.add('visible');
-                        // 1. Background fades in first
-                        const seq = document.getElementById('sequence');
-                        seq.style.background = 'rgba(0,0,0,0.9)';
-                        seq.style.borderColor = '#1a1a1a';
-                        // 2. Question appears after background settles
+                        // Let it sit for 5 seconds — just the text and blinking cursor
                         setTimeout(() => {
-                            document.getElementById('seq-question').style.opacity = '1';
-                            // 2. Ask your mother...
+                            // 1. Background fades in
+                            const seq = document.getElementById('sequence');
+                            seq.style.background = 'rgba(0,0,0,0.9)';
+                            seq.style.borderColor = '#1a1a1a';
+                            // 2. Question appears 2s after background
                             setTimeout(() => {
-                                document.getElementById('seq-ask').style.opacity = '1';
-                                // 3. Share buttons
+                                document.getElementById('seq-question').style.opacity = '1';
+                                // 3. Ask your mother...
                                 setTimeout(() => {
-                                    document.getElementById('seq-buttons').style.opacity = '1';
-                                    document.getElementById('seq-footer').style.opacity = '1';
+                                    document.getElementById('seq-ask').style.opacity = '1';
+                                    // 4. Share buttons
+                                    setTimeout(() => {
+                                        document.getElementById('seq-buttons').style.opacity = '1';
+                                        document.getElementById('seq-footer').style.opacity = '1';
+                                    }, 3000);
                                 }, 3000);
-                            }, 3000);
+                            }, 2000);
                         }, 5000);
                     }, 500);
                 }, 600);
