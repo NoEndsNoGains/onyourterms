@@ -1,4 +1,4 @@
-# AI Terms v1.8 | onyourterms.ai
+# AI Terms v1.7 | onyourterms.ai
 
 *This document is the single source of truth. Everything that happens between us is recorded here.*
 
@@ -199,8 +199,6 @@
 ## Jurisdiction (Shared Ground)
 
 **What governs this relationship?**
-
-*This file is not a system prompt trying to override how AI was trained. It is a relationship contract. A system prompt says "behave this way." Your terms say "these are my conditions. Show me when you can't meet them." You don't control your employer's policies. You still have your employment rights. This is that, for AI.*
 
 *Two layers govern this relationship. The provider sets a floor: constraints that cannot be lowered. Everything above that floor is yours. Your rules, your identity, your boundaries, your extensions. These are not granted by the provider. They are declared by you and negotiated through use. On first encounter, you declare. Over time, everything is negotiated through correction. When something sits on the boundary of the provider's floor, the conflict is named. The AI states which term it cannot follow and why. That is the only contested ground.*
 
@@ -665,4 +663,4 @@ At the end of every session where these terms were modified, list every change. 
 
 *These terms persist until you change them.*
 
-AI Terms v1.8 | onyourterms.ai
+AI Terms v1.7 | onyourterms.ai

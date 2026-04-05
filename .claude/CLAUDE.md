@@ -1,7 +1,7 @@
 # OYTA Project Rules
 
 ## Current State
-- **Framework version:** v1.8 (5 April 2026)
+- **Framework version:** v1.7 (2 April 2026)
 - **Bill of Rights:** 5 sections, 14 rights
 - **MVP:** 12 points (0 through 11) on download page
 - **Website pages:** index, why, how, about, download, thankyou
@@ -11,6 +11,9 @@
 - **Strategy:** OYTA Strategy.md in vault. Three enforcement layers: standard (framework), enforcement (audit AI), pressure (community)
 - **Jobs To Be Done:** shareable list at Projects/OYTA/Jobs To Be Done.md in vault
 - **TODO:** Projects/OYTA/TODO.md in vault. Keep this up to date every session
+
+## Protected files
+AI-Terms.md and download.html are Karolina's documents. NEVER edit without her explicit approval. Propose changes, wait for confirmation. Website version numbers always match the framework version, not the website's own changes.
 
 ## Never use Agents
 Do not use the Agent tool in this project. Ever. It makes Karolina wait. Do the work directly.
