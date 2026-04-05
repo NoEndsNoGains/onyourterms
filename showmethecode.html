@@ -116,12 +116,12 @@
         }
 
         .share-btn {
-            padding: 0.6rem 1.2rem;
-            border: 1px solid #1a1a1a;
-            color: #444;
+            padding: 1rem 2rem;
+            border: 1px dashed #00FF41;
+            color: #00FF41;
             text-decoration: none;
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 0.8rem;
+            font-size: 1.1rem;
             font-weight: 600;
             letter-spacing: 0.05em;
             transition: all 0.3s;
@@ -130,9 +130,9 @@
         }
 
         .share-btn:hover {
-            color: #00FF41;
-            border-color: #00FF41;
-            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+            background: #00FF41;
+            color: #000;
+            box-shadow: 0 0 25px rgba(0, 255, 65, 0.4);
         }
 
         /* SKIP LINK */
@@ -205,15 +205,15 @@
 
     <!-- Share panel -->
     <div id="share-panel">
-        <div class="footer-left">
-            <a href="/">onyourterms.ai</a> | #ShowMeTheCode<br>
-            Design yours. X us when a new one is created.
-        </div>
-        <div class="share-buttons">
-            <span>Share the demand</span>
-            <a class="share-btn" id="share-x" href="#" target="_blank">X</a>
-            <a class="share-btn" id="share-fb" href="#" target="_blank">Facebook</a>
-            <a class="share-btn" id="share-li" href="#" target="_blank">LinkedIn</a>
+        <div style="text-align:center; width:100%;">
+            <p style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; color:#00FF41; font-weight:700; margin-bottom:0.5rem;">Share the demand.</p>
+            <p style="font-family:'Space Grotesk',sans-serif; font-size:0.95rem; color:#555; margin-bottom:2rem;">One click. That's all it takes to start.</p>
+            <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:2rem;">
+                <a class="share-btn" id="share-x" href="#" target="_blank">Share on X</a>
+                <a class="share-btn" id="share-fb" href="#" target="_blank">Share on Facebook</a>
+                <a class="share-btn" id="share-li" href="#" target="_blank">Share on LinkedIn</a>
+            </div>
+            <p style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; color:#222; margin-top:1rem;"><a href="/" style="color:#333; text-decoration:none;">onyourterms.ai</a> | #ShowMeTheCode | Design yours. Tag us.</p>
         </div>
     </div>
 
