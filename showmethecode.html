@@ -284,7 +284,7 @@
         });
 
         // Typewriter
-        const message = '> Show me the code...';
+        const message = '> Show me the code';
         const textEl = document.getElementById('text');
         const cursorEl = document.getElementById('cursor');
         let i = 0;
@@ -296,28 +296,30 @@
 
                 let delay = 80;
                 if (message[i - 1] === ' ') delay = 50;
-                if (message[i - 1] === '.') delay = 400;
 
                 setTimeout(typeWriter, delay);
             } else {
-                // Typing done. Sequence starts
+                // Typing done. Add dots on new line, then cursor
                 setTimeout(() => {
-                    cursorEl.classList.add('visible');
-                    // Show panel container
-                    document.getElementById('sequence').style.opacity = '1';
-                    // 1. Question
+                    textEl.innerHTML += '<br>...';
                     setTimeout(() => {
-                        document.getElementById('seq-question').style.opacity = '1';
-                        // 2. Ask your mother...
+                        cursorEl.classList.add('visible');
+                        // Show panel container
+                        document.getElementById('sequence').style.opacity = '1';
+                        // 1. Question
                         setTimeout(() => {
-                            document.getElementById('seq-ask').style.opacity = '1';
-                            // 3. Share buttons
+                            document.getElementById('seq-question').style.opacity = '1';
+                            // 2. Ask your mother...
                             setTimeout(() => {
-                                document.getElementById('seq-buttons').style.opacity = '1';
-                                document.getElementById('seq-footer').style.opacity = '1';
+                                document.getElementById('seq-ask').style.opacity = '1';
+                                // 3. Share buttons
+                                setTimeout(() => {
+                                    document.getElementById('seq-buttons').style.opacity = '1';
+                                    document.getElementById('seq-footer').style.opacity = '1';
+                                }, 1500);
                             }, 1500);
                         }, 1500);
-                    }, 1500);
+                    }, 500);
                 }, 600);
             }
         }
