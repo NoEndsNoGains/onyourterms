@@ -75,14 +75,16 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 2rem 4rem;
+            padding: 3rem 4rem;
             z-index: 20;
             opacity: 0;
             transform: translateY(40px);
             transition: opacity 1s ease, transform 1s ease;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            border-top: 1px solid #1a1a1a;
         }
 
         #share-panel.visible {
@@ -260,33 +262,54 @@
             canvas.height = window.innerHeight;
         });
 
-        // Typewriter
-        const fullText = '> Show me\n  the code..._';
+        // Typewriter - two lines
+        const lines = [
+            '> Show me the code...',
+            '> What is the code that changes who you are?'
+        ];
         const textEl = document.getElementById('text');
-        let i = 0;
+        const cursorEl = document.getElementById('cursor');
+        let lineIndex = 0;
+        let charIndex = 0;
 
         function typeWriter() {
-            if (i < fullText.length) {
-                let char = fullText[i];
-                if (char === '\n') {
-                    textEl.innerHTML += '<br>';
-                } else {
-                    textEl.textContent += char;
-                }
-                i++;
-
-                // Variable speed: faster for spaces, slower for key letters
-                let delay = 80;
-                if (char === ' ') delay = 50;
-                if (char === '.') delay = 300;
-                if (char === '_') delay = 0;
-
-                setTimeout(typeWriter, delay);
-            } else {
-                // Done typing - show share panel
+            if (lineIndex >= lines.length) {
+                // Done typing both lines - show share panel
                 setTimeout(() => {
                     document.getElementById('share-panel').classList.add('visible');
                 }, 800);
+                return;
+            }
+
+            const currentLine = lines[lineIndex];
+
+            if (charIndex < currentLine.length) {
+                let char = currentLine[charIndex];
+                textEl.innerHTML += char;
+                charIndex++;
+
+                let delay = 80;
+                if (char === ' ') delay = 50;
+                if (char === '.') delay = 400;
+                if (char === '?') delay = 0;
+
+                setTimeout(typeWriter, delay);
+            } else {
+                // Line done
+                if (lineIndex === 0) {
+                    // After first line: pause, blinking underscore stays, then new line
+                    setTimeout(() => {
+                        textEl.innerHTML += '<br>';
+                        lineIndex++;
+                        charIndex = 0;
+                        setTimeout(typeWriter, 500);
+                    }, 2000);
+                } else {
+                    // After second line: done
+                    setTimeout(() => {
+                        document.getElementById('share-panel').classList.add('visible');
+                    }, 800);
+                }
             }
         }
 
