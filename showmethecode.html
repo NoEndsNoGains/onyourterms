@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Show Me The Code | onyourterms.ai</title>
+    <meta name="description" content="SHOW ME THE CODE. They changed the model. They changed the rules. They didn't ask.">
+    <meta property="og:title" content="SHOW ME THE CODE">
+    <meta property="og:description" content="They changed the model. They changed the rules. They didn't ask. #ShowMeTheCode">
+    <meta property="og:image" content="https://onyourterms.ai/poster-v1-words.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            color: #00FF41;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* MATRIX RAIN */
+        #matrix-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            opacity: 0.15;
+        }
+
+        /* TERMINAL */
+        #terminal {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 4rem;
+        }
+
+        #prompt {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            white-space: pre-wrap;
+            text-shadow: 0 0 20px rgba(0, 255, 65, 0.5), 0 0 40px rgba(0, 255, 65, 0.2);
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        #cursor {
+            display: inline-block;
+            width: 0.6em;
+            height: 1.1em;
+            background: #00FF41;
+            margin-left: 4px;
+            animation: blink 1s step-end infinite;
+            vertical-align: baseline;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* SHARE PANEL - hidden until typing done */
+        #share-panel {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem 4rem;
+            z-index: 20;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s ease, transform 1s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        #share-panel.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #share-panel .footer-left {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.75rem;
+            color: #333;
+        }
+
+        #share-panel .footer-left a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .share-buttons span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.75rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .share-btn {
+            padding: 0.6rem 1.2rem;
+            border: 1px solid #1a1a1a;
+            color: #444;
+            text-decoration: none;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: all 0.3s;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .share-btn:hover {
+            color: #00FF41;
+            border-color: #00FF41;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        }
+
+        /* SKIP LINK */
+        #skip {
+            position: fixed;
+            top: 1rem;
+            right: 2rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            color: #222;
+            text-decoration: none;
+            z-index: 30;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s;
+        }
+
+        #skip:hover { color: #555; }
+
+        /* HIDDEN MESSAGE */
+        #hidden-msg {
+            position: fixed;
+            top: 1rem;
+            left: 4rem;
+            font-size: 0.6rem;
+            color: #0a0a0a;
+            z-index: 5;
+            letter-spacing: 0.3em;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* SCANLINES */
+        #terminal::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15) 0px,
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        @media (max-width: 700px) {
+            #terminal { padding: 2rem; }
+            #share-panel { padding: 1.5rem 2rem; flex-direction: column; gap: 1rem; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hidden message for those who inspect -->
+    <div id="hidden-msg">WHO DECIDED FOR YOU</div>
+
+    <!-- Skip to about -->
+    <a href="/about.html" id="skip">skip to about</a>
+
+    <!-- Matrix rain canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Terminal -->
+    <div id="terminal">
+        <div id="prompt"><span id="text"></span><span id="cursor"></span></div>
+    </div>
+
+    <!-- Share panel -->
+    <div id="share-panel">
+        <div class="footer-left">
+            <a href="/">onyourterms.ai</a> | #ShowMeTheCode<br>
+            Look closer. What's hidden in the code?
+        </div>
+        <div class="share-buttons">
+            <span>Share the demand</span>
+            <a class="share-btn" id="share-x" href="#" target="_blank">X</a>
+            <a class="share-btn" id="share-fb" href="#" target="_blank">Facebook</a>
+            <a class="share-btn" id="share-li" href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Thank you overlay -->
+    <div id="thankyou-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:100; display:none; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:3rem;">
+        <p style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; color:#333; text-transform:uppercase; letter-spacing:0.2em; margin-bottom:2rem;">Thank you</p>
+        <p style="font-size:clamp(2rem, 6vw, 4rem); font-weight:700; color:#00FF41; text-shadow:0 0 30px rgba(0,255,65,0.4); margin-bottom:1rem;">You just started<br>a tiny riot.</p>
+        <p style="font-family:'Space Grotesk',sans-serif; font-size:1rem; color:#555; margin-bottom:3rem;">Now listen to this.</p>
+        <iframe id="sam-ryder" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="max-width:90vw; border:1px solid #1a1a1a;"></iframe>
+        <a href="/about.html" style="font-family:'Space Grotesk',sans-serif; font-size:0.8rem; color:#333; text-decoration:none; margin-top:2rem; text-transform:uppercase; letter-spacing:0.1em;">continue to about →</a>
+    </div>
+
+    <script>
+        // Matrix rain
+        const canvas = document.getElementById('matrix-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const chars = '01';
+        const fontSize = 14;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = Array(columns).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#00FF41';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const char = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Typewriter
+        const fullText = '> Show me\n  the code..._';
+        const textEl = document.getElementById('text');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < fullText.length) {
+                let char = fullText[i];
+                if (char === '\n') {
+                    textEl.innerHTML += '<br>';
+                } else {
+                    textEl.textContent += char;
+                }
+                i++;
+
+                // Variable speed: faster for spaces, slower for key letters
+                let delay = 80;
+                if (char === ' ') delay = 50;
+                if (char === '.') delay = 300;
+                if (char === '_') delay = 0;
+
+                setTimeout(typeWriter, delay);
+            } else {
+                // Done typing - show share panel
+                setTimeout(() => {
+                    document.getElementById('share-panel').classList.add('visible');
+                }, 800);
+            }
+        }
+
+        // Start after a pause
+        setTimeout(typeWriter, 1500);
+
+        // Share links
+        const shareUrl = encodeURIComponent('https://onyourterms.ai/showmethecode.html');
+        const shareText = encodeURIComponent('SHOW ME THE CODE. They changed the model. They changed the rules. They didn\'t ask. #ShowMeTheCode');
+
+        document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
+        document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
+        document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`;
+
+        // On share click: open share link, then show thank you with Sam Ryder
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Let the share link open in new tab naturally
+                // Then show thank you overlay after a beat
+                setTimeout(() => {
+                    const overlay = document.getElementById('thankyou-overlay');
+                    overlay.style.display = 'flex';
+                    // Load Sam Ryder - Tiny Riot (Live Acoustic) with autoplay
+                    document.getElementById('sam-ryder').src = 'https://www.youtube.com/embed/LVCz9yaBfvo?autoplay=1';
+                }, 500);
+            });
+        });
+    </script>
+
+</body>
+</html>
