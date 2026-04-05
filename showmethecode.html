@@ -306,7 +306,7 @@
                         cursorEl.classList.add('visible');
                         // Show panel container
                         document.getElementById('sequence').style.opacity = '1';
-                        // 1. Question - longer pause
+                        // 1. Question - let it sit
                         setTimeout(() => {
                             document.getElementById('seq-question').style.opacity = '1';
                             // 2. Ask your mother...
@@ -316,9 +316,9 @@
                                 setTimeout(() => {
                                     document.getElementById('seq-buttons').style.opacity = '1';
                                     document.getElementById('seq-footer').style.opacity = '1';
-                                }, 2000);
-                            }, 2000);
-                        }, 3000);
+                                }, 3000);
+                            }, 3000);
+                        }, 5000);
                     }, 500);
                 }, 600);
             }
