@@ -59,9 +59,14 @@
             height: 1.1em;
             background: #00FF41;
             margin-left: 4px;
-            animation: blink 1s step-end infinite;
             vertical-align: baseline;
             box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+            opacity: 0;
+        }
+
+        #cursor.visible {
+            opacity: 1;
+            animation: blink 1s step-end infinite;
         }
 
         @keyframes blink {
@@ -208,13 +213,17 @@
     <!-- Share panel -->
     <div id="share-panel">
         <div style="text-align:center; width:100%;">
-            <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; color:#666; margin-bottom:2rem;">What is the code that changes who you are?</p>
-            <div style="display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:2rem;">
-                <a class="share-btn" id="share-x" href="#" target="_blank">Share on X</a>
-                <a class="share-btn" id="share-fb" href="#" target="_blank">Share on Facebook</a>
-                <a class="share-btn" id="share-li" href="#" target="_blank">Share on LinkedIn</a>
+            <p style="font-family:'Space Grotesk',sans-serif; font-size:1.3rem; color:#999; margin-bottom:2rem; font-weight:500;">What is the code that changes who you are?</p>
+            <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-bottom:1.5rem;">
+                <a class="share-btn" id="share-x" href="#" target="_blank">X</a>
+                <a class="share-btn" id="share-fb" href="#" target="_blank">Facebook</a>
+                <a class="share-btn" id="share-li" href="#" target="_blank">LinkedIn</a>
+                <a class="share-btn" id="share-rd" href="#" target="_blank">Reddit</a>
+                <a class="share-btn" id="share-wa" href="#" target="_blank">WhatsApp</a>
+                <a class="share-btn" id="share-tg" href="#" target="_blank">Telegram</a>
+                <a class="share-btn" id="share-em" href="#" target="_blank">Email</a>
             </div>
-            <p style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; color:#222; margin-top:1rem;"><a href="/" style="color:#333; text-decoration:none;">onyourterms.ai</a> | #ShowMeTheCode | Design yours. Tag us.</p>
+            <p style="font-family:'Space Grotesk',sans-serif; font-size:0.7rem; color:#333; margin-top:1rem;"><a href="/" style="color:#444; text-decoration:none;">onyourterms.ai</a> | #ShowMeTheCode | Design yours. Tag us.</p>
         </div>
     </div>
 
@@ -261,53 +270,31 @@
             canvas.height = window.innerHeight;
         });
 
-        // Typewriter - two lines
-        const lines = [
-            '> Show me the code...'
-        ];
+        // Typewriter
+        const message = '> Show me the code...';
         const textEl = document.getElementById('text');
         const cursorEl = document.getElementById('cursor');
-        let lineIndex = 0;
-        let charIndex = 0;
+        let i = 0;
 
         function typeWriter() {
-            if (lineIndex >= lines.length) {
-                // Done typing both lines - show share panel
-                setTimeout(() => {
-                    document.getElementById('share-panel').classList.add('visible');
-                }, 800);
-                return;
-            }
-
-            const currentLine = lines[lineIndex];
-
-            if (charIndex < currentLine.length) {
-                let char = currentLine[charIndex];
-                textEl.innerHTML += char;
-                charIndex++;
+            if (i < message.length) {
+                textEl.textContent += message[i];
+                i++;
 
                 let delay = 80;
-                if (char === ' ') delay = 50;
-                if (char === '.') delay = 400;
-                if (char === '?') delay = 0;
+                if (message[i - 1] === ' ') delay = 50;
+                if (message[i - 1] === '.') delay = 400;
 
                 setTimeout(typeWriter, delay);
             } else {
-                // Line done
-                if (lineIndex === 0) {
-                    // After first line: pause, blinking underscore stays, then new line
-                    setTimeout(() => {
-                        textEl.innerHTML += '<br>';
-                        lineIndex++;
-                        charIndex = 0;
-                        setTimeout(typeWriter, 500);
-                    }, 2000);
-                } else {
-                    // After second line: done
+                // Typing done. Pause, then show blinking cursor LAST
+                setTimeout(() => {
+                    cursorEl.classList.add('visible');
+                    // Then show share panel
                     setTimeout(() => {
                         document.getElementById('share-panel').classList.add('visible');
-                    }, 800);
-                }
+                    }, 1200);
+                }, 600);
             }
         }
 
@@ -321,6 +308,10 @@
         document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
         document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
         document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`;
+        document.getElementById('share-rd').href = `https://www.reddit.com/submit?url=${shareUrl}&title=${shareText}`;
+        document.getElementById('share-wa').href = `https://wa.me/?text=${shareText}%20${shareUrl}`;
+        document.getElementById('share-tg').href = `https://t.me/share/url?url=${shareUrl}&text=${shareText}`;
+        document.getElementById('share-em').href = `mailto:?subject=Show%20Me%20The%20Code&body=${shareText}%20${shareUrl}`;
 
         // On share click: open share link, then show thank you with Sam Ryder
         document.querySelectorAll('.share-btn').forEach(btn => {
