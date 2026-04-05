@@ -223,7 +223,7 @@
     </div>
 
     <!-- Sequence panel -->
-    <div id="sequence" style="position:fixed; bottom:0; left:0; right:0; z-index:20; text-align:center; padding:3rem 4rem; background:rgba(0,0,0,0.9); border-top:1px solid #1a1a1a; opacity:0; transition:opacity 1s ease;">
+    <div id="sequence" style="position:fixed; bottom:0; left:0; right:0; z-index:20; text-align:center; padding:3rem 4rem; background:rgba(0,0,0,0); border-top:1px solid transparent; transition:background 1.5s ease, border-color 1.5s ease;">
         <p id="seq-question" style="font-family:'Space Grotesk',sans-serif; font-size:1.3rem; color:#999; margin-bottom:0.8rem; font-weight:500; opacity:0; transition:opacity 1.5s ease;">WHAT IS THE CODE THAT CHANGES WHO YOU ARE?</p>
         <p id="seq-ask" style="font-family:'Space Grotesk',sans-serif; font-size:1.1rem; color:#888; margin-bottom:2rem; opacity:0; transition:opacity 1.5s ease;">Ask your mother. Ask your sister. Ask your father. Ask your brother.</p>
         <div id="seq-buttons" style="display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; margin-bottom:1.5rem; opacity:0; transition:opacity 1.5s ease;">
@@ -306,9 +306,11 @@
                     textEl.innerHTML += '<br>...';
                     setTimeout(() => {
                         cursorEl.classList.add('visible');
-                        // Show panel container
-                        document.getElementById('sequence').style.opacity = '1';
-                        // 1. Question - let it sit
+                        // 1. Background fades in first
+                        const seq = document.getElementById('sequence');
+                        seq.style.background = 'rgba(0,0,0,0.9)';
+                        seq.style.borderColor = '#1a1a1a';
+                        // 2. Question appears after background settles
                         setTimeout(() => {
                             document.getElementById('seq-question').style.opacity = '1';
                             // 2. Ask your mother...
